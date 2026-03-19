@@ -1,13 +1,19 @@
 """
-Módulo de autenticación — SQLite + Flask-Login
+Módulo de autenticación — PostgreSQL + Flask-Login
 """
 
-import sqlite3
 import os
+import psycopg2
+import psycopg2.extras
 from flask_login import LoginManager, UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
-DB_PATH = "users.db"
+DATABASE_URL = os.environ.get("DATABASE_URL", "")
+
+# Railway a veces entrega "postgres://" pero psycopg2 requiere "postgresql://"
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
 
 # ─────────────────────────────────────────────
 # MODELO DE USUARIO
@@ -32,28 +38,23 @@ class User(UserMixin):
 # ─────────────────────────────────────────────
 
 def get_db():
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
+    conn = psycopg2.connect(DATABASE_URL)
     return conn
 
 
 def init_db():
-    """Crea la tabla de usuarios si no existe y agrega columna is_admin si falta."""
+    """Crea la tabla de usuarios si no existe."""
     with get_db() as conn:
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS users (
-                id            INTEGER PRIMARY KEY AUTOINCREMENT,
-                username      TEXT    UNIQUE NOT NULL,
-                password_hash TEXT    NOT NULL,
-                is_admin      INTEGER DEFAULT 0,
-                created_at    TEXT    DEFAULT (datetime('now'))
-            )
-        """)
-        # Migración: agregar is_admin si la tabla ya existía sin esa columna
-        try:
-            conn.execute("ALTER TABLE users ADD COLUMN is_admin INTEGER DEFAULT 0")
-        except Exception:
-            pass
+        with conn.cursor() as cur:
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS users (
+                    id            SERIAL PRIMARY KEY,
+                    username      TEXT UNIQUE NOT NULL,
+                    password_hash TEXT NOT NULL,
+                    is_admin      BOOLEAN DEFAULT FALSE,
+                    created_at    TIMESTAMP DEFAULT NOW()
+                )
+            """)
         conn.commit()
 
 
@@ -65,41 +66,55 @@ def create_user(username: str, password: str, is_admin: bool = False) -> tuple[b
         return False, "La contraseña debe tener al menos 6 caracteres."
     try:
         with get_db() as conn:
-            conn.execute(
-                "INSERT INTO users (username, password_hash, is_admin) VALUES (?, ?, ?)",
-                (username.strip().lower(), generate_password_hash(password), int(is_admin))
-            )
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO users (username, password_hash, is_admin) VALUES (%s, %s, %s)",
+                    (username.strip().lower(), generate_password_hash(password), is_admin)
+                )
             conn.commit()
         return True, "Usuario creado correctamente."
-    except sqlite3.IntegrityError:
+    except psycopg2.errors.UniqueViolation:
         return False, "Ese nombre de usuario ya existe."
+    except Exception as e:
+        return False, str(e)
 
 
 def get_user_by_id(user_id: str):
     with get_db() as conn:
-        row = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
-    return User(row["id"], row["username"], row["password_hash"], row["is_admin"]) if row else None
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+            row = cur.fetchone()
+    if not row:
+        return None
+    return User(row["id"], row["username"], row["password_hash"], row["is_admin"])
 
 
 def get_user_by_username(username: str):
     with get_db() as conn:
-        row = conn.execute(
-            "SELECT * FROM users WHERE username = ?", (username.strip().lower(),)
-        ).fetchone()
-    return User(row["id"], row["username"], row["password_hash"], row["is_admin"]) if row else None
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute(
+                "SELECT * FROM users WHERE username = %s", (username.strip().lower(),)
+            )
+            row = cur.fetchone()
+    if not row:
+        return None
+    return User(row["id"], row["username"], row["password_hash"], row["is_admin"])
 
 
 def get_all_users():
     with get_db() as conn:
-        rows = conn.execute(
-            "SELECT id, username, is_admin, created_at FROM users ORDER BY created_at DESC"
-        ).fetchall()
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute(
+                "SELECT id, username, is_admin, created_at FROM users ORDER BY created_at DESC"
+            )
+            rows = cur.fetchall()
     return [dict(r) for r in rows]
 
 
 def delete_user(user_id: str) -> bool:
     with get_db() as conn:
-        conn.execute("DELETE FROM users WHERE id = ?", (user_id,))
+        with conn.cursor() as cur:
+            cur.execute("DELETE FROM users WHERE id = %s", (user_id,))
         conn.commit()
     return True
 
