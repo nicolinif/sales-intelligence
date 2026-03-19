@@ -303,109 +303,139 @@ TOOLS = [
 # LOOP DEL AGENTE
 # ─────────────────────────────────────────────
 
+def _detectar_col_ventas(df):
+    candidatos = ["monto", "monto_final", "ventas", "total", "importe", "revenue", "amount", "venta", "precio", "valor"]
+    cols_lower = {col.lower(): col for col in df.columns}
+    for c in candidatos:
+        if c in cols_lower:
+            return cols_lower[c]
+    for col in df.columns:
+        if df[col].dtype in ["float64", "int64"]:
+            return col
+    return None
+
+
+def _detectar_col_fecha(df):
+    candidatos = ["fecha", "date", "periodo", "mes", "month", "year", "año"]
+    cols_lower = {col.lower(): col for col in df.columns}
+    for c in candidatos:
+        if c in cols_lower:
+            return cols_lower[c]
+    for col in df.columns:
+        for kw in ["fecha", "date", "mes", "year", "año"]:
+            if kw in col.lower():
+                return col
+    return None
+
+
+def _detectar_col_producto(df):
+    candidatos = ["producto", "product", "item", "nombre", "articulo", "categoria", "category", "desc", "descripcion"]
+    cols_lower = {col.lower(): col for col in df.columns}
+    for c in candidatos:
+        if c in cols_lower:
+            return cols_lower[c]
+    for col in df.columns:
+        for kw in ["prod", "item", "nombre", "categ"]:
+            if kw in col.lower():
+                return col
+    return None
+
+
 def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
-    GRAF_LABELS = {
-        "mes_barras":      "Un gráfico de BARRAS con los períodos temporales: usá 'ventas_por_mes' si existe, sino usá 'ventas_por_hoja'",
-        "mes_linea":       "Un gráfico de LINEA con los períodos temporales: usá 'ventas_por_mes' si existe, sino usá 'ventas_por_hoja'",
-        "top_productos":   "Un gráfico de BARRAS con los productos del campo top_5_productos",
-        "categoria_torta": "Un gráfico de TORTA agrupando monto por la columna de categoría si existe",
-    }
     if not graficos_seleccionados:
-        graficos_seleccionados = list(GRAF_LABELS.keys())
-
-    instrucciones_graf = "\n".join(
-        f"   - {GRAF_LABELS[g]}" for g in graficos_seleccionados if g in GRAF_LABELS
-    )
-
-    pregunta = (
-        "Analizá el archivo de ventas en '" + ruta_archivo + "' siguiendo estos pasos en orden:\n"
-        "1. Llamá a cargar_datos para ver las columnas disponibles. "
-        "   Si el resultado incluye 'hojas_detectadas', el archivo tiene múltiples hojas combinadas "
-        "   y la columna 'hoja' representa el período de cada registro.\n"
-        "2. Llamá a calcular_metricas usando las columnas reales que encontraste. "
-        "   Si no hay columna de fecha, el resultado tendrá 'ventas_por_hoja' en lugar de 'ventas_por_mes'.\n"
-        "3. Con los resultados EXACTOS de calcular_metricas, generá ÚNICAMENTE estos gráficos:\n"
-        + instrucciones_graf + "\n"
-        "Cuando termines de generar los gráficos, respondé solo 'Gráficos listos.' y nada más."
-    )
-
-    system_prompt = (
-        "Sos un agente experto en análisis de datos de ventas. "
-        "REGLAS ESTRICTAS:\n"
-        "1. NUNCA inventes datos, nombres de productos, valores ni etiquetas.\n"
-        "2. Las etiquetas y valores de generar_grafico deben ser EXACTAMENTE los de calcular_metricas.\n"
-        "3. Si el resultado tiene 'ventas_por_mes', usá ese campo para gráficos temporales con TODOS los meses.\n"
-        "4. Si el resultado tiene 'ventas_por_hoja', usá ese campo para gráficos temporales con TODAS las hojas.\n"
-        "5. Usa los nombres reales de top_5_productos.\n"
-        "6. Nunca uses datos inventados."
-    )
-
-    mensajes = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": pregunta},
-    ]
+        graficos_seleccionados = ["mes_barras", "mes_linea", "top_productos", "categoria_torta"]
 
     graficos = []
 
-    # ── Fase 1: loop de tool-calling ──
-    for _ in range(12):
-        respuesta = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=mensajes,
-            tools=TOOLS,
-            tool_choice="auto",
-            max_tokens=2048,
-        )
+    # ── Paso 1: cargar datos ──
+    datos = cargar_datos(ruta_archivo)
+    if not datos.get("ok"):
+        return f"Error al cargar el archivo: {datos.get('error')}", graficos
 
-        mensaje = respuesta.choices[0].message
-        asistente_msg = {"role": "assistant", "content": mensaje.content}
-        if mensaje.tool_calls:
-            asistente_msg["tool_calls"] = mensaje.tool_calls
-        mensajes.append(asistente_msg)
+    # ── Paso 2: calcular métricas con columnas detectadas ──
+    df = leer_archivo(ruta_archivo)
+    col_ventas  = _detectar_col_ventas(df)
+    col_fecha   = _detectar_col_fecha(df)
+    col_producto = _detectar_col_producto(df)
 
-        if not mensaje.tool_calls:
-            break
+    if not col_ventas:
+        return "No se encontró columna de ventas/montos en el archivo.", graficos
 
-        for tool_call in mensaje.tool_calls:
-            nombre_tool = tool_call.function.name
-            inputs = json.loads(tool_call.function.arguments)
-            fn = TOOL_MAP.get(nombre_tool)
-            resultado = fn(**inputs) if fn else {"error": "Tool no encontrada"}
+    metricas = calcular_metricas(ruta_archivo, col_ventas, col_fecha, col_producto)
 
-            if nombre_tool == "generar_grafico" and resultado.get("ok"):
-                graficos.append(resultado["archivo"])
+    # ── Paso 3: generar gráficos ──
+    ventas_temporales = metricas.get("ventas_por_mes") or metricas.get("ventas_por_hoja")
 
-            mensajes.append({
-                "role": "tool",
-                "tool_call_id": tool_call.id,
-                "content": json.dumps(resultado, ensure_ascii=False),
-            })
+    if ventas_temporales and "mes_barras" in graficos_seleccionados:
+        etiq = list(ventas_temporales.keys())
+        vals = list(ventas_temporales.values())
+        res = generar_grafico(etiq, vals, "barras", "Ventas por período", "ventas_por_periodo_barras.png")
+        if res.get("ok"):
+            graficos.append(res["archivo"])
 
-    # ── Fase 2: reporte SIN herramientas disponibles ──
-    mensajes.append({
-        "role": "user",
-        "content": (
-            "Ahora redactá el reporte ejecutivo completo con los datos analizados. "
-            "Usá SIEMPRE esta estructura en markdown:\n"
-            "## Resumen General\n"
-            "Párrafo con desempeño global: total, período, registros y tendencia.\n"
-            "## Puntos Clave\n"
-            "4 a 6 bullets con insights específicos: mejor/peor producto, mes pico, concentración de ventas, anomalías.\n"
-            "## Propuesta\n"
-            "3 a 5 recomendaciones concretas citando productos, meses y valores reales."
-        ),
-    })
+    if ventas_temporales and "mes_linea" in graficos_seleccionados:
+        etiq = list(ventas_temporales.keys())
+        vals = list(ventas_temporales.values())
+        res = generar_grafico(etiq, vals, "linea", "Tendencia de ventas", "ventas_por_periodo_linea.png")
+        if res.get("ok"):
+            graficos.append(res["archivo"])
 
-    respuesta_final = client.chat.completions.create(
+    top = metricas.get("top_5_productos")
+    if top and "top_productos" in graficos_seleccionados:
+        etiq = list(top.keys())
+        vals = list(top.values())
+        res = generar_grafico(etiq, vals, "barras", "Top 5 productos", "top_productos.png")
+        if res.get("ok"):
+            graficos.append(res["archivo"])
+
+    if "categoria_torta" in graficos_seleccionados and col_producto and col_ventas:
+        try:
+            cat = df.groupby(col_producto)[col_ventas].sum().sort_values(ascending=False).head(6)
+            if len(cat) >= 2:
+                res = generar_grafico(
+                    list(cat.index.astype(str)),
+                    [float(v) for v in cat.values],
+                    "torta", "Distribución por categoría", "categoria_torta.png"
+                )
+                if res.get("ok"):
+                    graficos.append(res["archivo"])
+        except Exception:
+            pass
+
+    # ── Paso 4: reporte con LLM (sin tool calling) ──
+    resumen_datos = json.dumps(metricas, ensure_ascii=False, default=str)
+
+    respuesta = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
-        messages=mensajes,
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "Sos un analista experto en ventas. Redactá reportes claros y concisos "
+                    "basándote ÚNICAMENTE en los datos proporcionados. No inventes datos."
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    f"Aquí están las métricas del análisis de ventas:\n\n{resumen_datos}\n\n"
+                    "Redactá el reporte ejecutivo con EXACTAMENTE esta estructura en markdown:\n\n"
+                    "## Resumen General\n"
+                    "Párrafo con desempeño global: total vendido, período analizado, cantidad de registros y tendencia general.\n\n"
+                    "## Puntos Clave\n"
+                    "4 a 6 bullets con insights específicos: mejor y peor producto, mes o período pico, "
+                    "concentración de ventas, anomalías o variaciones notables.\n\n"
+                    "## Propuesta\n"
+                    "3 a 5 recomendaciones concretas citando productos, períodos y valores reales del análisis."
+                ),
+            },
+        ],
         max_tokens=4096,
-        # Sin parámetro tools → el modelo no puede llamar herramientas
     )
 
-    reporte = respuesta_final.choices[0].message.content or ""
+    reporte = respuesta.choices[0].message.content or ""
     return reporte, graficos
 
 
