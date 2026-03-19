@@ -328,43 +328,35 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
         "   Si no hay columna de fecha, el resultado tendrá 'ventas_por_hoja' en lugar de 'ventas_por_mes'.\n"
         "3. Con los resultados EXACTOS de calcular_metricas, generá ÚNICAMENTE estos gráficos:\n"
         + instrucciones_graf + "\n"
-        "4. Con los datos obtenidos, escribí el reporte ejecutivo en texto. "
-        "   Si los datos vienen de múltiples hojas, mencioná cada período en el análisis."
+        "Cuando termines de generar los gráficos, respondé solo 'Gráficos listos.' y nada más."
+    )
+
+    system_prompt = (
+        "Sos un agente experto en análisis de datos de ventas. "
+        "REGLAS ESTRICTAS:\n"
+        "1. NUNCA inventes datos, nombres de productos, valores ni etiquetas.\n"
+        "2. Las etiquetas y valores de generar_grafico deben ser EXACTAMENTE los de calcular_metricas.\n"
+        "3. Si el resultado tiene 'ventas_por_mes', usá ese campo para gráficos temporales con TODOS los meses.\n"
+        "4. Si el resultado tiene 'ventas_por_hoja', usá ese campo para gráficos temporales con TODAS las hojas.\n"
+        "5. Usa los nombres reales de top_5_productos.\n"
+        "6. Nunca uses datos inventados."
     )
 
     mensajes = [
-        {
-            "role": "system",
-            "content": (
-                "Sos un agente experto en análisis de datos de ventas. "
-                "REGLAS ESTRICTAS:\n"
-                "1. NUNCA inventes datos, nombres de productos, valores ni etiquetas.\n"
-                "2. Las etiquetas y valores de generar_grafico deben ser EXACTAMENTE los de calcular_metricas.\n"
-                "3. Si el resultado tiene 'ventas_por_mes', usá ese campo para gráficos temporales con TODOS los meses.\n"
-                "4. Si el resultado tiene 'ventas_por_hoja', usá ese campo para gráficos temporales con TODAS las hojas.\n"
-                "5. Usa los nombres reales de top_5_productos.\n"
-                "6. El reporte final debe tener SIEMPRE esta estructura en markdown:\n"
-                "   ## Resumen General\n"
-                "   Párrafo con desempeño global: total, período, registros y tendencia.\n"
-                "   ## Puntos Clave\n"
-                "   4 a 6 bullets con insights específicos: mejor/peor producto, mes pico, concentración de ventas, anomalías.\n"
-                "   ## Propuesta\n"
-                "   3 a 5 recomendaciones concretas citando productos, meses y valores reales.\n"
-                "7. Nunca uses datos inventados en el reporte."
-            ),
-        },
+        {"role": "system", "content": system_prompt},
         {"role": "user", "content": pregunta},
     ]
 
     graficos = []
 
-    while True:
+    # ── Fase 1: loop de tool-calling ──
+    for _ in range(12):
         respuesta = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             messages=mensajes,
             tools=TOOLS,
             tool_choice="auto",
-            max_tokens=4096,
+            max_tokens=2048,
         )
 
         mensaje = respuesta.choices[0].message
@@ -375,8 +367,7 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
         })
 
         if not mensaje.tool_calls:
-            reporte = mensaje.content or ""
-            return reporte, graficos
+            break
 
         for tool_call in mensaje.tool_calls:
             nombre_tool = tool_call.function.name
@@ -392,6 +383,31 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
                 "tool_call_id": tool_call.id,
                 "content": json.dumps(resultado, ensure_ascii=False),
             })
+
+    # ── Fase 2: reporte SIN herramientas disponibles ──
+    mensajes.append({
+        "role": "user",
+        "content": (
+            "Ahora redactá el reporte ejecutivo completo con los datos analizados. "
+            "Usá SIEMPRE esta estructura en markdown:\n"
+            "## Resumen General\n"
+            "Párrafo con desempeño global: total, período, registros y tendencia.\n"
+            "## Puntos Clave\n"
+            "4 a 6 bullets con insights específicos: mejor/peor producto, mes pico, concentración de ventas, anomalías.\n"
+            "## Propuesta\n"
+            "3 a 5 recomendaciones concretas citando productos, meses y valores reales."
+        ),
+    })
+
+    respuesta_final = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=mensajes,
+        max_tokens=4096,
+        # Sin parámetro tools → el modelo no puede llamar herramientas
+    )
+
+    reporte = respuesta_final.choices[0].message.content or ""
+    return reporte, graficos
 
 
 def comparar_metricas(ruta1: str, ruta2: str) -> dict:
