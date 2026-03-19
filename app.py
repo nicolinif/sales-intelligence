@@ -353,7 +353,7 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
 
     while True:
         respuesta = client.chat.completions.create(
-            model="moonshotai/kimi-k2-instruct",
+            model="llama-3.3-70b-versatile",
             messages=mensajes,
             tools=TOOLS,
             tool_choice="auto",
@@ -599,7 +599,7 @@ def ejecutar_comparacion(ruta1: str, ruta2: str, nombre1: str, nombre2: str):
     graficos = []
     while True:
         respuesta = client.chat.completions.create(
-            model="moonshotai/kimi-k2-instruct",
+            model="llama-3.3-70b-versatile",
             messages=mensajes,
             tools=tools_comp,
             tool_choice="auto",
@@ -816,7 +816,7 @@ def preguntar():
         mensajes.append({"role": "user", "content": pregunta})
 
         respuesta = client.chat.completions.create(
-            model="moonshotai/kimi-k2-instruct",
+            model="llama-3.3-70b-versatile",
             messages=mensajes,
             max_tokens=1024,
         )
