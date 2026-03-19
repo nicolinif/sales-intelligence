@@ -328,20 +328,8 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
         "   Si no hay columna de fecha, el resultado tendrá 'ventas_por_hoja' en lugar de 'ventas_por_mes'.\n"
         "3. Con los resultados EXACTOS de calcular_metricas, generá ÚNICAMENTE estos gráficos:\n"
         + instrucciones_graf + "\n"
-        "4. Escribí un reporte ejecutivo completo con esta estructura EXACTA:\n"
-        "   ## Resumen General\n"
-        "   Un párrafo que sintetice el desempeño global: total de ventas, período analizado, volumen de registros y tendencia general.\n\n"
-        "   ## Puntos Clave\n"
-        "   Entre 4 y 6 puntos clave con insights concretos del análisis. Pueden incluir:\n"
-        "   - Producto o categoría con mejor/peor desempeño\n"
-        "   - Mes o período pico y valle\n"
-        "   - Variaciones relevantes entre períodos\n"
-        "   - Concentración de ventas (ej: top 2 productos representan X% del total)\n"
-        "   - Cualquier anomalía o patrón destacable\n\n"
-        "   ## Propuesta\n"
-        "   Entre 3 y 5 recomendaciones accionables y específicas basadas en los datos analizados. "
-        "   Deben ser concretas, no genéricas. Usá los nombres reales de productos, meses y valores.\n\n"
-        "   Usá solo datos reales. No inventes valores ni conclusiones que no estén respaldadas por los números."
+        "4. Con los datos obtenidos, escribí el reporte ejecutivo en texto. "
+        "   Si los datos vienen de múltiples hojas, mencioná cada período en el análisis."
     )
 
     mensajes = [
@@ -355,9 +343,14 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
                 "3. Si el resultado tiene 'ventas_por_mes', usá ese campo para gráficos temporales con TODOS los meses.\n"
                 "4. Si el resultado tiene 'ventas_por_hoja', usá ese campo para gráficos temporales con TODAS las hojas.\n"
                 "5. Usa los nombres reales de top_5_productos.\n"
-                "6. El reporte debe tener SIEMPRE las tres secciones: ## Resumen General, ## Puntos Clave y ## Propuesta.\n"
-                "7. Los Puntos Clave deben ser insights reales y específicos, no descripciones genéricas.\n"
-                "8. La Propuesta debe citar productos, meses o valores reales, no dar consejos vagos."
+                "6. El reporte final debe tener SIEMPRE esta estructura en markdown:\n"
+                "   ## Resumen General\n"
+                "   Párrafo con desempeño global: total, período, registros y tendencia.\n"
+                "   ## Puntos Clave\n"
+                "   4 a 6 bullets con insights específicos: mejor/peor producto, mes pico, concentración de ventas, anomalías.\n"
+                "   ## Propuesta\n"
+                "   3 a 5 recomendaciones concretas citando productos, meses y valores reales.\n"
+                "7. Nunca uses datos inventados en el reporte."
             ),
         },
         {"role": "user", "content": pregunta},
@@ -367,7 +360,7 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
 
     while True:
         respuesta = client.chat.completions.create(
-            model="llama3-groq-70b-8192-tool-use-preview",
+            model="llama-3.3-70b-versatile",
             messages=mensajes,
             tools=TOOLS,
             tool_choice="auto",
@@ -613,7 +606,7 @@ def ejecutar_comparacion(ruta1: str, ruta2: str, nombre1: str, nombre2: str):
     graficos = []
     while True:
         respuesta = client.chat.completions.create(
-            model="llama3-groq-70b-8192-tool-use-preview",
+            model="llama-3.3-70b-versatile",
             messages=mensajes,
             tools=tools_comp,
             tool_choice="auto",
@@ -830,7 +823,7 @@ def preguntar():
         mensajes.append({"role": "user", "content": pregunta})
 
         respuesta = client.chat.completions.create(
-            model="llama3-groq-70b-8192-tool-use-preview",
+            model="llama-3.3-70b-versatile",
             messages=mensajes,
             max_tokens=1024,
         )
