@@ -328,8 +328,20 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
         "   Si no hay columna de fecha, el resultado tendrá 'ventas_por_hoja' en lugar de 'ventas_por_mes'.\n"
         "3. Con los resultados EXACTOS de calcular_metricas, generá ÚNICAMENTE estos gráficos:\n"
         + instrucciones_graf + "\n"
-        "4. Escribí un reporte ejecutivo usando solo los números y nombres reales de los datos. "
-        "   Si los datos vienen de múltiples hojas, menciona cada período/hoja en el análisis."
+        "4. Escribí un reporte ejecutivo completo con esta estructura EXACTA:\n"
+        "   ## Resumen General\n"
+        "   Un párrafo que sintetice el desempeño global: total de ventas, período analizado, volumen de registros y tendencia general.\n\n"
+        "   ## Puntos Clave\n"
+        "   Entre 4 y 6 puntos clave con insights concretos del análisis. Pueden incluir:\n"
+        "   - Producto o categoría con mejor/peor desempeño\n"
+        "   - Mes o período pico y valle\n"
+        "   - Variaciones relevantes entre períodos\n"
+        "   - Concentración de ventas (ej: top 2 productos representan X% del total)\n"
+        "   - Cualquier anomalía o patrón destacable\n\n"
+        "   ## Propuesta\n"
+        "   Entre 3 y 5 recomendaciones accionables y específicas basadas en los datos analizados. "
+        "   Deben ser concretas, no genéricas. Usá los nombres reales de productos, meses y valores.\n\n"
+        "   Usá solo datos reales. No inventes valores ni conclusiones que no estén respaldadas por los números."
     )
 
     mensajes = [
@@ -343,7 +355,9 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
                 "3. Si el resultado tiene 'ventas_por_mes', usá ese campo para gráficos temporales con TODOS los meses.\n"
                 "4. Si el resultado tiene 'ventas_por_hoja', usá ese campo para gráficos temporales con TODAS las hojas.\n"
                 "5. Usa los nombres reales de top_5_productos.\n"
-                "6. El reporte solo describe datos reales."
+                "6. El reporte debe tener SIEMPRE las tres secciones: ## Resumen General, ## Puntos Clave y ## Propuesta.\n"
+                "7. Los Puntos Clave deben ser insights reales y específicos, no descripciones genéricas.\n"
+                "8. La Propuesta debe citar productos, meses o valores reales, no dar consejos vagos."
             ),
         },
         {"role": "user", "content": pregunta},
