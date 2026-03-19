@@ -38,6 +38,8 @@ class User(UserMixin):
 # ─────────────────────────────────────────────
 
 def get_db():
+    if not DATABASE_URL:
+        raise RuntimeError("DATABASE_URL no está configurada. Agregá el plugin de PostgreSQL en Railway.")
     conn = psycopg2.connect(DATABASE_URL)
     return conn
 
