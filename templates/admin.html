@@ -135,7 +135,7 @@
               <span class="you-badge">vos</span>
               {% endif %}
             </td>
-            <td>{{ user.created_at[:10] }}</td>
+            <td>{{ user.created_at.strftime('%Y-%m-%d') if user.created_at else '-' }}</td>
             <td style="text-align:right">
               {% if user.id|string != current_user.id %}
               <form method="POST" style="display:inline" onsubmit="return confirm('¿Eliminar a {{ user.username }}?')">
