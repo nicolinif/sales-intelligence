@@ -628,6 +628,23 @@ def ejecutar_comparacion(ruta1: str, ruta2: str, nombre1: str, nombre2: str):
 # RUTAS DE AUTENTICACIÓN
 # ─────────────────────────────────────────────
 
+@app.route("/setup-admin")
+def setup_admin():
+    """Ruta de un solo uso para crear el primer admin. Borrar después del primer uso."""
+    token = request.args.get("token", "")
+    if token != os.environ.get("SETUP_TOKEN", ""):
+        return "Acceso denegado", 403
+    from auth import get_all_users
+    if get_all_users():
+        return "Ya existen usuarios. Esta ruta está deshabilitada.", 403
+    username = request.args.get("username", "admin")
+    password = request.args.get("password", "")
+    if len(password) < 6:
+        return "Especificá ?username=xxx&password=yyy&token=zzz (mínimo 6 caracteres)", 400
+    ok, msg = create_user(username, password, is_admin=True)
+    return f"{'OK' if ok else 'ERROR'}: {msg}"
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if current_user.is_authenticated:
