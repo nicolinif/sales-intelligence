@@ -1,0 +1,801 @@
+fecha,producto,categoria,vendedor,region,cantidad,precio_unitario,descuento_pct,monto_final
+2023-01-02,"Pantalla Proyección 100""",Audiovisual,Sebastián Molina,GBA Norte,10,286.58,15,2435.93
+2023-01-02,Proyector Full HD,Audiovisual,Ana García,GBA Norte,13,758.4,10,8873.28
+2023-01-03,Escritorio Standing,Mobiliario,Camila Herrera,GBA Sur,13,821.36,5,10143.8
+2023-01-04,Notebook Pro 15,Tecnología,Sebastián Molina,Rosario,8,1373.55,5,10438.98
+2023-01-05,Notebook Air 13,Tecnología,Valeria Soto,CABA,12,981.77,0,11781.24
+2023-01-06,Proyector Full HD,Audiovisual,Carlos López,GBA Sur,9,797.36,0,7176.24
+2023-01-06,Notebook Pro 15,Tecnología,Ana García,Córdoba,2,1253.4,15,2130.78
+2023-01-07,Teclado Mecánico,Tecnología,Sebastián Molina,CABA,10,134.1,0,1341.0
+2023-01-10,Teclado Mecánico,Tecnología,Sebastián Molina,Mendoza,14,110.48,0,1546.72
+2023-01-13,"Pantalla Proyección 100""",Audiovisual,Sebastián Molina,CABA,13,303.6,5,3749.46
+2023-01-13,Lámpara LED Escritorio,Iluminación,Lucía Fernández,Mendoza,10,81.89,0,818.9
+2023-01-15,Panel LED Oficina,Iluminación,Carlos López,Córdoba,4,210.42,0,841.68
+2023-01-17,Teclado Mecánico,Tecnología,Sebastián Molina,Rosario,3,115.96,0,347.88
+2023-01-17,Lámpara LED Escritorio,Iluminación,Martín Torres,GBA Sur,12,78.28,5,892.39
+2023-01-17,Disco SSD 1TB,Tecnología,Sebastián Molina,GBA Sur,10,114.22,0,1142.2
+2023-01-18,Lámpara LED Escritorio,Iluminación,Sebastián Molina,GBA Norte,11,82.75,0,910.25
+2023-01-19,Silla Ejecutiva,Mobiliario,Valeria Soto,Córdoba,4,312.71,0,1250.84
+2023-01-20,Lámpara LED Escritorio,Iluminación,Sebastián Molina,Rosario,14,79.34,0,1110.76
+2023-01-23,Mouse Inalámbrico,Tecnología,Martín Torres,CABA,15,47.1,10,635.85
+2023-01-23,Proyector Full HD,Audiovisual,Valeria Soto,Mendoza,2,779.88,15,1325.8
+2023-01-26,Escritorio Standing,Mobiliario,Ana García,GBA Norte,11,795.88,0,8754.68
+2023-01-27,Webcam HD,Tecnología,Carlos López,Córdoba,5,80.13,0,400.65
+2023-01-28,Cajonera Móvil,Mobiliario,Camila Herrera,GBA Sur,4,204.43,15,695.06
+2023-01-30,"Monitor 27"" 4K",Tecnología,Diego Ramírez,Mendoza,11,528.59,0,5814.49
+2023-01-30,Teclado Mecánico,Tecnología,Lucía Fernández,CABA,14,113.78,0,1592.92
+2023-01-31,Disco SSD 1TB,Tecnología,Valeria Soto,Rosario,8,100.61,0,804.88
+2023-02-01,Notebook Air 13,Tecnología,Sebastián Molina,Córdoba,14,1092.16,15,12996.7
+2023-02-02,"Monitor 27"" 4K",Tecnología,Camila Herrera,CABA,7,580.77,15,3455.58
+2023-02-03,"Pantalla Proyección 100""",Audiovisual,Valeria Soto,GBA Sur,8,272.12,5,2068.11
+2023-02-03,Cajonera Móvil,Mobiliario,Lucía Fernández,GBA Sur,6,164.28,0,985.68
+2023-02-03,Lámpara LED Escritorio,Iluminación,Martín Torres,Córdoba,14,74.01,0,1036.14
+2023-02-07,Panel LED Oficina,Iluminación,Camila Herrera,Mendoza,15,202.68,0,3040.2
+2023-02-08,Escritorio Standing,Mobiliario,Ana García,Rosario,5,951.27,0,4756.35
+2023-02-08,Escritorio Standing,Mobiliario,Diego Ramírez,Mendoza,7,962.77,10,6065.45
+2023-02-12,Hub USB-C,Tecnología,Ana García,GBA Sur,15,59.47,0,892.05
+2023-02-13,Hub USB-C,Tecnología,Valeria Soto,Córdoba,2,68.33,15,116.16
+2023-02-14,Cajonera Móvil,Mobiliario,Sebastián Molina,CABA,15,186.13,10,2512.76
+2023-02-14,Escritorio Esquinero,Mobiliario,Lucía Fernández,Córdoba,12,614.47,10,6636.28
+2023-02-15,Escritorio Standing,Mobiliario,Lucía Fernández,CABA,9,858.28,0,7724.52
+2023-02-16,Auriculares Bluetooth,Tecnología,Lucía Fernández,CABA,2,163.99,5,311.58
+2023-02-16,Hub USB-C,Tecnología,Valeria Soto,Córdoba,8,68.23,15,463.96
+2023-02-16,"Monitor 27"" 4K",Tecnología,Carlos López,GBA Sur,9,573.87,15,4390.11
+2023-02-17,"Monitor 24"" FHD",Tecnología,Camila Herrera,CABA,14,338.09,0,4733.26
+2023-02-20,Escritorio Standing,Mobiliario,Camila Herrera,GBA Norte,14,886.5,0,12411.0
+2023-02-21,Panel LED Oficina,Iluminación,Lucía Fernández,GBA Norte,2,232.89,5,442.49
+2023-02-21,Disco SSD 1TB,Tecnología,Camila Herrera,GBA Sur,4,109.43,0,437.72
+2023-02-21,"Monitor 24"" FHD",Tecnología,Ana García,GBA Sur,14,353.05,0,4942.7
+2023-02-27,Hub USB-C,Tecnología,Martín Torres,GBA Norte,7,59.38,10,374.09
+2023-02-27,Auriculares Bluetooth,Tecnología,Sebastián Molina,GBA Sur,13,156.59,0,2035.67
+2023-02-28,Notebook Air 13,Tecnología,Martín Torres,CABA,9,993.74,10,8049.29
+2023-02-28,Teclado Mecánico,Tecnología,Ana García,GBA Norte,8,127.21,15,865.03
+2023-03-02,Auriculares Bluetooth,Tecnología,Valeria Soto,CABA,1,137.53,10,123.78
+2023-03-02,Disco SSD 1TB,Tecnología,Martín Torres,GBA Norte,3,122.84,0,368.52
+2023-03-05,Auriculares Bluetooth,Tecnología,Sebastián Molina,GBA Sur,14,139.9,15,1664.81
+2023-03-07,Estante Organizador,Mobiliario,Carlos López,Córdoba,6,96.15,10,519.21
+2023-03-08,Escritorio Standing,Mobiliario,Ana García,GBA Norte,10,869.5,0,8695.0
+2023-03-09,Hub USB-C,Tecnología,Camila Herrera,Rosario,12,59.97,5,683.66
+2023-03-09,Hub USB-C,Tecnología,Martín Torres,Rosario,7,64.64,10,407.23
+2023-03-10,Auriculares Bluetooth,Tecnología,Valeria Soto,Córdoba,6,164.19,10,886.63
+2023-03-10,"Monitor 24"" FHD",Tecnología,Ana García,GBA Norte,8,335.52,15,2281.54
+2023-03-11,Estante Organizador,Mobiliario,Diego Ramírez,Rosario,5,96.0,0,480.0
+2023-03-11,Mouse Inalámbrico,Tecnología,Camila Herrera,GBA Sur,9,40.6,0,365.4
+2023-03-11,Notebook Pro 15,Tecnología,Ana García,Córdoba,1,1158.66,10,1042.79
+2023-03-11,Silla Ejecutiva,Mobiliario,Ana García,CABA,2,308.53,5,586.21
+2023-03-11,Lámpara LED Escritorio,Iluminación,Sebastián Molina,CABA,9,70.49,0,634.41
+2023-03-12,Notebook Air 13,Tecnología,Lucía Fernández,CABA,4,1034.13,10,3722.87
+2023-03-12,Escritorio Esquinero,Mobiliario,Diego Ramírez,GBA Norte,3,662.31,0,1986.93
+2023-03-13,Silla Ergonómica Pro,Mobiliario,Carlos López,Mendoza,11,506.78,0,5574.58
+2023-03-14,Proyector Full HD,Audiovisual,Diego Ramírez,Córdoba,15,840.11,5,11971.57
+2023-03-16,Notebook Pro 15,Tecnología,Carlos López,CABA,10,1217.49,10,10957.41
+2023-03-16,Notebook Air 13,Tecnología,Camila Herrera,Córdoba,7,892.54,0,6247.78
+2023-03-16,Hub USB-C,Tecnología,Carlos López,GBA Norte,5,64.08,15,272.34
+2023-03-17,"Monitor 27"" 4K",Tecnología,Martín Torres,Mendoza,7,560.86,5,3729.72
+2023-03-18,Estante Organizador,Mobiliario,Valeria Soto,Rosario,5,104.06,15,442.25
+2023-03-18,Notebook Air 13,Tecnología,Martín Torres,Mendoza,7,1036.53,0,7255.71
+2023-03-18,Proyector Full HD,Audiovisual,Martín Torres,GBA Norte,7,791.89,0,5543.23
+2023-03-20,Proyector Full HD,Audiovisual,Sebastián Molina,GBA Sur,6,710.16,15,3621.82
+2023-03-20,Silla Ejecutiva,Mobiliario,Camila Herrera,Rosario,4,308.14,10,1109.3
+2023-03-20,Lámpara LED Escritorio,Iluminación,Martín Torres,GBA Norte,4,79.57,0,318.28
+2023-03-22,Disco SSD 1TB,Tecnología,Diego Ramírez,GBA Norte,9,104.4,15,798.66
+2023-03-22,Cajonera Móvil,Mobiliario,Camila Herrera,CABA,10,181.99,5,1728.9
+2023-03-24,Teclado Mecánico,Tecnología,Lucía Fernández,Córdoba,2,110.06,0,220.12
+2023-03-25,Silla Ejecutiva,Mobiliario,Carlos López,Mendoza,6,305.96,15,1560.4
+2023-03-26,"Monitor 24"" FHD",Tecnología,Ana García,Mendoza,13,301.39,0,3918.07
+2023-03-27,Hub USB-C,Tecnología,Sebastián Molina,GBA Sur,9,62.97,0,566.73
+2023-03-28,Notebook Air 13,Tecnología,Ana García,Mendoza,13,891.95,0,11595.35
+2023-03-30,Disco SSD 1TB,Tecnología,Camila Herrera,Rosario,4,123.24,10,443.66
+2023-03-30,Escritorio Esquinero,Mobiliario,Ana García,GBA Sur,10,575.98,15,4895.83
+2023-04-02,"Monitor 24"" FHD",Tecnología,Diego Ramírez,GBA Norte,6,296.26,5,1688.68
+2023-04-03,Escritorio Standing,Mobiliario,Carlos López,Córdoba,9,767.96,0,6911.64
+2023-04-03,Hub USB-C,Tecnología,Martín Torres,Rosario,1,54.41,0,54.41
+2023-04-04,Notebook Air 13,Tecnología,Martín Torres,Mendoza,3,1059.51,5,3019.6
+2023-04-04,"Monitor 24"" FHD",Tecnología,Carlos López,GBA Norte,8,288.09,10,2074.25
+2023-04-05,Escritorio Standing,Mobiliario,Valeria Soto,Rosario,14,785.55,0,10997.7
+2023-04-06,"Pantalla Proyección 100""",Audiovisual,Sebastián Molina,CABA,6,304.36,0,1826.16
+2023-04-06,Escritorio Standing,Mobiliario,Valeria Soto,Córdoba,5,874.57,5,4154.21
+2023-04-06,Notebook Air 13,Tecnología,Sebastián Molina,Mendoza,15,1073.8,0,16107.0
+2023-04-06,Silla Ejecutiva,Mobiliario,Carlos López,Córdoba,3,353.2,5,1006.62
+2023-04-06,Escritorio Standing,Mobiliario,Valeria Soto,CABA,14,908.16,10,11442.82
+2023-04-09,Lámpara LED Escritorio,Iluminación,Diego Ramírez,GBA Sur,4,70.29,0,281.16
+2023-04-09,Teclado Mecánico,Tecnología,Ana García,Rosario,10,122.28,10,1100.52
+2023-04-10,Escritorio Esquinero,Mobiliario,Camila Herrera,Mendoza,7,612.92,0,4290.44
+2023-04-10,Auriculares Bluetooth,Tecnología,Sebastián Molina,Córdoba,3,168.27,0,504.81
+2023-04-11,Disco SSD 1TB,Tecnología,Lucía Fernández,Córdoba,12,105.11,0,1261.32
+2023-04-11,Auriculares Bluetooth,Tecnología,Camila Herrera,GBA Sur,12,140.04,0,1680.48
+2023-04-12,Webcam HD,Tecnología,Carlos López,GBA Norte,5,89.79,0,448.95
+2023-04-12,Estante Organizador,Mobiliario,Ana García,Mendoza,5,100.12,0,500.6
+2023-04-13,Cajonera Móvil,Mobiliario,Ana García,CABA,5,169.49,0,847.45
+2023-04-14,Hub USB-C,Tecnología,Valeria Soto,Córdoba,15,67.01,0,1005.15
+2023-04-14,Disco SSD 1TB,Tecnología,Diego Ramírez,GBA Sur,8,116.72,5,887.07
+2023-04-15,Panel LED Oficina,Iluminación,Ana García,CABA,7,193.56,0,1354.92
+2023-04-16,Silla Ergonómica Pro,Mobiliario,Martín Torres,CABA,2,549.89,0,1099.78
+2023-04-19,Auriculares Bluetooth,Tecnología,Carlos López,Córdoba,7,151.34,0,1059.38
+2023-04-21,Proyector Full HD,Audiovisual,Sebastián Molina,Córdoba,5,688.88,15,2927.74
+2023-04-21,Estante Organizador,Mobiliario,Carlos López,CABA,8,102.42,0,819.36
+2023-04-22,Teclado Mecánico,Tecnología,Lucía Fernández,Rosario,12,135.9,0,1630.8
+2023-04-22,Teclado Mecánico,Tecnología,Diego Ramírez,GBA Norte,2,127.37,10,229.27
+2023-04-25,Hub USB-C,Tecnología,Ana García,Mendoza,8,60.52,15,411.54
+2023-04-25,Notebook Air 13,Tecnología,Lucía Fernández,Rosario,15,1051.83,10,14199.71
+2023-04-26,Notebook Air 13,Tecnología,Ana García,GBA Norte,7,1047.25,0,7330.75
+2023-04-26,Auriculares Bluetooth,Tecnología,Carlos López,Rosario,10,153.73,0,1537.3
+2023-04-26,Escritorio Esquinero,Mobiliario,Diego Ramírez,Mendoza,2,626.31,0,1252.62
+2023-04-27,Lámpara LED Escritorio,Iluminación,Valeria Soto,GBA Sur,15,77.06,15,982.52
+2023-04-27,"Monitor 24"" FHD",Tecnología,Ana García,GBA Sur,4,348.75,0,1395.0
+2023-04-27,Estante Organizador,Mobiliario,Lucía Fernández,Rosario,8,101.54,0,812.32
+2023-04-28,Panel LED Oficina,Iluminación,Sebastián Molina,Córdoba,4,226.84,0,907.36
+2023-04-29,Escritorio Standing,Mobiliario,Diego Ramírez,CABA,4,956.14,15,3250.88
+2023-04-30,Mouse Inalámbrico,Tecnología,Diego Ramírez,Córdoba,1,41.01,0,41.01
+2023-05-01,"Monitor 27"" 4K",Tecnología,Ana García,Mendoza,3,591.92,15,1509.4
+2023-05-02,Teclado Mecánico,Tecnología,Martín Torres,Mendoza,7,137.79,0,964.53
+2023-05-04,Escritorio Esquinero,Mobiliario,Carlos López,GBA Norte,8,665.57,5,5058.33
+2023-05-10,Disco SSD 1TB,Tecnología,Diego Ramírez,Mendoza,1,100.25,0,100.25
+2023-05-10,Lámpara LED Escritorio,Iluminación,Carlos López,Córdoba,6,85.6,0,513.6
+2023-05-10,Disco SSD 1TB,Tecnología,Ana García,GBA Sur,2,119.16,5,226.4
+2023-05-14,Panel LED Oficina,Iluminación,Carlos López,Mendoza,3,202.16,0,606.48
+2023-05-14,Teclado Mecánico,Tecnología,Ana García,GBA Sur,5,125.52,5,596.22
+2023-05-15,"Monitor 27"" 4K",Tecnología,Sebastián Molina,GBA Norte,6,653.9,0,3923.4
+2023-05-15,Notebook Pro 15,Tecnología,Lucía Fernández,Rosario,13,1187.47,0,15437.11
+2023-05-16,Panel LED Oficina,Iluminación,Diego Ramírez,GBA Norte,6,235.01,0,1410.06
+2023-05-16,Lámpara LED Escritorio,Iluminación,Ana García,Rosario,10,75.29,5,715.25
+2023-05-17,Cajonera Móvil,Mobiliario,Valeria Soto,Córdoba,9,192.04,10,1555.52
+2023-05-17,Mouse Inalámbrico,Tecnología,Ana García,Rosario,10,41.27,15,350.79
+2023-05-18,Disco SSD 1TB,Tecnología,Martín Torres,GBA Sur,2,102.17,0,204.34
+2023-05-18,Silla Ergonómica Pro,Mobiliario,Valeria Soto,GBA Norte,8,551.54,0,4412.32
+2023-05-19,"Monitor 27"" 4K",Tecnología,Camila Herrera,CABA,15,587.55,15,7491.26
+2023-05-22,Teclado Mecánico,Tecnología,Camila Herrera,Rosario,15,117.86,0,1767.9
+2023-05-23,Auriculares Bluetooth,Tecnología,Diego Ramírez,Mendoza,9,162.94,10,1319.81
+2023-05-23,Auriculares Bluetooth,Tecnología,Valeria Soto,Rosario,1,164.64,10,148.18
+2023-05-25,Auriculares Bluetooth,Tecnología,Sebastián Molina,Rosario,12,167.26,0,2007.12
+2023-05-25,Silla Ejecutiva,Mobiliario,Sebastián Molina,GBA Norte,11,312.82,10,3096.92
+2023-05-25,Lámpara LED Escritorio,Iluminación,Martín Torres,Rosario,10,74.78,5,710.41
+2023-05-26,Silla Ejecutiva,Mobiliario,Lucía Fernández,Rosario,8,312.95,5,2378.42
+2023-05-27,Silla Ergonómica Pro,Mobiliario,Carlos López,Córdoba,3,535.49,0,1606.47
+2023-05-29,Escritorio Standing,Mobiliario,Martín Torres,CABA,10,805.5,0,8055.0
+2023-05-30,"Monitor 27"" 4K",Tecnología,Sebastián Molina,GBA Sur,5,546.25,5,2594.69
+2023-06-03,Teclado Mecánico,Tecnología,Camila Herrera,CABA,9,117.84,15,901.48
+2023-06-03,Mouse Inalámbrico,Tecnología,Carlos López,CABA,10,46.87,10,421.83
+2023-06-04,Mouse Inalámbrico,Tecnología,Sebastián Molina,Rosario,6,51.66,5,294.46
+2023-06-06,Auriculares Bluetooth,Tecnología,Carlos López,Rosario,11,139.73,0,1537.03
+2023-06-06,Cajonera Móvil,Mobiliario,Valeria Soto,Córdoba,10,195.65,15,1663.02
+2023-06-06,Webcam HD,Tecnología,Ana García,GBA Sur,11,91.27,5,953.77
+2023-06-07,Teclado Mecánico,Tecnología,Martín Torres,Mendoza,12,113.43,5,1293.1
+2023-06-07,Teclado Mecánico,Tecnología,Valeria Soto,Rosario,12,127.76,0,1533.12
+2023-06-08,Auriculares Bluetooth,Tecnología,Martín Torres,Córdoba,13,167.42,0,2176.46
+2023-06-09,"Monitor 24"" FHD",Tecnología,Valeria Soto,Córdoba,8,301.15,0,2409.2
+2023-06-09,"Monitor 24"" FHD",Tecnología,Camila Herrera,Rosario,2,297.59,0,595.18
+2023-06-10,Notebook Air 13,Tecnología,Lucía Fernández,Córdoba,4,879.05,15,2988.77
+2023-06-11,Escritorio Esquinero,Mobiliario,Camila Herrera,Córdoba,15,659.2,15,8404.8
+2023-06-11,Cajonera Móvil,Mobiliario,Lucía Fernández,Mendoza,7,182.54,0,1277.78
+2023-06-13,"Monitor 24"" FHD",Tecnología,Diego Ramírez,Rosario,4,307.83,15,1046.62
+2023-06-14,"Monitor 27"" 4K",Tecnología,Carlos López,GBA Sur,15,601.32,10,8117.82
+2023-06-14,Hub USB-C,Tecnología,Ana García,Mendoza,3,64.25,0,192.75
+2023-06-14,Mouse Inalámbrico,Tecnología,Martín Torres,CABA,1,47.58,0,47.58
+2023-06-15,Silla Ergonómica Pro,Mobiliario,Valeria Soto,Rosario,4,544.17,0,2176.68
+2023-06-16,Proyector Full HD,Audiovisual,Sebastián Molina,Mendoza,14,729.69,10,9194.09
+2023-06-17,Estante Organizador,Mobiliario,Diego Ramírez,GBA Norte,9,108.13,0,973.17
+2023-06-17,Notebook Air 13,Tecnología,Camila Herrera,Mendoza,5,906.17,0,4530.85
+2023-06-18,Cajonera Móvil,Mobiliario,Martín Torres,Córdoba,4,177.8,10,640.08
+2023-06-20,"Monitor 24"" FHD",Tecnología,Ana García,GBA Norte,12,298.6,0,3583.2
+2023-06-23,Escritorio Standing,Mobiliario,Diego Ramírez,GBA Sur,5,801.02,5,3804.84
+2023-06-24,Lámpara LED Escritorio,Iluminación,Sebastián Molina,GBA Norte,10,79.29,15,673.96
+2023-06-24,Panel LED Oficina,Iluminación,Camila Herrera,GBA Norte,2,198.51,15,337.47
+2023-06-25,Panel LED Oficina,Iluminación,Camila Herrera,Córdoba,3,227.28,0,681.84
+2023-06-26,Hub USB-C,Tecnología,Carlos López,Mendoza,10,67.78,0,677.8
+2023-06-27,Panel LED Oficina,Iluminación,Sebastián Molina,Córdoba,1,192.94,15,164.0
+2023-06-27,Teclado Mecánico,Tecnología,Lucía Fernández,GBA Norte,13,137.16,0,1783.08
+2023-06-27,Mouse Inalámbrico,Tecnología,Valeria Soto,Rosario,11,41.66,5,435.35
+2023-06-28,"Pantalla Proyección 100""",Audiovisual,Ana García,GBA Sur,7,302.26,0,2115.82
+2023-06-29,Estante Organizador,Mobiliario,Diego Ramírez,GBA Norte,8,97.83,10,704.38
+2023-06-29,Mouse Inalámbrico,Tecnología,Lucía Fernández,Rosario,12,44.78,10,483.62
+2023-06-30,Lámpara LED Escritorio,Iluminación,Lucía Fernández,CABA,9,76.21,5,651.6
+2023-06-30,Notebook Air 13,Tecnología,Camila Herrera,GBA Norte,7,1091.83,15,6496.39
+2023-06-30,Auriculares Bluetooth,Tecnología,Valeria Soto,Rosario,13,157.22,0,2043.86
+2023-06-30,Escritorio Esquinero,Mobiliario,Valeria Soto,Córdoba,15,635.44,0,9531.6
+2023-07-01,Escritorio Standing,Mobiliario,Camila Herrera,Rosario,5,970.85,0,4854.25
+2023-07-02,Estante Organizador,Mobiliario,Diego Ramírez,GBA Norte,4,92.95,15,316.03
+2023-07-03,Silla Ergonómica Pro,Mobiliario,Lucía Fernández,GBA Sur,7,525.89,0,3681.23
+2023-07-11,Disco SSD 1TB,Tecnología,Martín Torres,CABA,15,106.7,10,1440.45
+2023-07-11,Panel LED Oficina,Iluminación,Camila Herrera,Rosario,5,202.8,0,1014.0
+2023-07-13,Auriculares Bluetooth,Tecnología,Sebastián Molina,CABA,4,156.44,0,625.76
+2023-07-14,"Pantalla Proyección 100""",Audiovisual,Martín Torres,Mendoza,13,279.17,0,3629.21
+2023-07-15,Silla Ergonómica Pro,Mobiliario,Ana García,Mendoza,7,444.93,15,2647.33
+2023-07-16,Webcam HD,Tecnología,Sebastián Molina,GBA Norte,3,87.9,0,263.7
+2023-07-19,Cajonera Móvil,Mobiliario,Ana García,GBA Sur,10,203.84,0,2038.4
+2023-07-20,Silla Ergonómica Pro,Mobiliario,Lucía Fernández,Córdoba,10,459.6,10,4136.4
+2023-07-20,Cajonera Móvil,Mobiliario,Ana García,Córdoba,5,166.81,0,834.05
+2023-07-21,Disco SSD 1TB,Tecnología,Carlos López,Mendoza,11,119.17,0,1310.87
+2023-07-22,Cajonera Móvil,Mobiliario,Valeria Soto,CABA,2,198.42,0,396.84
+2023-07-23,"Monitor 27"" 4K",Tecnología,Lucía Fernández,CABA,14,607.85,15,7233.41
+2023-07-23,Escritorio Standing,Mobiliario,Lucía Fernández,Córdoba,2,946.33,10,1703.39
+2023-07-24,Hub USB-C,Tecnología,Ana García,CABA,11,58.82,15,549.97
+2023-07-27,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,GBA Norte,14,323.99,15,3855.48
+2023-07-27,Lámpara LED Escritorio,Iluminación,Sebastián Molina,GBA Norte,9,83.62,10,677.32
+2023-07-28,Panel LED Oficina,Iluminación,Camila Herrera,CABA,14,190.7,10,2402.82
+2023-07-30,Proyector Full HD,Audiovisual,Camila Herrera,CABA,15,776.88,5,11070.54
+2023-07-30,Silla Ergonómica Pro,Mobiliario,Martín Torres,Córdoba,2,481.06,15,817.8
+2023-08-03,Disco SSD 1TB,Tecnología,Carlos López,Rosario,11,118.3,15,1106.11
+2023-08-03,Teclado Mecánico,Tecnología,Camila Herrera,CABA,3,125.29,0,375.87
+2023-08-04,Escritorio Esquinero,Mobiliario,Valeria Soto,Córdoba,10,679.79,5,6458.0
+2023-08-04,Webcam HD,Tecnología,Carlos López,GBA Norte,7,94.88,10,597.74
+2023-08-04,Escritorio Standing,Mobiliario,Valeria Soto,Rosario,6,888.46,0,5330.76
+2023-08-05,Webcam HD,Tecnología,Camila Herrera,GBA Norte,2,96.94,15,164.8
+2023-08-05,Estante Organizador,Mobiliario,Diego Ramírez,GBA Sur,14,91.88,10,1157.69
+2023-08-06,Silla Ejecutiva,Mobiliario,Diego Ramírez,Rosario,6,351.83,15,1794.33
+2023-08-06,"Pantalla Proyección 100""",Audiovisual,Valeria Soto,GBA Norte,1,331.4,0,331.4
+2023-08-07,Lámpara LED Escritorio,Iluminación,Valeria Soto,CABA,15,72.47,0,1087.05
+2023-08-08,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,GBA Norte,15,281.7,0,4225.5
+2023-08-08,Webcam HD,Tecnología,Carlos López,Rosario,12,82.41,0,988.92
+2023-08-09,Lámpara LED Escritorio,Iluminación,Carlos López,GBA Sur,7,69.63,15,414.3
+2023-08-09,Mouse Inalámbrico,Tecnología,Sebastián Molina,CABA,12,46.67,0,560.04
+2023-08-11,Notebook Air 13,Tecnología,Ana García,Mendoza,9,992.56,0,8933.04
+2023-08-11,Cajonera Móvil,Mobiliario,Valeria Soto,CABA,4,182.01,15,618.83
+2023-08-12,Auriculares Bluetooth,Tecnología,Lucía Fernández,Mendoza,1,153.95,15,130.86
+2023-08-12,Proyector Full HD,Audiovisual,Valeria Soto,Mendoza,7,697.88,0,4885.16
+2023-08-13,Estante Organizador,Mobiliario,Valeria Soto,GBA Norte,5,91.0,0,455.0
+2023-08-15,"Pantalla Proyección 100""",Audiovisual,Diego Ramírez,Córdoba,13,264.14,15,2918.75
+2023-08-15,Escritorio Esquinero,Mobiliario,Martín Torres,Mendoza,1,604.58,15,513.89
+2023-08-15,Auriculares Bluetooth,Tecnología,Sebastián Molina,Rosario,5,160.41,0,802.05
+2023-08-15,Webcam HD,Tecnología,Valeria Soto,GBA Sur,6,90.6,0,543.6
+2023-08-15,"Pantalla Proyección 100""",Audiovisual,Carlos López,GBA Norte,4,321.52,15,1093.17
+2023-08-15,Escritorio Esquinero,Mobiliario,Martín Torres,Mendoza,6,600.89,15,3064.54
+2023-08-16,Silla Ejecutiva,Mobiliario,Diego Ramírez,Córdoba,14,305.87,0,4282.18
+2023-08-18,Disco SSD 1TB,Tecnología,Diego Ramírez,Córdoba,5,115.73,5,549.72
+2023-08-20,Mouse Inalámbrico,Tecnología,Carlos López,Rosario,5,42.24,10,190.08
+2023-08-20,Lámpara LED Escritorio,Iluminación,Ana García,Mendoza,1,80.25,0,80.25
+2023-08-23,"Monitor 24"" FHD",Tecnología,Lucía Fernández,Rosario,13,345.67,5,4269.02
+2023-08-24,Auriculares Bluetooth,Tecnología,Diego Ramírez,GBA Norte,3,152.27,15,388.29
+2023-08-24,Cajonera Móvil,Mobiliario,Carlos López,GBA Norte,3,197.24,10,532.55
+2023-08-26,Cajonera Móvil,Mobiliario,Diego Ramírez,Mendoza,8,190.71,0,1525.68
+2023-08-27,Silla Ergonómica Pro,Mobiliario,Ana García,GBA Sur,13,524.92,0,6823.96
+2023-08-27,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,CABA,9,276.86,0,2491.74
+2023-08-28,Estante Organizador,Mobiliario,Valeria Soto,Rosario,15,86.09,0,1291.35
+2023-08-29,"Monitor 24"" FHD",Tecnología,Lucía Fernández,GBA Sur,2,310.81,5,590.54
+2023-08-31,Webcam HD,Tecnología,Valeria Soto,Mendoza,10,93.73,10,843.57
+2023-09-01,Disco SSD 1TB,Tecnología,Martín Torres,Mendoza,4,117.4,10,422.64
+2023-09-01,Hub USB-C,Tecnología,Sebastián Molina,Mendoza,4,55.83,10,200.99
+2023-09-04,"Monitor 24"" FHD",Tecnología,Valeria Soto,GBA Norte,12,349.72,0,4196.64
+2023-09-04,Webcam HD,Tecnología,Ana García,GBA Sur,1,88.9,5,84.45
+2023-09-05,Silla Ejecutiva,Mobiliario,Martín Torres,Córdoba,8,327.1,10,2355.12
+2023-09-06,Notebook Air 13,Tecnología,Carlos López,GBA Norte,12,990.99,0,11891.88
+2023-09-07,Mouse Inalámbrico,Tecnología,Carlos López,Córdoba,1,47.88,0,47.88
+2023-09-08,Estante Organizador,Mobiliario,Carlos López,Córdoba,13,100.02,5,1235.25
+2023-09-12,Estante Organizador,Mobiliario,Sebastián Molina,GBA Norte,11,93.71,10,927.73
+2023-09-14,Notebook Air 13,Tecnología,Valeria Soto,Rosario,14,1007.28,0,14101.92
+2023-09-14,Panel LED Oficina,Iluminación,Sebastián Molina,CABA,1,234.07,15,198.96
+2023-09-15,Notebook Air 13,Tecnología,Diego Ramírez,CABA,7,876.92,0,6138.44
+2023-09-19,Hub USB-C,Tecnología,Camila Herrera,Mendoza,1,58.92,5,55.97
+2023-09-19,Webcam HD,Tecnología,Camila Herrera,GBA Sur,2,83.52,0,167.04
+2023-09-19,"Monitor 24"" FHD",Tecnología,Carlos López,GBA Norte,11,359.54,15,3361.7
+2023-09-20,Estante Organizador,Mobiliario,Diego Ramírez,Rosario,14,90.58,15,1077.9
+2023-09-22,Panel LED Oficina,Iluminación,Valeria Soto,Mendoza,3,229.05,0,687.15
+2023-09-22,Teclado Mecánico,Tecnología,Ana García,Mendoza,7,123.5,15,734.82
+2023-09-24,Teclado Mecánico,Tecnología,Camila Herrera,Rosario,7,108.93,15,648.13
+2023-09-25,Teclado Mecánico,Tecnología,Ana García,CABA,5,125.42,10,564.39
+2023-09-25,Silla Ergonómica Pro,Mobiliario,Valeria Soto,GBA Sur,7,543.13,5,3611.81
+2023-09-27,Lámpara LED Escritorio,Iluminación,Carlos López,Mendoza,9,81.79,0,736.11
+2023-09-28,Silla Ejecutiva,Mobiliario,Ana García,Córdoba,6,349.11,0,2094.66
+2023-09-29,Proyector Full HD,Audiovisual,Ana García,Rosario,12,793.75,5,9048.75
+2023-09-29,"Monitor 24"" FHD",Tecnología,Diego Ramírez,Mendoza,13,295.23,15,3262.29
+2023-09-29,Webcam HD,Tecnología,Lucía Fernández,Rosario,14,81.37,0,1139.18
+2023-09-30,Mouse Inalámbrico,Tecnología,Diego Ramírez,Rosario,3,41.3,15,105.31
+2023-10-01,"Monitor 27"" 4K",Tecnología,Sebastián Molina,Rosario,2,627.43,0,1254.86
+2023-10-04,"Monitor 24"" FHD",Tecnología,Sebastián Molina,Córdoba,3,298.6,10,806.22
+2023-10-05,"Monitor 27"" 4K",Tecnología,Ana García,GBA Norte,2,604.87,0,1209.74
+2023-10-06,Lámpara LED Escritorio,Iluminación,Carlos López,Rosario,8,77.62,0,620.96
+2023-10-06,Cajonera Móvil,Mobiliario,Camila Herrera,Córdoba,8,191.79,0,1534.32
+2023-10-06,Mouse Inalámbrico,Tecnología,Lucía Fernández,GBA Norte,12,41.73,0,500.76
+2023-10-06,Lámpara LED Escritorio,Iluminación,Carlos López,Córdoba,12,68.7,5,783.18
+2023-10-06,Auriculares Bluetooth,Tecnología,Martín Torres,Rosario,4,137.8,0,551.2
+2023-10-07,Escritorio Esquinero,Mobiliario,Lucía Fernández,Córdoba,8,687.38,10,4949.14
+2023-10-07,"Monitor 24"" FHD",Tecnología,Sebastián Molina,Mendoza,7,351.95,5,2340.47
+2023-10-07,Webcam HD,Tecnología,Martín Torres,Mendoza,6,93.69,5,534.03
+2023-10-07,Cajonera Móvil,Mobiliario,Sebastián Molina,Córdoba,6,184.08,0,1104.48
+2023-10-09,Notebook Air 13,Tecnología,Sebastián Molina,GBA Sur,11,872.82,10,8640.92
+2023-10-09,Auriculares Bluetooth,Tecnología,Camila Herrera,Rosario,3,155.16,15,395.66
+2023-10-09,Estante Organizador,Mobiliario,Diego Ramírez,Córdoba,13,89.84,0,1167.92
+2023-10-10,Panel LED Oficina,Iluminación,Carlos López,GBA Norte,4,189.53,15,644.4
+2023-10-10,Webcam HD,Tecnología,Camila Herrera,CABA,14,97.07,15,1155.13
+2023-10-10,Escritorio Standing,Mobiliario,Sebastián Molina,Rosario,7,840.04,0,5880.28
+2023-10-11,"Monitor 27"" 4K",Tecnología,Diego Ramírez,Mendoza,10,557.98,0,5579.8
+2023-10-12,Cajonera Móvil,Mobiliario,Martín Torres,GBA Sur,6,190.61,0,1143.66
+2023-10-12,Notebook Air 13,Tecnología,Sebastián Molina,Córdoba,9,975.4,0,8778.6
+2023-10-13,Auriculares Bluetooth,Tecnología,Martín Torres,Córdoba,1,171.02,10,153.92
+2023-10-17,Escritorio Standing,Mobiliario,Ana García,Mendoza,6,851.86,15,4344.49
+2023-10-17,Notebook Pro 15,Tecnología,Valeria Soto,Rosario,14,1353.4,10,17052.84
+2023-10-18,Lámpara LED Escritorio,Iluminación,Valeria Soto,CABA,10,79.95,0,799.5
+2023-10-19,Cajonera Móvil,Mobiliario,Diego Ramírez,Córdoba,4,172.53,0,690.12
+2023-10-21,Lámpara LED Escritorio,Iluminación,Sebastián Molina,CABA,7,81.88,15,487.19
+2023-10-22,Auriculares Bluetooth,Tecnología,Carlos López,Mendoza,7,163.0,15,969.85
+2023-10-22,"Pantalla Proyección 100""",Audiovisual,Lucía Fernández,GBA Norte,2,283.65,15,482.2
+2023-10-23,Escritorio Standing,Mobiliario,Ana García,Córdoba,9,937.88,0,8440.92
+2023-10-24,Hub USB-C,Tecnología,Sebastián Molina,GBA Sur,13,61.24,5,756.31
+2023-10-24,Notebook Air 13,Tecnología,Carlos López,GBA Sur,10,857.2,0,8572.0
+2023-10-25,Escritorio Standing,Mobiliario,Lucía Fernández,GBA Norte,7,948.63,0,6640.41
+2023-10-27,Hub USB-C,Tecnología,Carlos López,GBA Norte,14,62.59,5,832.45
+2023-10-28,"Pantalla Proyección 100""",Audiovisual,Lucía Fernández,Mendoza,6,325.2,0,1951.2
+2023-10-29,Cajonera Móvil,Mobiliario,Carlos López,GBA Norte,11,169.98,0,1869.78
+2023-10-30,Notebook Air 13,Tecnología,Lucía Fernández,Córdoba,13,1041.15,5,12858.2
+2023-10-30,Disco SSD 1TB,Tecnología,Sebastián Molina,Mendoza,7,123.94,0,867.58
+2023-10-31,Auriculares Bluetooth,Tecnología,Ana García,Mendoza,5,148.53,10,668.38
+2023-11-01,Proyector Full HD,Audiovisual,Ana García,Rosario,5,872.11,15,3706.47
+2023-11-02,Proyector Full HD,Audiovisual,Camila Herrera,GBA Norte,11,794.19,5,8299.29
+2023-11-02,Auriculares Bluetooth,Tecnología,Diego Ramírez,Mendoza,5,170.31,0,851.55
+2023-11-03,Estante Organizador,Mobiliario,Valeria Soto,Mendoza,6,104.87,0,629.22
+2023-11-04,Notebook Air 13,Tecnología,Ana García,GBA Sur,2,1047.42,15,1780.61
+2023-11-05,"Pantalla Proyección 100""",Audiovisual,Ana García,GBA Sur,13,319.4,10,3736.98
+2023-11-05,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,Córdoba,13,267.27,5,3300.78
+2023-11-07,"Pantalla Proyección 100""",Audiovisual,Martín Torres,Rosario,9,299.68,10,2427.41
+2023-11-10,Cajonera Móvil,Mobiliario,Martín Torres,Mendoza,7,189.12,5,1257.65
+2023-11-11,Auriculares Bluetooth,Tecnología,Carlos López,CABA,15,137.17,15,1748.92
+2023-11-12,Escritorio Standing,Mobiliario,Diego Ramírez,CABA,15,865.08,15,11029.77
+2023-11-14,Lámpara LED Escritorio,Iluminación,Camila Herrera,GBA Sur,14,74.97,0,1049.58
+2023-11-17,Escritorio Esquinero,Mobiliario,Valeria Soto,GBA Norte,5,606.44,15,2577.37
+2023-11-17,"Monitor 24"" FHD",Tecnología,Martín Torres,GBA Sur,2,307.09,15,522.05
+2023-11-18,Auriculares Bluetooth,Tecnología,Diego Ramírez,Córdoba,3,144.96,0,434.88
+2023-11-18,Teclado Mecánico,Tecnología,Valeria Soto,Rosario,9,121.79,0,1096.11
+2023-11-19,Disco SSD 1TB,Tecnología,Sebastián Molina,Rosario,13,107.89,0,1402.57
+2023-11-20,Escritorio Standing,Mobiliario,Valeria Soto,GBA Norte,4,821.89,15,2794.43
+2023-11-20,"Monitor 24"" FHD",Tecnología,Martín Torres,GBA Norte,13,347.43,0,4516.59
+2023-11-21,Silla Ejecutiva,Mobiliario,Diego Ramírez,Córdoba,1,296.52,0,296.52
+2023-11-22,"Pantalla Proyección 100""",Audiovisual,Carlos López,Córdoba,10,277.01,0,2770.1
+2023-11-23,Disco SSD 1TB,Tecnología,Valeria Soto,GBA Norte,2,125.17,5,237.82
+2023-11-24,Silla Ejecutiva,Mobiliario,Diego Ramírez,GBA Sur,9,344.76,0,3102.84
+2023-11-25,"Monitor 24"" FHD",Tecnología,Sebastián Molina,Mendoza,6,356.62,5,2032.73
+2023-11-25,Escritorio Standing,Mobiliario,Sebastián Molina,GBA Sur,2,959.64,10,1727.35
+2023-11-26,Escritorio Standing,Mobiliario,Valeria Soto,Rosario,1,822.47,0,822.47
+2023-11-28,Auriculares Bluetooth,Tecnología,Lucía Fernández,Córdoba,7,135.26,0,946.82
+2023-11-30,Escritorio Standing,Mobiliario,Sebastián Molina,GBA Sur,13,824.56,0,10719.28
+2023-12-02,"Monitor 27"" 4K",Tecnología,Martín Torres,GBA Norte,2,580.12,5,1102.23
+2023-12-02,Proyector Full HD,Audiovisual,Carlos López,Mendoza,13,684.47,5,8453.2
+2023-12-02,"Monitor 27"" 4K",Tecnología,Valeria Soto,GBA Norte,1,602.2,0,602.2
+2023-12-04,Hub USB-C,Tecnología,Ana García,GBA Sur,10,62.74,15,533.29
+2023-12-05,Estante Organizador,Mobiliario,Martín Torres,CABA,13,87.89,10,1028.31
+2023-12-06,Escritorio Standing,Mobiliario,Carlos López,Rosario,3,925.57,15,2360.2
+2023-12-06,"Monitor 27"" 4K",Tecnología,Martín Torres,Mendoza,6,556.51,0,3339.06
+2023-12-06,Auriculares Bluetooth,Tecnología,Diego Ramírez,GBA Sur,8,136.85,0,1094.8
+2023-12-06,Notebook Air 13,Tecnología,Martín Torres,GBA Sur,1,875.79,10,788.21
+2023-12-06,Estante Organizador,Mobiliario,Diego Ramírez,Córdoba,6,96.49,10,521.05
+2023-12-08,Mouse Inalámbrico,Tecnología,Martín Torres,Mendoza,5,47.67,5,226.43
+2023-12-09,"Monitor 27"" 4K",Tecnología,Sebastián Molina,GBA Sur,9,569.81,0,5128.29
+2023-12-10,Silla Ergonómica Pro,Mobiliario,Martín Torres,GBA Norte,2,539.16,0,1078.32
+2023-12-10,Mouse Inalámbrico,Tecnología,Camila Herrera,Mendoza,5,42.05,0,210.25
+2023-12-11,Hub USB-C,Tecnología,Sebastián Molina,Mendoza,3,58.84,5,167.69
+2023-12-11,Disco SSD 1TB,Tecnología,Diego Ramírez,GBA Sur,14,116.62,15,1387.78
+2023-12-12,Hub USB-C,Tecnología,Camila Herrera,Mendoza,14,58.66,15,698.05
+2023-12-14,Auriculares Bluetooth,Tecnología,Carlos López,Rosario,3,147.49,15,376.1
+2023-12-15,"Pantalla Proyección 100""",Audiovisual,Valeria Soto,Mendoza,14,271.42,0,3799.88
+2023-12-18,Hub USB-C,Tecnología,Martín Torres,Córdoba,3,60.79,10,164.13
+2023-12-18,Auriculares Bluetooth,Tecnología,Diego Ramírez,Mendoza,11,146.76,0,1614.36
+2023-12-19,Panel LED Oficina,Iluminación,Lucía Fernández,Rosario,13,210.73,0,2739.49
+2023-12-19,Hub USB-C,Tecnología,Diego Ramírez,GBA Norte,7,55.93,0,391.51
+2023-12-19,Webcam HD,Tecnología,Martín Torres,GBA Norte,11,85.27,0,937.97
+2023-12-21,Notebook Air 13,Tecnología,Carlos López,GBA Sur,4,878.2,10,3161.52
+2023-12-21,Cajonera Móvil,Mobiliario,Lucía Fernández,CABA,11,172.82,15,1615.87
+2023-12-23,Estante Organizador,Mobiliario,Camila Herrera,GBA Sur,12,87.82,0,1053.84
+2023-12-24,Notebook Pro 15,Tecnología,Valeria Soto,GBA Norte,7,1204.47,5,8009.73
+2023-12-24,Cajonera Móvil,Mobiliario,Diego Ramírez,Mendoza,8,173.34,10,1248.05
+2023-12-26,Cajonera Móvil,Mobiliario,Valeria Soto,Rosario,14,163.91,5,2180.0
+2023-12-26,Panel LED Oficina,Iluminación,Camila Herrera,Rosario,14,208.71,15,2483.65
+2023-12-27,Hub USB-C,Tecnología,Sebastián Molina,Rosario,14,65.3,15,777.07
+2023-12-27,Lámpara LED Escritorio,Iluminación,Camila Herrera,CABA,8,68.89,0,551.12
+2023-12-27,Panel LED Oficina,Iluminación,Martín Torres,Mendoza,11,206.77,5,2160.75
+2024-01-02,"Monitor 27"" 4K",Tecnología,Lucía Fernández,GBA Norte,6,635.68,10,3432.67
+2024-01-03,Proyector Full HD,Audiovisual,Diego Ramírez,CABA,12,740.22,15,7550.24
+2024-01-03,Notebook Pro 15,Tecnología,Sebastián Molina,Rosario,4,1225.38,10,4411.37
+2024-01-03,Estante Organizador,Mobiliario,Valeria Soto,Rosario,8,98.43,10,708.7
+2024-01-04,Auriculares Bluetooth,Tecnología,Camila Herrera,GBA Sur,2,137.33,0,274.66
+2024-01-04,Panel LED Oficina,Iluminación,Carlos López,CABA,15,220.18,0,3302.7
+2024-01-05,Disco SSD 1TB,Tecnología,Martín Torres,CABA,11,101.27,5,1058.27
+2024-01-05,Silla Ergonómica Pro,Mobiliario,Sebastián Molina,GBA Sur,14,447.84,10,5642.78
+2024-01-05,Notebook Pro 15,Tecnología,Camila Herrera,GBA Norte,5,1208.28,0,6041.4
+2024-01-06,"Pantalla Proyección 100""",Audiovisual,Lucía Fernández,Córdoba,2,313.0,0,626.0
+2024-01-09,"Monitor 27"" 4K",Tecnología,Sebastián Molina,Rosario,11,576.17,0,6337.87
+2024-01-09,Silla Ergonómica Pro,Mobiliario,Ana García,GBA Sur,3,547.04,0,1641.12
+2024-01-09,Escritorio Standing,Mobiliario,Martín Torres,Rosario,3,824.42,15,2102.27
+2024-01-10,Escritorio Standing,Mobiliario,Diego Ramírez,GBA Norte,13,812.45,5,10033.76
+2024-01-10,Teclado Mecánico,Tecnología,Sebastián Molina,Mendoza,4,122.96,0,491.84
+2024-01-11,Panel LED Oficina,Iluminación,Camila Herrera,Rosario,1,232.19,0,232.19
+2024-01-12,Panel LED Oficina,Iluminación,Valeria Soto,CABA,11,236.34,5,2469.75
+2024-01-12,Proyector Full HD,Audiovisual,Diego Ramírez,Córdoba,8,871.04,10,6271.49
+2024-01-13,Hub USB-C,Tecnología,Carlos López,Rosario,14,55.15,10,694.89
+2024-01-13,Cajonera Móvil,Mobiliario,Martín Torres,Rosario,9,198.16,0,1783.44
+2024-01-14,Hub USB-C,Tecnología,Diego Ramírez,Rosario,14,56.37,15,670.8
+2024-01-15,Silla Ergonómica Pro,Mobiliario,Lucía Fernández,Mendoza,10,481.67,0,4816.7
+2024-01-16,Disco SSD 1TB,Tecnología,Carlos López,Córdoba,8,115.1,0,920.8
+2024-01-17,Mouse Inalámbrico,Tecnología,Valeria Soto,Mendoza,10,46.76,0,467.6
+2024-01-21,Auriculares Bluetooth,Tecnología,Valeria Soto,Córdoba,6,154.36,5,879.85
+2024-01-22,Proyector Full HD,Audiovisual,Valeria Soto,Córdoba,4,775.89,15,2638.03
+2024-01-23,Silla Ejecutiva,Mobiliario,Carlos López,Rosario,15,335.01,0,5025.15
+2024-01-24,Disco SSD 1TB,Tecnología,Sebastián Molina,GBA Sur,14,119.68,0,1675.52
+2024-01-24,Silla Ejecutiva,Mobiliario,Martín Torres,Córdoba,14,336.91,5,4480.9
+2024-01-26,Webcam HD,Tecnología,Martín Torres,Córdoba,12,79.6,0,955.2
+2024-01-27,Auriculares Bluetooth,Tecnología,Valeria Soto,Córdoba,4,160.38,0,641.52
+2024-01-28,Mouse Inalámbrico,Tecnología,Sebastián Molina,Córdoba,2,48.45,0,96.9
+2024-01-28,Estante Organizador,Mobiliario,Ana García,GBA Norte,8,99.09,0,792.72
+2024-01-31,Silla Ergonómica Pro,Mobiliario,Camila Herrera,GBA Sur,8,548.85,10,3951.72
+2024-02-01,Silla Ejecutiva,Mobiliario,Valeria Soto,CABA,1,308.29,0,308.29
+2024-02-01,Panel LED Oficina,Iluminación,Diego Ramírez,Mendoza,13,195.18,5,2410.47
+2024-02-01,Lámpara LED Escritorio,Iluminación,Camila Herrera,Rosario,9,75.35,0,678.15
+2024-02-05,Cajonera Móvil,Mobiliario,Martín Torres,GBA Sur,10,196.76,0,1967.6
+2024-02-05,Panel LED Oficina,Iluminación,Martín Torres,GBA Sur,11,204.49,15,1911.98
+2024-02-08,Silla Ejecutiva,Mobiliario,Valeria Soto,GBA Norte,6,351.59,0,2109.54
+2024-02-09,"Pantalla Proyección 100""",Audiovisual,Diego Ramírez,GBA Norte,4,264.97,0,1059.88
+2024-02-10,Disco SSD 1TB,Tecnología,Ana García,Rosario,14,99.22,15,1180.72
+2024-02-11,"Monitor 27"" 4K",Tecnología,Camila Herrera,Rosario,7,576.09,0,4032.63
+2024-02-12,"Monitor 27"" 4K",Tecnología,Sebastián Molina,GBA Sur,14,645.51,15,7681.57
+2024-02-13,Mouse Inalámbrico,Tecnología,Carlos López,GBA Sur,9,49.06,0,441.54
+2024-02-15,Silla Ergonómica Pro,Mobiliario,Ana García,GBA Norte,10,528.1,5,5016.95
+2024-02-17,Mouse Inalámbrico,Tecnología,Sebastián Molina,CABA,11,47.46,5,495.96
+2024-02-18,Silla Ergonómica Pro,Mobiliario,Ana García,Mendoza,12,513.69,5,5856.07
+2024-02-18,Notebook Pro 15,Tecnología,Martín Torres,GBA Norte,12,1148.53,15,11715.01
+2024-02-20,Lámpara LED Escritorio,Iluminación,Diego Ramírez,Mendoza,15,84.81,0,1272.15
+2024-02-21,Estante Organizador,Mobiliario,Camila Herrera,Mendoza,4,98.69,15,335.55
+2024-02-21,Lámpara LED Escritorio,Iluminación,Diego Ramírez,GBA Sur,2,69.5,0,139.0
+2024-02-23,Teclado Mecánico,Tecnología,Sebastián Molina,GBA Sur,13,131.07,5,1618.71
+2024-02-24,Proyector Full HD,Audiovisual,Carlos López,Córdoba,6,698.01,5,3978.66
+2024-02-24,Notebook Pro 15,Tecnología,Ana García,GBA Sur,6,1149.9,0,6899.4
+2024-02-24,Hub USB-C,Tecnología,Camila Herrera,GBA Norte,9,56.41,15,431.54
+2024-02-25,Silla Ejecutiva,Mobiliario,Sebastián Molina,Mendoza,13,357.89,0,4652.57
+2024-02-26,Proyector Full HD,Audiovisual,Martín Torres,GBA Norte,3,813.54,0,2440.62
+2024-02-26,"Monitor 24"" FHD",Tecnología,Lucía Fernández,Rosario,11,316.09,10,3129.29
+2024-02-27,Notebook Air 13,Tecnología,Carlos López,Rosario,1,987.32,10,888.59
+2024-02-28,Silla Ergonómica Pro,Mobiliario,Sebastián Molina,Mendoza,7,531.29,0,3719.03
+2024-02-28,Escritorio Standing,Mobiliario,Lucía Fernández,Rosario,12,930.57,10,10050.16
+2024-02-29,Silla Ergonómica Pro,Mobiliario,Diego Ramírez,CABA,9,544.11,0,4896.99
+2024-03-02,Proyector Full HD,Audiovisual,Ana García,Rosario,15,742.46,5,10580.05
+2024-03-02,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,GBA Norte,4,307.8,5,1169.64
+2024-03-02,Cajonera Móvil,Mobiliario,Diego Ramírez,Córdoba,9,179.11,15,1370.19
+2024-03-02,Proyector Full HD,Audiovisual,Camila Herrera,GBA Norte,10,775.71,10,6981.39
+2024-03-04,"Pantalla Proyección 100""",Audiovisual,Lucía Fernández,GBA Sur,13,327.4,5,4043.39
+2024-03-07,"Pantalla Proyección 100""",Audiovisual,Carlos López,CABA,14,302.44,0,4234.16
+2024-03-09,Teclado Mecánico,Tecnología,Martín Torres,Rosario,9,122.6,0,1103.4
+2024-03-09,"Monitor 27"" 4K",Tecnología,Lucía Fernández,Mendoza,7,665.3,0,4657.1
+2024-03-11,"Monitor 24"" FHD",Tecnología,Lucía Fernández,GBA Sur,11,346.88,0,3815.68
+2024-03-13,Panel LED Oficina,Iluminación,Sebastián Molina,Rosario,6,215.02,0,1290.12
+2024-03-14,Proyector Full HD,Audiovisual,Martín Torres,Rosario,4,759.89,5,2887.58
+2024-03-14,Silla Ejecutiva,Mobiliario,Valeria Soto,CABA,11,293.52,5,3067.28
+2024-03-15,Auriculares Bluetooth,Tecnología,Sebastián Molina,GBA Sur,8,170.19,10,1225.37
+2024-03-17,Lámpara LED Escritorio,Iluminación,Ana García,Mendoza,14,75.39,10,949.91
+2024-03-18,Silla Ergonómica Pro,Mobiliario,Carlos López,GBA Norte,1,504.45,15,428.78
+2024-03-20,Silla Ejecutiva,Mobiliario,Sebastián Molina,Rosario,6,346.28,10,1869.91
+2024-03-21,Teclado Mecánico,Tecnología,Diego Ramírez,Rosario,11,130.01,10,1287.1
+2024-03-21,"Monitor 27"" 4K",Tecnología,Valeria Soto,CABA,4,531.29,10,1912.64
+2024-03-22,Notebook Pro 15,Tecnología,Lucía Fernández,GBA Sur,13,1235.98,5,15264.35
+2024-03-22,Estante Organizador,Mobiliario,Valeria Soto,Córdoba,8,108.52,0,868.16
+2024-03-24,Escritorio Esquinero,Mobiliario,Sebastián Molina,Córdoba,15,708.21,5,10091.99
+2024-03-27,Silla Ergonómica Pro,Mobiliario,Diego Ramírez,Córdoba,1,454.12,0,454.12
+2024-03-27,Silla Ergonómica Pro,Mobiliario,Lucía Fernández,Córdoba,7,482.25,10,3038.18
+2024-03-28,Webcam HD,Tecnología,Martín Torres,Mendoza,13,87.36,0,1135.68
+2024-04-01,Notebook Air 13,Tecnología,Diego Ramírez,GBA Norte,8,917.53,0,7340.24
+2024-04-01,Estante Organizador,Mobiliario,Lucía Fernández,GBA Sur,15,86.54,10,1168.29
+2024-04-02,Silla Ergonómica Pro,Mobiliario,Ana García,CABA,8,446.24,5,3391.42
+2024-04-04,Escritorio Standing,Mobiliario,Martín Torres,Mendoza,11,844.82,0,9293.02
+2024-04-05,Lámpara LED Escritorio,Iluminación,Carlos López,GBA Norte,7,70.26,5,467.23
+2024-04-05,Disco SSD 1TB,Tecnología,Carlos López,Córdoba,14,108.59,0,1520.26
+2024-04-05,Silla Ergonómica Pro,Mobiliario,Diego Ramírez,GBA Sur,6,463.17,0,2779.02
+2024-04-06,Escritorio Standing,Mobiliario,Sebastián Molina,Mendoza,1,857.02,0,857.02
+2024-04-06,Silla Ergonómica Pro,Mobiliario,Martín Torres,Rosario,5,505.96,10,2276.82
+2024-04-07,"Monitor 24"" FHD",Tecnología,Valeria Soto,CABA,2,307.83,10,554.09
+2024-04-09,Disco SSD 1TB,Tecnología,Carlos López,Mendoza,4,107.43,0,429.72
+2024-04-09,Silla Ergonómica Pro,Mobiliario,Valeria Soto,Rosario,5,450.89,10,2029.0
+2024-04-10,Panel LED Oficina,Iluminación,Martín Torres,Rosario,15,216.53,5,3085.55
+2024-04-10,Notebook Air 13,Tecnología,Valeria Soto,CABA,11,864.48,15,8082.89
+2024-04-12,Disco SSD 1TB,Tecnología,Camila Herrera,Córdoba,12,121.98,15,1244.2
+2024-04-12,Silla Ergonómica Pro,Mobiliario,Lucía Fernández,Córdoba,1,475.6,0,475.6
+2024-04-13,"Monitor 27"" 4K",Tecnología,Camila Herrera,Rosario,15,538.07,10,7263.95
+2024-04-13,Notebook Air 13,Tecnología,Lucía Fernández,CABA,1,924.69,0,924.69
+2024-04-14,"Monitor 27"" 4K",Tecnología,Martín Torres,Mendoza,9,606.21,5,5183.1
+2024-04-15,"Monitor 27"" 4K",Tecnología,Sebastián Molina,Rosario,10,647.01,5,6146.6
+2024-04-16,Silla Ejecutiva,Mobiliario,Lucía Fernández,GBA Norte,13,312.42,0,4061.46
+2024-04-16,Proyector Full HD,Audiovisual,Carlos López,GBA Sur,8,847.78,0,6782.24
+2024-04-17,Notebook Air 13,Tecnología,Sebastián Molina,Mendoza,10,894.9,5,8501.55
+2024-04-18,Auriculares Bluetooth,Tecnología,Camila Herrera,Rosario,2,167.79,0,335.58
+2024-04-20,Lámpara LED Escritorio,Iluminación,Carlos López,Mendoza,15,74.94,0,1124.1
+2024-04-21,Disco SSD 1TB,Tecnología,Carlos López,GBA Norte,3,120.09,0,360.27
+2024-04-21,Hub USB-C,Tecnología,Carlos López,Córdoba,3,64.16,0,192.48
+2024-04-22,"Monitor 24"" FHD",Tecnología,Martín Torres,CABA,4,309.4,0,1237.6
+2024-04-22,Panel LED Oficina,Iluminación,Diego Ramírez,GBA Sur,5,223.06,10,1003.77
+2024-04-23,Mouse Inalámbrico,Tecnología,Ana García,Córdoba,9,51.53,10,417.39
+2024-04-26,Notebook Pro 15,Tecnología,Valeria Soto,GBA Norte,1,1304.71,15,1109.0
+2024-04-28,Silla Ejecutiva,Mobiliario,Martín Torres,CABA,3,318.64,10,860.33
+2024-04-29,Escritorio Standing,Mobiliario,Martín Torres,Córdoba,11,847.04,0,9317.44
+2024-04-29,Auriculares Bluetooth,Tecnología,Martín Torres,Córdoba,5,166.85,0,834.25
+2024-04-30,"Monitor 27"" 4K",Tecnología,Carlos López,Córdoba,2,535.23,0,1070.46
+2024-05-01,Panel LED Oficina,Iluminación,Sebastián Molina,GBA Norte,9,197.67,10,1601.13
+2024-05-01,Cajonera Móvil,Mobiliario,Diego Ramírez,Rosario,4,173.66,5,659.91
+2024-05-02,Hub USB-C,Tecnología,Ana García,Rosario,15,55.18,10,744.93
+2024-05-05,Notebook Air 13,Tecnología,Martín Torres,Córdoba,7,875.83,0,6130.81
+2024-05-07,Silla Ergonómica Pro,Mobiliario,Carlos López,CABA,1,460.14,10,414.13
+2024-05-08,Hub USB-C,Tecnología,Carlos López,Córdoba,6,65.2,0,391.2
+2024-05-08,Auriculares Bluetooth,Tecnología,Valeria Soto,CABA,6,166.77,0,1000.62
+2024-05-08,Teclado Mecánico,Tecnología,Martín Torres,Rosario,7,114.58,0,802.06
+2024-05-09,"Monitor 24"" FHD",Tecnología,Carlos López,CABA,15,311.63,15,3973.28
+2024-05-10,Cajonera Móvil,Mobiliario,Diego Ramírez,GBA Sur,12,181.6,0,2179.2
+2024-05-10,Disco SSD 1TB,Tecnología,Diego Ramírez,CABA,13,118.93,0,1546.09
+2024-05-11,Lámpara LED Escritorio,Iluminación,Ana García,Rosario,14,83.76,0,1172.64
+2024-05-12,"Monitor 27"" 4K",Tecnología,Martín Torres,GBA Norte,9,663.81,15,5078.15
+2024-05-12,Estante Organizador,Mobiliario,Ana García,GBA Norte,7,90.58,5,602.36
+2024-05-12,Notebook Pro 15,Tecnología,Sebastián Molina,Mendoza,11,1196.66,0,13163.26
+2024-05-14,Panel LED Oficina,Iluminación,Lucía Fernández,Mendoza,2,190.88,15,324.5
+2024-05-15,Teclado Mecánico,Tecnología,Lucía Fernández,GBA Sur,1,110.48,0,110.48
+2024-05-16,"Monitor 24"" FHD",Tecnología,Camila Herrera,Mendoza,6,322.68,0,1936.08
+2024-05-16,Hub USB-C,Tecnología,Camila Herrera,Rosario,6,56.1,0,336.6
+2024-05-17,Cajonera Móvil,Mobiliario,Diego Ramírez,GBA Norte,2,197.68,5,375.59
+2024-05-17,Cajonera Móvil,Mobiliario,Valeria Soto,GBA Norte,13,169.57,0,2204.41
+2024-05-19,Panel LED Oficina,Iluminación,Ana García,CABA,8,205.23,0,1641.84
+2024-05-19,Mouse Inalámbrico,Tecnología,Sebastián Molina,CABA,12,49.75,0,597.0
+2024-05-20,Cajonera Móvil,Mobiliario,Camila Herrera,Mendoza,13,195.95,10,2292.61
+2024-05-20,Webcam HD,Tecnología,Lucía Fernández,GBA Norte,9,92.06,0,828.54
+2024-05-22,Panel LED Oficina,Iluminación,Carlos López,GBA Sur,10,215.82,10,1942.38
+2024-05-22,Teclado Mecánico,Tecnología,Valeria Soto,GBA Norte,8,110.25,0,882.0
+2024-05-23,Hub USB-C,Tecnología,Valeria Soto,GBA Norte,4,65.64,15,223.18
+2024-05-23,Notebook Pro 15,Tecnología,Martín Torres,GBA Sur,7,1194.82,0,8363.74
+2024-05-24,Cajonera Móvil,Mobiliario,Camila Herrera,GBA Sur,12,166.44,0,1997.28
+2024-05-25,Hub USB-C,Tecnología,Sebastián Molina,Rosario,2,61.46,5,116.77
+2024-05-26,Escritorio Standing,Mobiliario,Camila Herrera,GBA Norte,11,953.0,0,10483.0
+2024-05-27,"Monitor 24"" FHD",Tecnología,Diego Ramírez,Córdoba,7,357.4,0,2501.8
+2024-05-28,Lámpara LED Escritorio,Iluminación,Ana García,Mendoza,6,69.2,0,415.2
+2024-05-29,Notebook Air 13,Tecnología,Martín Torres,GBA Sur,9,1052.46,0,9472.14
+2024-05-30,Hub USB-C,Tecnología,Valeria Soto,Rosario,15,57.51,10,776.38
+2024-05-31,Escritorio Esquinero,Mobiliario,Camila Herrera,GBA Norte,9,686.74,15,5253.56
+2024-05-31,Cajonera Móvil,Mobiliario,Carlos López,GBA Norte,5,196.4,0,982.0
+2024-05-31,Mouse Inalámbrico,Tecnología,Ana García,Rosario,1,51.34,5,48.77
+2024-06-03,Hub USB-C,Tecnología,Sebastián Molina,Mendoza,6,64.0,0,384.0
+2024-06-03,Escritorio Standing,Mobiliario,Ana García,Córdoba,9,863.33,10,6992.97
+2024-06-03,Lámpara LED Escritorio,Iluminación,Camila Herrera,CABA,7,77.89,15,463.45
+2024-06-05,Notebook Pro 15,Tecnología,Ana García,GBA Norte,14,1093.21,0,15304.94
+2024-06-07,Webcam HD,Tecnología,Valeria Soto,Córdoba,3,97.2,10,262.44
+2024-06-07,Silla Ejecutiva,Mobiliario,Martín Torres,GBA Sur,14,292.44,0,4094.16
+2024-06-07,"Pantalla Proyección 100""",Audiovisual,Carlos López,Córdoba,2,269.54,0,539.08
+2024-06-09,Disco SSD 1TB,Tecnología,Diego Ramírez,Mendoza,14,123.09,5,1637.1
+2024-06-10,"Monitor 24"" FHD",Tecnología,Diego Ramírez,Rosario,7,318.18,0,2227.26
+2024-06-11,Mouse Inalámbrico,Tecnología,Valeria Soto,GBA Norte,10,44.19,5,419.8
+2024-06-12,Notebook Air 13,Tecnología,Camila Herrera,GBA Sur,2,1081.59,0,2163.18
+2024-06-12,Panel LED Oficina,Iluminación,Diego Ramírez,GBA Norte,14,189.51,0,2653.14
+2024-06-13,Proyector Full HD,Audiovisual,Martín Torres,CABA,10,812.73,5,7720.93
+2024-06-14,Hub USB-C,Tecnología,Lucía Fernández,Rosario,13,56.92,0,739.96
+2024-06-14,Notebook Pro 15,Tecnología,Carlos López,Rosario,2,1301.08,0,2602.16
+2024-06-15,Webcam HD,Tecnología,Camila Herrera,Rosario,11,88.42,5,923.99
+2024-06-15,Lámpara LED Escritorio,Iluminación,Carlos López,Córdoba,10,80.4,15,683.4
+2024-06-17,Disco SSD 1TB,Tecnología,Martín Torres,Córdoba,5,121.96,15,518.33
+2024-06-22,Cajonera Móvil,Mobiliario,Sebastián Molina,Mendoza,3,162.69,0,488.07
+2024-06-23,Notebook Air 13,Tecnología,Martín Torres,Rosario,15,1012.21,5,14423.99
+2024-06-24,Escritorio Esquinero,Mobiliario,Lucía Fernández,Rosario,14,707.77,0,9908.78
+2024-06-25,Notebook Pro 15,Tecnología,Diego Ramírez,Mendoza,9,1280.36,0,11523.24
+2024-06-26,Auriculares Bluetooth,Tecnología,Martín Torres,Mendoza,1,150.74,0,150.74
+2024-06-27,Notebook Pro 15,Tecnología,Ana García,CABA,8,1259.68,0,10077.44
+2024-06-27,Silla Ejecutiva,Mobiliario,Valeria Soto,GBA Sur,12,322.04,15,3284.81
+2024-06-27,Hub USB-C,Tecnología,Sebastián Molina,CABA,10,60.81,15,516.88
+2024-06-27,Webcam HD,Tecnología,Lucía Fernández,GBA Norte,1,76.88,15,65.35
+2024-06-28,Panel LED Oficina,Iluminación,Diego Ramírez,Rosario,1,210.6,0,210.6
+2024-06-30,Hub USB-C,Tecnología,Ana García,Rosario,7,67.16,0,470.12
+2024-07-01,Notebook Pro 15,Tecnología,Carlos López,Mendoza,10,1272.43,10,11451.87
+2024-07-02,Webcam HD,Tecnología,Ana García,CABA,7,77.6,0,543.2
+2024-07-02,Silla Ejecutiva,Mobiliario,Camila Herrera,GBA Sur,4,365.17,5,1387.65
+2024-07-03,Teclado Mecánico,Tecnología,Camila Herrera,CABA,4,118.97,0,475.88
+2024-07-03,Panel LED Oficina,Iluminación,Carlos López,GBA Sur,5,221.34,0,1106.7
+2024-07-05,Estante Organizador,Mobiliario,Sebastián Molina,Córdoba,9,93.7,0,843.3
+2024-07-08,Notebook Air 13,Tecnología,Camila Herrera,CABA,2,1076.96,0,2153.92
+2024-07-08,Notebook Air 13,Tecnología,Valeria Soto,Córdoba,6,1056.4,10,5704.56
+2024-07-09,Cajonera Móvil,Mobiliario,Sebastián Molina,Córdoba,4,180.71,10,650.56
+2024-07-10,Proyector Full HD,Audiovisual,Valeria Soto,CABA,3,809.04,0,2427.12
+2024-07-11,Escritorio Standing,Mobiliario,Sebastián Molina,GBA Sur,15,804.29,0,12064.35
+2024-07-12,Notebook Air 13,Tecnología,Martín Torres,Córdoba,10,1053.22,0,10532.2
+2024-07-12,Hub USB-C,Tecnología,Valeria Soto,Mendoza,2,58.82,0,117.64
+2024-07-13,"Pantalla Proyección 100""",Audiovisual,Lucía Fernández,GBA Sur,8,326.09,5,2478.28
+2024-07-13,Estante Organizador,Mobiliario,Ana García,Rosario,15,89.87,0,1348.05
+2024-07-16,Mouse Inalámbrico,Tecnología,Camila Herrera,CABA,8,50.94,0,407.52
+2024-07-16,Estante Organizador,Mobiliario,Lucía Fernández,GBA Norte,13,103.49,15,1143.56
+2024-07-17,Auriculares Bluetooth,Tecnología,Martín Torres,CABA,2,138.55,0,277.1
+2024-07-18,Escritorio Esquinero,Mobiliario,Carlos López,Mendoza,2,644.94,0,1289.88
+2024-07-18,Silla Ejecutiva,Mobiliario,Diego Ramírez,Mendoza,14,315.54,15,3754.93
+2024-07-19,Teclado Mecánico,Tecnología,Camila Herrera,GBA Norte,7,117.93,5,784.23
+2024-07-20,Notebook Pro 15,Tecnología,Diego Ramírez,Mendoza,2,1284.09,0,2568.18
+2024-07-20,Webcam HD,Tecnología,Diego Ramírez,Mendoza,10,80.77,0,807.7
+2024-07-21,Auriculares Bluetooth,Tecnología,Carlos López,Mendoza,1,157.07,15,133.51
+2024-07-21,Mouse Inalámbrico,Tecnología,Sebastián Molina,Mendoza,11,42.66,15,398.87
+2024-07-21,Panel LED Oficina,Iluminación,Diego Ramírez,GBA Norte,5,202.93,0,1014.65
+2024-07-22,Lámpara LED Escritorio,Iluminación,Carlos López,GBA Sur,1,75.15,10,67.64
+2024-07-23,Escritorio Standing,Mobiliario,Diego Ramírez,Rosario,14,882.31,5,11734.72
+2024-07-24,Estante Organizador,Mobiliario,Camila Herrera,GBA Sur,9,89.74,0,807.66
+2024-07-26,Proyector Full HD,Audiovisual,Diego Ramírez,GBA Norte,14,750.14,10,9451.76
+2024-07-27,"Pantalla Proyección 100""",Audiovisual,Valeria Soto,Mendoza,12,304.5,5,3471.3
+2024-07-29,Escritorio Esquinero,Mobiliario,Martín Torres,Córdoba,9,708.01,0,6372.09
+2024-07-30,Hub USB-C,Tecnología,Carlos López,Rosario,4,55.28,5,210.06
+2024-07-31,Notebook Pro 15,Tecnología,Martín Torres,Córdoba,7,1105.18,0,7736.26
+2024-07-31,Webcam HD,Tecnología,Martín Torres,Mendoza,9,89.08,10,721.55
+2024-07-31,Hub USB-C,Tecnología,Camila Herrera,GBA Sur,4,65.09,10,234.32
+2024-07-31,Notebook Air 13,Tecnología,Carlos López,CABA,12,890.89,15,9087.08
+2024-08-01,Webcam HD,Tecnología,Lucía Fernández,Rosario,13,77.96,0,1013.48
+2024-08-02,"Monitor 24"" FHD",Tecnología,Ana García,GBA Norte,15,359.58,0,5393.7
+2024-08-02,Proyector Full HD,Audiovisual,Camila Herrera,GBA Sur,3,809.29,0,2427.87
+2024-08-03,Notebook Air 13,Tecnología,Camila Herrera,Mendoza,15,1057.2,10,14272.2
+2024-08-05,Hub USB-C,Tecnología,Diego Ramírez,Mendoza,8,60.59,5,460.48
+2024-08-06,Auriculares Bluetooth,Tecnología,Carlos López,Córdoba,1,156.71,15,133.2
+2024-08-06,Panel LED Oficina,Iluminación,Diego Ramírez,CABA,9,199.22,5,1703.33
+2024-08-06,Silla Ejecutiva,Mobiliario,Martín Torres,GBA Sur,10,330.58,15,2809.93
+2024-08-08,Escritorio Esquinero,Mobiliario,Camila Herrera,Mendoza,1,653.81,10,588.43
+2024-08-10,Auriculares Bluetooth,Tecnología,Ana García,Rosario,14,165.27,15,1966.71
+2024-08-10,Panel LED Oficina,Iluminación,Valeria Soto,GBA Norte,7,208.93,0,1462.51
+2024-08-10,Auriculares Bluetooth,Tecnología,Ana García,GBA Norte,12,155.07,5,1767.8
+2024-08-12,Proyector Full HD,Audiovisual,Diego Ramírez,Rosario,13,864.65,0,11240.45
+2024-08-13,Estante Organizador,Mobiliario,Sebastián Molina,GBA Norte,8,91.27,0,730.16
+2024-08-13,Mouse Inalámbrico,Tecnología,Sebastián Molina,Córdoba,13,41.11,10,480.99
+2024-08-14,Silla Ergonómica Pro,Mobiliario,Camila Herrera,Rosario,3,454.78,5,1296.12
+2024-08-14,Disco SSD 1TB,Tecnología,Camila Herrera,CABA,7,116.26,15,691.75
+2024-08-14,Mouse Inalámbrico,Tecnología,Valeria Soto,Mendoza,8,46.87,0,374.96
+2024-08-14,Silla Ejecutiva,Mobiliario,Martín Torres,Mendoza,7,349.94,0,2449.58
+2024-08-17,Estante Organizador,Mobiliario,Martín Torres,Mendoza,6,108.1,15,551.31
+2024-08-19,Proyector Full HD,Audiovisual,Sebastián Molina,Mendoza,12,863.11,15,8803.72
+2024-08-20,Proyector Full HD,Audiovisual,Diego Ramírez,GBA Norte,15,783.33,15,9987.46
+2024-08-20,Proyector Full HD,Audiovisual,Lucía Fernández,Mendoza,6,839.04,10,4530.82
+2024-08-22,Estante Organizador,Mobiliario,Martín Torres,Mendoza,13,107.45,10,1257.16
+2024-08-22,Disco SSD 1TB,Tecnología,Sebastián Molina,Rosario,9,106.19,0,955.71
+2024-08-24,Hub USB-C,Tecnología,Diego Ramírez,Córdoba,7,63.58,0,445.06
+2024-08-24,Panel LED Oficina,Iluminación,Valeria Soto,GBA Sur,4,200.39,0,801.56
+2024-08-24,Mouse Inalámbrico,Tecnología,Sebastián Molina,CABA,12,48.96,0,587.52
+2024-08-25,"Monitor 24"" FHD",Tecnología,Camila Herrera,Mendoza,8,349.77,10,2518.34
+2024-08-26,Escritorio Standing,Mobiliario,Valeria Soto,GBA Norte,7,839.7,0,5877.9
+2024-08-26,Teclado Mecánico,Tecnología,Diego Ramírez,GBA Norte,12,119.35,0,1432.2
+2024-08-27,"Monitor 27"" 4K",Tecnología,Martín Torres,CABA,7,555.32,0,3887.24
+2024-08-31,Estante Organizador,Mobiliario,Diego Ramírez,Mendoza,4,92.42,0,369.68
+2024-08-31,"Pantalla Proyección 100""",Audiovisual,Carlos López,Córdoba,11,281.49,0,3096.39
+2024-09-01,Disco SSD 1TB,Tecnología,Carlos López,CABA,12,107.79,5,1228.81
+2024-09-02,"Monitor 27"" 4K",Tecnología,Camila Herrera,Rosario,10,577.79,0,5777.9
+2024-09-02,"Monitor 27"" 4K",Tecnología,Valeria Soto,CABA,9,598.2,10,4845.42
+2024-09-03,Estante Organizador,Mobiliario,Carlos López,Córdoba,1,92.29,0,92.29
+2024-09-04,Estante Organizador,Mobiliario,Sebastián Molina,Rosario,9,99.33,0,893.97
+2024-09-08,Mouse Inalámbrico,Tecnología,Carlos López,GBA Norte,11,49.05,15,458.62
+2024-09-08,Lámpara LED Escritorio,Iluminación,Ana García,CABA,1,75.03,0,75.03
+2024-09-09,Notebook Air 13,Tecnología,Valeria Soto,GBA Norte,14,906.07,0,12684.98
+2024-09-10,Webcam HD,Tecnología,Valeria Soto,GBA Sur,4,84.93,5,322.73
+2024-09-10,Notebook Pro 15,Tecnología,Camila Herrera,GBA Norte,3,1230.55,0,3691.65
+2024-09-11,Webcam HD,Tecnología,Diego Ramírez,Rosario,4,91.75,5,348.65
+2024-09-12,"Pantalla Proyección 100""",Audiovisual,Sebastián Molina,Córdoba,4,318.33,5,1209.65
+2024-09-14,Mouse Inalámbrico,Tecnología,Valeria Soto,Córdoba,5,41.24,10,185.58
+2024-09-15,Webcam HD,Tecnología,Lucía Fernández,GBA Sur,14,93.03,15,1107.06
+2024-09-16,Escritorio Standing,Mobiliario,Camila Herrera,Rosario,4,896.69,0,3586.76
+2024-09-17,Escritorio Standing,Mobiliario,Valeria Soto,Córdoba,6,889.74,10,4804.6
+2024-09-17,Webcam HD,Tecnología,Sebastián Molina,GBA Norte,15,80.49,5,1146.98
+2024-09-18,Estante Organizador,Mobiliario,Ana García,Mendoza,12,106.23,0,1274.76
+2024-09-18,Disco SSD 1TB,Tecnología,Lucía Fernández,Córdoba,7,126.27,10,795.5
+2024-09-19,Notebook Air 13,Tecnología,Martín Torres,Rosario,15,857.77,5,12223.22
+2024-09-20,"Pantalla Proyección 100""",Audiovisual,Valeria Soto,CABA,13,289.76,15,3201.85
+2024-09-20,Webcam HD,Tecnología,Sebastián Molina,CABA,7,86.05,15,512.0
+2024-09-20,Webcam HD,Tecnología,Martín Torres,GBA Sur,6,93.64,0,561.84
+2024-09-20,Estante Organizador,Mobiliario,Martín Torres,Rosario,7,102.23,5,679.83
+2024-09-20,Teclado Mecánico,Tecnología,Camila Herrera,GBA Norte,3,130.72,0,392.16
+2024-09-20,Hub USB-C,Tecnología,Martín Torres,Mendoza,3,60.96,0,182.88
+2024-09-21,Escritorio Esquinero,Mobiliario,Sebastián Molina,Córdoba,7,656.19,5,4363.66
+2024-09-23,Hub USB-C,Tecnología,Camila Herrera,Mendoza,9,62.91,10,509.57
+2024-09-24,Cajonera Móvil,Mobiliario,Valeria Soto,CABA,15,199.44,5,2842.02
+2024-09-24,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,CABA,11,327.17,0,3598.87
+2024-09-25,Lámpara LED Escritorio,Iluminación,Ana García,CABA,9,76.4,15,584.46
+2024-09-26,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,Córdoba,5,278.82,10,1254.69
+2024-09-27,Escritorio Standing,Mobiliario,Camila Herrera,GBA Sur,6,935.87,5,5334.46
+2024-09-29,Estante Organizador,Mobiliario,Ana García,GBA Norte,13,100.35,0,1304.55
+2024-09-30,Escritorio Standing,Mobiliario,Valeria Soto,Rosario,1,889.2,15,755.82
+2024-09-30,Lámpara LED Escritorio,Iluminación,Valeria Soto,Córdoba,12,72.46,10,782.57
+2024-10-02,Hub USB-C,Tecnología,Lucía Fernández,Córdoba,13,64.89,15,717.03
+2024-10-02,"Pantalla Proyección 100""",Audiovisual,Camila Herrera,Rosario,5,322.13,10,1449.59
+2024-10-03,Auriculares Bluetooth,Tecnología,Diego Ramírez,GBA Norte,2,145.3,0,290.6
+2024-10-04,Notebook Air 13,Tecnología,Ana García,Rosario,8,928.37,0,7426.96
+2024-10-06,Proyector Full HD,Audiovisual,Sebastián Molina,Córdoba,12,720.94,5,8218.72
+2024-10-06,Teclado Mecánico,Tecnología,Sebastián Molina,Córdoba,11,113.59,0,1249.49
+2024-10-07,"Pantalla Proyección 100""",Audiovisual,Martín Torres,GBA Sur,12,318.95,10,3444.66
+2024-10-07,"Monitor 27"" 4K",Tecnología,Carlos López,CABA,5,606.44,0,3032.2
+2024-10-08,Teclado Mecánico,Tecnología,Ana García,Córdoba,1,117.4,0,117.4
+2024-10-09,Escritorio Esquinero,Mobiliario,Lucía Fernández,GBA Norte,3,583.73,0,1751.19
+2024-10-10,Notebook Pro 15,Tecnología,Lucía Fernández,Córdoba,9,1107.53,5,9469.38
+2024-10-10,Hub USB-C,Tecnología,Carlos López,CABA,6,62.22,0,373.32
+2024-10-11,"Monitor 27"" 4K",Tecnología,Lucía Fernández,CABA,7,566.97,0,3968.79
+2024-10-11,Proyector Full HD,Audiovisual,Carlos López,Córdoba,10,794.26,0,7942.6
+2024-10-12,Silla Ejecutiva,Mobiliario,Sebastián Molina,GBA Norte,13,356.01,5,4396.72
+2024-10-13,Notebook Pro 15,Tecnología,Martín Torres,Córdoba,14,1321.31,10,16648.51
+2024-10-14,Hub USB-C,Tecnología,Lucía Fernández,Mendoza,9,67.35,15,515.23
+2024-10-15,Estante Organizador,Mobiliario,Diego Ramírez,Córdoba,1,87.94,5,83.54
+2024-10-15,Estante Organizador,Mobiliario,Valeria Soto,Rosario,11,107.03,0,1177.33
+2024-10-16,"Monitor 24"" FHD",Tecnología,Lucía Fernández,GBA Norte,5,290.0,0,1450.0
+2024-10-16,Lámpara LED Escritorio,Iluminación,Valeria Soto,GBA Norte,3,78.92,10,213.08
+2024-10-16,Hub USB-C,Tecnología,Lucía Fernández,GBA Norte,4,59.51,5,226.14
+2024-10-17,Panel LED Oficina,Iluminación,Ana García,GBA Norte,6,200.53,0,1203.18
+2024-10-18,Lámpara LED Escritorio,Iluminación,Valeria Soto,CABA,14,74.99,0,1049.86
+2024-10-20,"Pantalla Proyección 100""",Audiovisual,Valeria Soto,GBA Norte,11,284.43,5,2972.29
+2024-10-20,Lámpara LED Escritorio,Iluminación,Ana García,Córdoba,13,72.17,15,797.48
+2024-10-22,Mouse Inalámbrico,Tecnología,Diego Ramírez,GBA Norte,3,43.16,0,129.48
+2024-10-24,Webcam HD,Tecnología,Ana García,Mendoza,14,82.58,0,1156.12
+2024-10-24,Escritorio Esquinero,Mobiliario,Martín Torres,Rosario,1,561.48,10,505.33
+2024-10-25,Mouse Inalámbrico,Tecnología,Diego Ramírez,Rosario,12,46.11,15,470.32
+2024-10-25,"Monitor 27"" 4K",Tecnología,Diego Ramírez,Mendoza,8,614.13,5,4667.39
+2024-10-25,Disco SSD 1TB,Tecnología,Valeria Soto,GBA Sur,1,118.76,10,106.88
+2024-10-25,Silla Ejecutiva,Mobiliario,Martín Torres,CABA,1,364.59,0,364.59
+2024-10-26,Silla Ergonómica Pro,Mobiliario,Valeria Soto,GBA Norte,9,452.9,15,3464.68
+2024-10-27,Hub USB-C,Tecnología,Diego Ramírez,CABA,15,56.38,15,718.85
+2024-10-27,Panel LED Oficina,Iluminación,Diego Ramírez,GBA Sur,13,198.16,0,2576.08
+2024-10-28,"Pantalla Proyección 100""",Audiovisual,Lucía Fernández,Córdoba,6,270.87,0,1625.22
+2024-10-29,Webcam HD,Tecnología,Martín Torres,CABA,8,83.33,5,633.31
+2024-10-30,Estante Organizador,Mobiliario,Sebastián Molina,Mendoza,8,95.22,5,723.67
+2024-11-01,Silla Ergonómica Pro,Mobiliario,Camila Herrera,Mendoza,14,462.88,15,5508.27
+2024-11-02,Escritorio Esquinero,Mobiliario,Sebastián Molina,Mendoza,4,592.8,0,2371.2
+2024-11-03,"Pantalla Proyección 100""",Audiovisual,Carlos López,Rosario,6,324.31,15,1653.98
+2024-11-04,Panel LED Oficina,Iluminación,Lucía Fernández,Rosario,1,213.25,0,213.25
+2024-11-04,Silla Ejecutiva,Mobiliario,Ana García,Rosario,10,301.31,15,2561.13
+2024-11-04,Teclado Mecánico,Tecnología,Martín Torres,Mendoza,12,111.58,0,1338.96
+2024-11-04,Escritorio Standing,Mobiliario,Diego Ramírez,CABA,12,945.41,0,11344.92
+2024-11-05,Mouse Inalámbrico,Tecnología,Sebastián Molina,CABA,13,48.55,5,599.59
+2024-11-05,Hub USB-C,Tecnología,Lucía Fernández,Mendoza,10,57.08,5,542.26
+2024-11-06,Webcam HD,Tecnología,Carlos López,GBA Sur,5,84.97,0,424.85
+2024-11-07,Notebook Pro 15,Tecnología,Lucía Fernández,GBA Norte,9,1222.2,15,9349.83
+2024-11-08,Webcam HD,Tecnología,Lucía Fernández,Mendoza,9,85.53,0,769.77
+2024-11-08,"Monitor 24"" FHD",Tecnología,Ana García,Mendoza,1,340.29,0,340.29
+2024-11-08,"Monitor 24"" FHD",Tecnología,Martín Torres,Córdoba,5,341.0,0,1705.0
+2024-11-08,Hub USB-C,Tecnología,Camila Herrera,Rosario,4,68.21,5,259.2
+2024-11-15,Escritorio Standing,Mobiliario,Valeria Soto,GBA Norte,8,836.48,5,6357.25
+2024-11-15,Silla Ejecutiva,Mobiliario,Ana García,Córdoba,14,293.77,0,4112.78
+2024-11-15,"Monitor 27"" 4K",Tecnología,Carlos López,Rosario,6,597.91,10,3228.71
+2024-11-15,Webcam HD,Tecnología,Valeria Soto,Córdoba,13,87.51,5,1080.75
+2024-11-16,Lámpara LED Escritorio,Iluminación,Ana García,CABA,4,71.73,5,272.57
+2024-11-16,Estante Organizador,Mobiliario,Carlos López,Mendoza,2,89.04,15,151.37
+2024-11-17,Panel LED Oficina,Iluminación,Martín Torres,Córdoba,12,211.0,15,2152.2
+2024-11-17,Estante Organizador,Mobiliario,Valeria Soto,Rosario,11,98.03,5,1024.41
+2024-11-19,Hub USB-C,Tecnología,Martín Torres,CABA,4,57.37,0,229.48
+2024-11-19,Disco SSD 1TB,Tecnología,Valeria Soto,CABA,14,115.08,15,1369.45
+2024-11-19,Hub USB-C,Tecnología,Diego Ramírez,CABA,7,64.85,15,385.86
+2024-11-19,Silla Ergonómica Pro,Mobiliario,Martín Torres,Mendoza,15,460.43,10,6215.81
+2024-11-19,Mouse Inalámbrico,Tecnología,Martín Torres,Rosario,11,51.54,10,510.25
+2024-11-20,"Monitor 24"" FHD",Tecnología,Valeria Soto,CABA,12,292.85,0,3514.2
+2024-11-20,Lámpara LED Escritorio,Iluminación,Camila Herrera,CABA,12,76.64,5,873.7
+2024-11-21,Webcam HD,Tecnología,Sebastián Molina,Córdoba,14,80.23,10,1010.9
+2024-11-21,Notebook Air 13,Tecnología,Ana García,GBA Norte,11,940.44,0,10344.84
+2024-11-22,Panel LED Oficina,Iluminación,Sebastián Molina,GBA Norte,12,234.4,10,2531.52
+2024-11-23,Disco SSD 1TB,Tecnología,Lucía Fernández,GBA Sur,4,115.78,10,416.81
+2024-11-24,Escritorio Standing,Mobiliario,Sebastián Molina,CABA,6,970.45,0,5822.7
+2024-11-24,Silla Ergonómica Pro,Mobiliario,Carlos López,CABA,2,483.12,0,966.24
+2024-11-25,Proyector Full HD,Audiovisual,Diego Ramírez,CABA,11,776.46,0,8541.06
+2024-11-26,Teclado Mecánico,Tecnología,Camila Herrera,CABA,3,136.58,0,409.74
+2024-11-27,Lámpara LED Escritorio,Iluminación,Martín Torres,GBA Norte,15,73.96,5,1053.93
+2024-11-27,Proyector Full HD,Audiovisual,Diego Ramírez,GBA Norte,2,809.53,15,1376.2
+2024-11-29,Auriculares Bluetooth,Tecnología,Sebastián Molina,Rosario,6,160.01,15,816.05
+2024-11-29,Notebook Pro 15,Tecnología,Martín Torres,Rosario,3,1222.23,0,3666.69
+2024-11-30,Teclado Mecánico,Tecnología,Carlos López,CABA,13,130.88,10,1531.3
+2024-11-30,Webcam HD,Tecnología,Lucía Fernández,Mendoza,4,87.1,0,348.4
+2024-12-02,Silla Ergonómica Pro,Mobiliario,Ana García,Mendoza,1,547.9,0,547.9
+2024-12-04,Cajonera Móvil,Mobiliario,Carlos López,GBA Norte,2,200.7,0,401.4
+2024-12-04,Auriculares Bluetooth,Tecnología,Ana García,GBA Sur,2,141.1,0,282.2
+2024-12-07,Webcam HD,Tecnología,Valeria Soto,Córdoba,7,91.65,10,577.39
+2024-12-07,Estante Organizador,Mobiliario,Diego Ramírez,GBA Sur,6,93.03,0,558.18
+2024-12-09,Auriculares Bluetooth,Tecnología,Valeria Soto,Córdoba,10,146.48,10,1318.32
+2024-12-09,Proyector Full HD,Audiovisual,Carlos López,Mendoza,1,774.35,0,774.35
+2024-12-11,Disco SSD 1TB,Tecnología,Diego Ramírez,GBA Sur,5,99.8,0,499.0
+2024-12-11,Silla Ergonómica Pro,Mobiliario,Valeria Soto,Rosario,13,517.24,5,6387.91
+2024-12-13,Notebook Pro 15,Tecnología,Sebastián Molina,Córdoba,13,1337.02,0,17381.26
+2024-12-13,Estante Organizador,Mobiliario,Martín Torres,CABA,13,100.5,15,1110.52
+2024-12-13,Hub USB-C,Tecnología,Sebastián Molina,Córdoba,1,64.39,5,61.17
+2024-12-14,Panel LED Oficina,Iluminación,Martín Torres,GBA Norte,8,223.75,0,1790.0
+2024-12-14,Escritorio Esquinero,Mobiliario,Sebastián Molina,GBA Norte,5,621.28,10,2795.76
+2024-12-14,Auriculares Bluetooth,Tecnología,Carlos López,Mendoza,14,146.25,15,1740.38
+2024-12-14,Proyector Full HD,Audiovisual,Diego Ramírez,Córdoba,3,702.57,0,2107.71
+2024-12-15,Escritorio Esquinero,Mobiliario,Lucía Fernández,GBA Sur,3,610.74,0,1832.22
+2024-12-16,Lámpara LED Escritorio,Iluminación,Ana García,CABA,12,76.13,15,776.53
+2024-12-17,Lámpara LED Escritorio,Iluminación,Valeria Soto,Mendoza,12,73.1,15,745.62
+2024-12-19,Panel LED Oficina,Iluminación,Diego Ramírez,CABA,8,211.02,0,1688.16
+2024-12-19,"Monitor 24"" FHD",Tecnología,Camila Herrera,GBA Norte,1,318.6,0,318.6
+2024-12-20,Cajonera Móvil,Mobiliario,Diego Ramírez,Mendoza,4,165.2,10,594.72
+2024-12-20,Lámpara LED Escritorio,Iluminación,Sebastián Molina,Rosario,11,69.25,0,761.75
+2024-12-20,Escritorio Esquinero,Mobiliario,Martín Torres,CABA,2,658.22,5,1250.62
+2024-12-21,Silla Ejecutiva,Mobiliario,Martín Torres,Rosario,10,363.8,0,3638.0
+2024-12-22,Silla Ejecutiva,Mobiliario,Lucía Fernández,Mendoza,9,348.41,0,3135.69
+2024-12-23,Estante Organizador,Mobiliario,Carlos López,CABA,1,96.15,0,96.15
+2024-12-25,Cajonera Móvil,Mobiliario,Martín Torres,GBA Sur,9,206.59,0,1859.31
+2024-12-26,"Monitor 27"" 4K",Tecnología,Valeria Soto,GBA Norte,7,566.89,15,3373.0
+2024-12-26,Silla Ergonómica Pro,Mobiliario,Lucía Fernández,GBA Norte,5,485.6,15,2063.8
+2024-12-27,Escritorio Esquinero,Mobiliario,Ana García,GBA Sur,7,602.87,0,4220.09
+2024-12-27,Mouse Inalámbrico,Tecnología,Valeria Soto,Rosario,15,40.95,0,614.25
+2024-12-29,Lámpara LED Escritorio,Iluminación,Carlos López,GBA Norte,5,83.46,0,417.3
+2024-12-29,Teclado Mecánico,Tecnología,Lucía Fernández,CABA,9,131.81,0,1186.29
+2024-12-29,Silla Ergonómica Pro,Mobiliario,Sebastián Molina,Córdoba,13,531.42,0,6908.46
+2024-12-29,Auriculares Bluetooth,Tecnología,Ana García,Mendoza,7,171.32,0,1199.24
+2024-12-29,Hub USB-C,Tecnología,Lucía Fernández,CABA,9,56.83,10,460.32
+2024-12-31,Silla Ergonómica Pro,Mobiliario,Camila Herrera,GBA Norte,9,528.48,10,4280.69

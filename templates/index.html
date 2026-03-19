@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Intelligence — Análisis de ventas con IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --surface2: #1c1c27;
+      --border: rgba(255,255,255,0.07);
+      --border-hover: rgba(255,255,255,0.15);
+      --accent: #7c6ff7;
+      --accent2: #4fd1a5;
+      --accent-dim: rgba(124,111,247,0.12);
+      --accent2-dim: rgba(79,209,165,0.12);
+      --text: #e8e8f0;
+      --text-muted: #6b6b80;
+      --text-dim: #3a3a4a;
+      --danger: #f07070;
+      --danger-dim: rgba(240,112,112,0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(124,111,247,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,111,247,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    body::after {
+      content: ""; position: fixed; top: -200px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 500px; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse, rgba(124,111,247,0.08) 0%, transparent 70%);
+    }
+    .page { position: relative; z-index: 1; display: flex; min-height: 100vh; }
+
+    /* ── SIDEBAR HISTORIAL ── */
+    #sidebar {
+      width: 220px; flex-shrink: 0;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      position: fixed; top: 0; left: 0; bottom: 0;
+      display: flex; flex-direction: column;
+      z-index: 10; transition: transform 0.3s;
+    }
+    .sidebar-logo {
+      padding: 20px 16px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 9px;
+    }
+    .logo-icon {
+      width: 28px; height: 28px; border-radius: 7px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 14px; height: 14px; color: white; }
+    .logo-name { font-size: 13px; font-weight: 600; letter-spacing: -0.3px; line-height: 1.2; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); font-family: "DM Mono", monospace; }
+
+    .sidebar-section { padding: 16px 12px 8px; }
+    .sidebar-label {
+      font-size: 10px; font-family: "DM Mono", monospace;
+      color: var(--text-dim); letter-spacing: 1.2px; text-transform: uppercase;
+      padding: 0 4px; margin-bottom: 8px;
+    }
+    .hist-empty {
+      font-size: 12px; color: var(--text-dim); padding: 8px 4px; line-height: 1.5;
+    }
+    .hist-list { display: flex; flex-direction: column; gap: 2px; }
+    .hist-item {
+      display: flex; align-items: center; gap: 9px;
+      padding: 9px 8px; border-radius: 7px; cursor: pointer;
+      transition: background 0.15s; border: 1px solid transparent;
+    }
+    .hist-item:hover { background: var(--surface2); border-color: var(--border); }
+    .hist-item.active { background: var(--accent-dim); border-color: rgba(124,111,247,0.2); }
+    .hist-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--text-dim); flex-shrink: 0; transition: background 0.15s;
+    }
+    .hist-item:hover .hist-dot, .hist-item.active .hist-dot { background: var(--accent); }
+    .hist-name {
+      font-size: 12px; color: var(--text-muted); white-space: nowrap;
+      overflow: hidden; text-overflow: ellipsis; flex: 1;
+      transition: color 0.15s;
+    }
+    .hist-item:hover .hist-name, .hist-item.active .hist-name { color: var(--text); }
+    .hist-date { font-size: 10px; color: var(--text-dim); font-family: "DM Mono", monospace; flex-shrink: 0; }
+    .hist-delete {
+      opacity: 0; width: 18px; height: 18px; border-radius: 4px;
+      background: none; border: none; cursor: pointer; flex-shrink: 0;
+      color: var(--text-dim); font-size: 14px; line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+      transition: opacity 0.15s, color 0.15s, background 0.15s;
+    }
+    .hist-item:hover .hist-delete { opacity: 1; }
+    .hist-delete:hover { color: var(--danger); background: var(--danger-dim); }
+
+    .sidebar-footer {
+      margin-top: auto; padding: 12px 16px;
+      border-top: 1px solid var(--border);
+    }
+    .btn-clear {
+      font-size: 11px; color: var(--text-dim); background: none;
+      border: none; cursor: pointer; font-family: "DM Mono", monospace;
+      transition: color 0.2s; padding: 0; display: block; width: 100%; text-align: left;
+    }
+    .btn-clear:hover { color: var(--danger); }
+
+    /* ── MAIN ── */
+    .main { margin-left: 220px; flex: 1; min-width: 0; }
+
+    /* ── HEADER ── */
+    header {
+      padding: 20px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      font-size: 11px; font-family: "DM Mono", monospace;
+      background: var(--accent-dim); color: var(--accent);
+      border: 1px solid rgba(124,111,247,0.2);
+      padding: 4px 10px; border-radius: 20px;
+    }
+    .header-title { font-size: 14px; color: var(--text-muted); }
+
+    /* ── HERO ── */
+    .hero { text-align: center; padding: 64px 24px 48px; }
+    .hero-tag {
+      display: inline-block; margin-bottom: 18px;
+      font-size: 11px; font-family: "DM Mono", monospace; letter-spacing: 1.5px;
+      color: var(--accent); text-transform: uppercase;
+      border: 1px solid rgba(124,111,247,0.25); border-radius: 20px; padding: 5px 14px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 48px); font-weight: 300;
+      line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 14px;
+    }
+    .hero h1 span { font-weight: 600; color: var(--accent); }
+    .hero p { font-size: 15px; color: var(--text-muted); max-width: 440px; margin: 0 auto 40px; line-height: 1.6; }
+
+    /* ── DROP ZONE ── */
+    .drop-wrapper { max-width: 580px; margin: 0 auto; }
+    .drop-zone {
+      border: 1.5px dashed var(--border-hover); border-radius: 16px; padding: 44px 32px;
+      text-align: center; cursor: pointer; transition: all 0.25s;
+      background: var(--surface); position: relative; overflow: hidden;
+    }
+    .drop-zone::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(ellipse at 50% 0%, rgba(124,111,247,0.06) 0%, transparent 60%);
+    }
+    .drop-zone:hover, .drop-zone.dragover {
+      border-color: var(--accent); background: var(--surface2);
+      box-shadow: 0 0 40px rgba(124,111,247,0.08), inset 0 0 40px rgba(124,111,247,0.04);
+    }
+    .drop-icon {
+      width: 52px; height: 52px; border-radius: 13px; margin: 0 auto 18px;
+      background: var(--accent-dim); border: 1px solid rgba(124,111,247,0.2);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .drop-icon svg { width: 22px; height: 22px; color: var(--accent); }
+    .drop-zone h2 { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+    .drop-zone p { font-size: 13px; color: var(--text-muted); margin-bottom: 22px; }
+    #file-input { display: none; }
+    .btn-select {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: white; border: none;
+      padding: 10px 22px; border-radius: 8px; font-size: 13px;
+      font-family: "DM Sans", sans-serif; font-weight: 500;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-select:hover { background: #6c5ff0; box-shadow: 0 4px 20px rgba(124,111,247,0.35); }
+    .btn-select svg { width: 14px; height: 14px; }
+    .formats { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 18px; }
+    .fmt-tag {
+      font-size: 11px; font-family: "DM Mono", monospace;
+      color: var(--text-muted); background: var(--surface2);
+      border: 1px solid var(--border); border-radius: 4px; padding: 3px 8px;
+    }
+
+    /* ── SELECTOR DE GRÁFICOS ── */
+    #graf-selector { display: none; max-width: 580px; margin: 16px auto 0; }
+    .graf-selector-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 24px 28px;
+    }
+    .graf-selector-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;
+    }
+    .graf-selector-header h3 { font-size: 14px; font-weight: 500; }
+    .graf-selector-header span { font-size: 11px; color: var(--text-muted); font-family: "DM Mono", monospace; }
+    .graf-filename {
+      font-size: 11px; color: var(--accent); font-family: "DM Mono", monospace;
+      margin-bottom: 16px; padding: 6px 10px; background: var(--accent-dim);
+      border-radius: 6px; border: 1px solid rgba(124,111,247,0.2);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .graf-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+    .graf-option {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border-radius: 8px; cursor: pointer;
+      border: 1px solid var(--border); background: var(--surface2);
+      transition: all 0.15s; user-select: none;
+    }
+    .graf-option:hover { border-color: var(--border-hover); }
+    .graf-option.selected { border-color: rgba(124,111,247,0.4); background: var(--accent-dim); }
+    .graf-option input { display: none; }
+    .graf-check {
+      width: 16px; height: 16px; border-radius: 4px; flex-shrink: 0;
+      border: 1.5px solid var(--text-dim); background: transparent;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.15s;
+    }
+    .graf-option.selected .graf-check {
+      background: var(--accent); border-color: var(--accent);
+    }
+    .graf-check svg { width: 10px; height: 10px; color: white; opacity: 0; transition: opacity 0.15s; }
+    .graf-option.selected .graf-check svg { opacity: 1; }
+    .graf-label { font-size: 12px; color: var(--text-muted); transition: color 0.15s; }
+    .graf-option.selected .graf-label { color: var(--text); }
+    .graf-actions { display: flex; gap: 10px; }
+    .btn-confirmar {
+      flex: 1; background: var(--accent); color: white; border: none;
+      padding: 11px; border-radius: 8px; font-size: 13px; font-weight: 500;
+      font-family: "DM Sans", sans-serif; cursor: pointer; transition: all 0.2s;
+    }
+    .btn-confirmar:hover { background: #6c5ff0; box-shadow: 0 4px 16px rgba(124,111,247,0.35); }
+    .btn-confirmar:disabled { background: var(--text-dim); cursor: not-allowed; box-shadow: none; }
+    .btn-cancelar {
+      background: transparent; color: var(--text-muted); border: 1px solid var(--border);
+      padding: 11px 18px; border-radius: 8px; font-size: 13px;
+      font-family: "DM Sans", sans-serif; cursor: pointer; transition: all 0.2s;
+    }
+    .btn-cancelar:hover { border-color: var(--border-hover); color: var(--text); }
+
+    /* ── LOADER ── */
+    #loader { display: none; max-width: 580px; margin: 20px auto 0; }
+    .loader-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
+    .loader-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+    .loader-spinner {
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 2px solid var(--border); border-top-color: var(--accent);
+      animation: spin 0.8s linear infinite; flex-shrink: 0;
+    }
+    .loader-header h3 { font-size: 14px; font-weight: 500; margin-bottom: 2px; }
+    .loader-header p { font-size: 12px; color: var(--text-muted); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .steps { display: flex; flex-direction: column; gap: 8px; }
+    .step {
+      display: flex; align-items: center; gap: 10px; font-size: 12px;
+      color: var(--text-muted); padding: 9px 12px; border-radius: 7px;
+      background: var(--surface2); border: 1px solid var(--border); transition: all 0.3s;
+    }
+    .step.active { color: var(--text); border-color: rgba(124,111,247,0.3); background: var(--accent-dim); }
+    .step.done { color: var(--accent2); border-color: rgba(79,209,165,0.2); background: var(--accent2-dim); }
+    .step-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; background: var(--text-dim); transition: background 0.3s; }
+    .step.active .step-dot { background: var(--accent); animation: pulse 1s ease-in-out infinite; }
+    .step.done .step-dot { background: var(--accent2); animation: none; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+    /* ── ERROR ── */
+    .error-msg {
+      display: none; max-width: 580px; margin: 14px auto 0;
+      background: var(--danger-dim); border: 1px solid rgba(240,112,112,0.25);
+      border-radius: 9px; padding: 12px 16px; font-size: 12px; color: var(--danger);
+      align-items: center; gap: 8px;
+    }
+    .error-msg.visible { display: flex; }
+
+    /* ── DASHBOARD ── */
+    #dashboard { display: none; max-width: 1000px; margin: 40px auto 0; padding: 0 32px 80px; }
+    .dash-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 28px; flex-wrap: wrap; gap: 12px;
+    }
+    .dash-title { font-size: 20px; font-weight: 600; letter-spacing: -0.5px; }
+    .dash-file {
+      font-size: 11px; font-family: "DM Mono", monospace;
+      color: var(--text-muted); background: var(--surface);
+      border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px;
+    }
+    .btn-nuevo {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: transparent; color: var(--text-muted);
+      border: 1px solid var(--border); padding: 8px 16px;
+      border-radius: 7px; font-size: 12px; font-family: "DM Sans", sans-serif;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-nuevo:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-nuevo svg { width: 13px; height: 13px; }
+    .btn-pdf {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: transparent; color: var(--accent2);
+      border: 1px solid rgba(79,209,165,0.3); padding: 8px 16px;
+      border-radius: 7px; font-size: 12px; font-family: "DM Sans", sans-serif;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-pdf:hover { background: var(--accent2-dim); border-color: var(--accent2); }
+    .btn-pdf:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-pdf svg { width: 13px; height: 13px; }
+    .section-label {
+      font-size: 10px; font-family: "DM Mono", monospace;
+      color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px;
+    }
+    .graficos-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 14px; margin-bottom: 28px;
+    }
+    .grafico-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 4px; overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .grafico-card:hover { border-color: var(--border-hover); box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+    .grafico-card img { width: 100%; border-radius: 8px; display: block; cursor: zoom-in; transition: opacity 0.15s; }
+    .grafico-card img:hover { opacity: 0.92; }
+    .grafico-hint { text-align: center; font-size: 10px; color: var(--text-dim); font-family: "DM Mono", monospace; padding: 6px 0 3px; }
+    .reporte-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; line-height: 1.75; }
+    .reporte-card h2 { font-size: 16px; font-weight: 600; color: var(--accent); margin: 20px 0 8px; }
+    .reporte-card h3 { font-size: 14px; font-weight: 500; color: var(--accent); margin: 14px 0 5px; }
+    .reporte-card h4 { font-size: 13px; font-weight: 500; color: #a78bfa; margin: 10px 0 4px; }
+    .reporte-card p { font-size: 13px; color: #c0c0d0; margin-bottom: 8px; }
+    .reporte-card strong { color: var(--text); font-weight: 500; }
+    .reporte-card li { font-size: 13px; color: #c0c0d0; margin-bottom: 3px; padding-left: 4px; }
+
+    /* ── MODAL ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 1000;
+      background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 24px;
+      backdrop-filter: blur(4px);
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-overlay img { max-width: 100%; max-height: 90vh; border-radius: 12px; box-shadow: 0 20px 80px rgba(0,0,0,0.8); }
+    .modal-close {
+      position: fixed; top: 20px; right: 28px; color: rgba(255,255,255,0.5);
+      font-size: 26px; cursor: pointer; background: none; border: none; transition: color 0.15s; line-height: 1;
+    }
+    .modal-close:hover { color: white; }
+
+    /* ── CHAT FLOTANTE ── */
+    #chat-widget {
+      position: fixed; bottom: 24px; right: 24px; z-index: 500;
+      display: none; flex-direction: column; align-items: flex-end; gap: 12px;
+    }
+    #chat-widget.visible { display: flex; }
+    .chat-window {
+      width: 360px; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 16px;
+      overflow: hidden; display: none;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      flex-direction: column;
+    }
+    .chat-window.open { display: flex; }
+    .chat-header {
+      padding: 14px 16px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+    }
+    .chat-header-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent2); animation: pulse 2s ease-in-out infinite;
+    }
+    .chat-header h3 { font-size: 13px; font-weight: 500; flex: 1; }
+    .chat-header-close {
+      background: none; border: none; color: var(--text-muted); cursor: pointer;
+      font-size: 18px; line-height: 1; padding: 0; transition: color 0.15s;
+    }
+    .chat-header-close:hover { color: var(--text); }
+    .chat-messages {
+      padding: 16px; height: 320px; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 12px; flex: 1;
+    }
+    .chat-empty {
+      text-align: center; color: var(--text-dim); font-size: 11px;
+      margin: auto; font-family: "DM Mono", monospace; line-height: 1.6;
+    }
+    .chat-msg { display: flex; gap: 8px; align-items: flex-start; }
+    .chat-msg.user { flex-direction: row-reverse; }
+    .chat-avatar {
+      width: 26px; height: 26px; border-radius: 6px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 11px;
+    }
+    .chat-msg.user .chat-avatar { background: var(--accent-dim); color: var(--accent); }
+    .chat-msg.agent .chat-avatar { background: var(--accent2-dim); color: var(--accent2); }
+    .chat-bubble {
+      max-width: 82%; padding: 9px 12px; border-radius: 10px;
+      font-size: 12px; line-height: 1.6;
+    }
+    .chat-msg.user .chat-bubble {
+      background: var(--accent-dim); border: 1px solid rgba(124,111,247,0.2);
+      color: var(--text); border-top-right-radius: 3px;
+    }
+    .chat-msg.agent .chat-bubble {
+      background: var(--surface2); border: 1px solid var(--border);
+      color: #c0c0d0; border-top-left-radius: 3px;
+    }
+    .chat-bubble strong { color: var(--text); }
+    .chat-typing { display: flex; gap: 4px; align-items: center; padding: 2px 0; }
+    .chat-typing span {
+      width: 5px; height: 5px; border-radius: 50%; background: var(--text-muted);
+      animation: typing 1.2s ease-in-out infinite;
+    }
+    .chat-typing span:nth-child(2) { animation-delay: 0.2s; }
+    .chat-typing span:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes typing { 0%,60%,100%{opacity:0.3} 30%{opacity:1} }
+    .chat-input-row {
+      padding: 12px 14px; border-top: 1px solid var(--border);
+      display: flex; gap: 8px; align-items: center; flex-shrink: 0;
+    }
+    .chat-input {
+      flex: 1; background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 9px 12px; font-size: 12px;
+      color: var(--text); font-family: "DM Sans", sans-serif; outline: none;
+      transition: border-color 0.2s;
+    }
+    .chat-input::placeholder { color: var(--text-dim); }
+    .chat-input:focus { border-color: rgba(124,111,247,0.4); }
+    .chat-send {
+      width: 34px; height: 34px; border-radius: 8px; flex-shrink: 0;
+      background: var(--accent); border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: all 0.2s;
+    }
+    .chat-send:hover { background: #6c5ff0; }
+    .chat-send:disabled { background: var(--text-dim); cursor: not-allowed; }
+    .chat-send svg { width: 14px; height: 14px; color: white; }
+    .chat-fab {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--accent); border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(124,111,247,0.45); transition: all 0.2s;
+    }
+    .chat-fab:hover { background: #6c5ff0; box-shadow: 0 6px 28px rgba(124,111,247,0.55); transform: scale(1.05); }
+    .chat-fab svg { width: 22px; height: 22px; color: white; }
+    .chat-fab-badge {
+      position: absolute; top: -3px; right: -3px;
+      width: 18px; height: 18px; border-radius: 50%;
+      background: var(--accent2); font-size: 10px; color: #0a0a0f;
+      font-weight: 600; display: none; align-items: center; justify-content: center;
+    }
+    .chat-fab-badge.visible { display: flex; }
+    .chat-fab-wrap { position: relative; }
+
+    /* ── COMPARACIÓN ── */
+    #comp-section { max-width: 580px; margin: 0 auto; padding: 0; }
+    .comp-divider { display: none; }
+    .comp-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative; overflow: hidden; }
+    .comp-card::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(ellipse at 50% 0%, rgba(124,111,247,0.06) 0%, transparent 60%);
+    }
+    .comp-card h3 { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+    .comp-card > p { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+    .comp-uploads { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+    .comp-upload-slot {
+      border: 1.5px dashed var(--border-hover); border-radius: 12px; padding: 20px 14px;
+      text-align: center; cursor: pointer; transition: all 0.2s; background: var(--surface2);
+    }
+    .comp-upload-slot:hover { border-color: var(--accent); background: var(--surface); }
+    .comp-upload-slot.loaded { border-color: var(--accent2); border-style: solid; background: var(--accent2-dim); }
+    .comp-slot-icon { font-size: 22px; margin-bottom: 8px; }
+    .comp-slot-label { font-size: 10px; font-family: "DM Mono", monospace; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+    .comp-slot-label.b { color: var(--accent2); }
+    .comp-slot-name { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .comp-slot-hint { font-size: 11px; color: var(--text-dim); }
+    .comp-upload-slot input { display: none; }
+    .btn-comparar {
+      width: 100%; background: var(--surface2); color: var(--text-dim);
+      border: 1px solid var(--border); padding: 12px; border-radius: 8px;
+      font-size: 13px; font-weight: 500; font-family: "DM Sans", sans-serif; cursor: not-allowed; transition: all 0.2s;
+    }
+    .btn-comparar.ready { background: var(--accent); color: white; border-color: var(--accent); cursor: pointer; }
+    .btn-comparar.ready:hover { background: #6c5ff0; box-shadow: 0 4px 16px rgba(124,111,247,0.35); }
+    .btn-comparar:disabled { opacity: 0.5; cursor: not-allowed; }
+    #comp-loader { display: none; max-width: 580px; margin: 16px auto 0; }
+    #comp-dashboard { display: none; max-width: 1000px; margin: 32px auto 0; padding: 0 32px 80px; }
+    .comp-badges { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .comp-badge { font-size: 11px; font-family: "DM Mono", monospace; padding: 4px 12px; border-radius: 20px; border: 1px solid; }
+    .comp-badge.a { color: var(--accent); border-color: rgba(124,111,247,0.3); background: var(--accent-dim); }
+    .comp-badge.b { color: var(--accent2); border-color: rgba(79,209,165,0.3); background: var(--accent2-dim); }
+
+    @media (max-width: 768px) {
+      #sidebar { transform: translateX(-100%); }
+      .main { margin-left: 0; }
+      header { padding: 16px 20px; }
+      .graficos-grid { grid-template-columns: 1fr; }
+      #dashboard { padding: 0 16px 60px; }
+    }
+
+    /* ── MODE SWITCH ── */
+    .mode-switch {
+      display: flex; align-items: center;
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 3px; gap: 2px;
+    }
+    .mode-btn {
+      padding: 7px 16px; border-radius: 7px; border: none; cursor: pointer;
+      font-size: 12px; font-weight: 500; font-family: "DM Sans", sans-serif;
+      color: var(--text-muted); background: transparent; transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .mode-btn.active { background: var(--accent); color: white; box-shadow: 0 2px 8px rgba(124,111,247,0.3); }
+    .mode-btn:not(.active):hover { color: var(--text); }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-name">Sales Intelligence</div>
+        <div class="logo-sub">powered by AI</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label" id="sidebar-hist-label">Recientes — Análisis</div>
+      <div id="hist-empty" class="hist-empty">Todavía no hay análisis guardados.</div>
+      <div class="hist-list" id="hist-list"></div>
+    </div>
+
+    <div class="sidebar-footer">
+      <button class="btn-clear" onclick="limpiarHistorial()">Limpiar historial</button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+    <header>
+      <span class="header-title">Análisis de ventas con IA</span>
+      <div class="mode-switch">
+        <button class="mode-btn active" id="btn-modo-analisis" onclick="cambiarModo('analisis')">Análisis</button>
+        <button class="mode-btn" id="btn-modo-comparacion" onclick="cambiarModo('comparacion')">Comparación</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:11px;color:var(--text-muted);font-family:'DM Mono',monospace">{{ username }}</span>
+        {% if is_admin %}
+        <a href="/admin" style="font-size:11px;color:var(--text-muted);text-decoration:none;padding:5px 10px;border:1px solid var(--border);border-radius:6px;transition:all 0.2s" onmouseover="this.style.borderColor='var(--border-hover)';this.style.color='var(--text)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">Usuarios</a>
+        {% endif %}
+        <a href="/logout" style="font-size:11px;color:var(--text-muted);text-decoration:none;padding:5px 10px;border:1px solid var(--border);border-radius:6px;transition:all 0.2s" onmouseover="this.style.borderColor='var(--border-hover)';this.style.color='var(--text)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">Salir</a>
+      </div>
+    </header>
+
+    <!-- MODO ANÁLISIS -->
+    <div id="modo-analisis">
+    <section class="hero">
+      <div class="hero-tag">Análisis automático</div>
+      <h1>Convertí tus datos<br>en <span>decisiones</span></h1>
+      <p>Subí tu archivo de ventas y el agente genera métricas, gráficos y un reporte ejecutivo en segundos.</p>
+
+      <div class="drop-wrapper">
+        <div class="drop-zone" id="drop-zone">
+          <div class="drop-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+            </svg>
+          </div>
+          <h2>Arrastrá tu archivo acá</h2>
+          <p>o hacé clic para seleccionarlo</p>
+          <label class="btn-select" for="file-input">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+            </svg>
+            Seleccionar archivo
+          </label>
+          <input type="file" id="file-input" accept=".csv,.xlsx,.xls">
+          <div class="formats">
+            <span class="fmt-tag">.csv</span>
+            <span class="fmt-tag">.xlsx</span>
+            <span class="fmt-tag">.xls</span>
+          </div>
+        </div>
+
+        <div id="graf-selector">
+          <div class="graf-selector-card">
+            <div class="graf-selector-header">
+              <h3>Elegí los gráficos a generar</h3>
+              <span id="graf-count">4 seleccionados</span>
+            </div>
+            <div class="graf-filename" id="graf-filename"></div>
+            <div class="graf-options" id="graf-options">
+              <label class="graf-option selected" data-id="mes_barras">
+                <input type="checkbox" checked>
+                <div class="graf-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+                <span class="graf-label">Ventas por mes (barras)</span>
+              </label>
+              <label class="graf-option selected" data-id="mes_linea">
+                <input type="checkbox" checked>
+                <div class="graf-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+                <span class="graf-label">Ventas por mes (línea)</span>
+              </label>
+              <label class="graf-option selected" data-id="top_productos">
+                <input type="checkbox" checked>
+                <div class="graf-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+                <span class="graf-label">Top productos (barras)</span>
+              </label>
+              <label class="graf-option selected" data-id="categoria_torta">
+                <input type="checkbox" checked>
+                <div class="graf-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></div>
+                <span class="graf-label">Categorías (torta)</span>
+              </label>
+            </div>
+            <div class="graf-actions">
+              <button class="btn-confirmar" id="btn-confirmar">Analizar</button>
+              <button class="btn-cancelar" onclick="cancelarSeleccion()">Cancelar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="loader">
+          <div class="loader-card">
+            <div class="loader-header">
+              <div class="loader-spinner"></div>
+              <div>
+                <h3>Analizando tu archivo</h3>
+                <p id="loader-filename">Procesando...</p>
+              </div>
+            </div>
+            <div class="steps">
+              <div class="step" id="step-1"><div class="step-dot"></div>Cargando y validando estructura</div>
+              <div class="step" id="step-2"><div class="step-dot"></div>Calculando métricas de ventas</div>
+              <div class="step" id="step-3"><div class="step-dot"></div>Generando gráficos</div>
+              <div class="step" id="step-4"><div class="step-dot"></div>Redactando reporte ejecutivo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="error-msg" id="error-msg">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          <span id="error-text"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard">
+      <div class="dash-header">
+        <div>
+          <div class="section-label">Resultados</div>
+          <div class="dash-title">Análisis completado</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span class="dash-file" id="dash-filename"></span>
+          <button class="btn-pdf" id="btn-pdf" onclick="exportarPDF()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="18" x2="12" y2="12"/>
+              <line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+            Exportar PDF
+          </button>
+          <button class="btn-nuevo" onclick="reiniciar()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+            </svg>
+            Nuevo análisis
+          </button>
+        </div>
+      </div>
+      <div class="section-label">Visualizaciones</div>
+      <div class="graficos-grid" id="graficos-grid"></div>
+      <div class="section-label">Reporte ejecutivo</div>
+      <div class="reporte-card"><div id="reporte-texto"></div></div>
+    </section>
+
+    </div><!-- fin modo-analisis -->
+
+    <!-- MODO COMPARACIÓN -->
+    <div id="modo-comparacion" style="display:none">
+
+    <section class="hero">
+      <div class="hero-tag">Comparación de períodos</div>
+      <h1>Compará dos períodos<br>de <span>ventas</span></h1>
+      <p>Subí dos archivos del mismo negocio y el agente genera un análisis diferencial automático.</p>
+
+      <div class="drop-wrapper">
+    <!-- SECCIÓN COMPARACIÓN -->
+    <section id="comp-section">
+      <div class="comp-divider">
+        <div class="comp-divider-line"></div>
+        <div class="comp-divider-label">Comparar dos períodos</div>
+        <div class="comp-divider-line"></div>
+      </div>
+      <div class="comp-card">
+        <h3>Comparación entre períodos</h3>
+        <p>Subí dos archivos del mismo negocio para comparar su evolución de ventas.</p>
+        <div class="comp-uploads">
+          <label class="comp-upload-slot" id="slot1" for="comp-input1">
+            <div class="comp-slot-icon">📁</div>
+            <div class="comp-slot-label">Período A</div>
+            <div class="comp-slot-name" id="slot1-name">
+              <span class="comp-slot-hint">Seleccionar archivo</span>
+            </div>
+            <input type="file" id="comp-input1" accept=".csv,.xlsx,.xls">
+          </label>
+          <label class="comp-upload-slot" id="slot2" for="comp-input2">
+            <div class="comp-slot-icon">📁</div>
+            <div class="comp-slot-label b">Período B</div>
+            <div class="comp-slot-name" id="slot2-name">
+              <span class="comp-slot-hint">Seleccionar archivo</span>
+            </div>
+            <input type="file" id="comp-input2" accept=".csv,.xlsx,.xls">
+          </label>
+        </div>
+        <button class="btn-comparar" id="btn-comparar" disabled onclick="ejecutarComparacion()">
+          Seleccioná los dos archivos para comparar
+        </button>
+      </div>
+    </section>
+
+      </div><!-- fin drop-wrapper -->
+    </section><!-- fin hero comp -->
+
+    <div id="comp-loader">
+      <div class="loader-card">
+        <div class="loader-header">
+          <div class="loader-spinner"></div>
+          <div>
+            <h3>Comparando períodos</h3>
+            <p>El agente está analizando y comparando los dos archivos...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="comp-dashboard">
+      <div class="dash-header">
+        <div>
+          <div class="section-label">Comparación</div>
+          <div class="dash-title">Análisis comparativo</div>
+        </div>
+        <div class="comp-badges">
+          <span class="comp-badge a" id="comp-badge-a"></span>
+          <span class="comp-badge b" id="comp-badge-b"></span>
+        </div>
+      </div>
+      <div class="section-label">Visualizaciones comparativas</div>
+      <div class="graficos-grid" id="comp-graficos-grid"></div>
+      <div class="section-label">Reporte comparativo</div>
+      <div class="reporte-card"><div id="comp-reporte-texto"></div></div>
+    </section>
+
+    </div><!-- fin modo-comparacion -->
+
+  </div><!-- fin main -->
+</div><!-- fin page -->
+
+<!-- CHAT FLOTANTE -->
+<div id="chat-widget">
+  <div class="chat-window" id="chat-window">
+    <div class="chat-header">
+      <div class="chat-header-dot"></div>
+      <h3>Preguntale al agente</h3>
+      <button class="chat-header-close" onclick="toggleChat()">&#x2715;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-empty" id="chat-empty">Analizá un archivo y luego<br>hacé preguntas sobre los datos</div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" class="chat-input" id="chat-input"
+        placeholder="¿Cuál fue el mejor mes?..."
+        onkeydown="if(event.key==='Enter') enviarPregunta()">
+      <button class="chat-send" id="chat-send" onclick="enviarPregunta()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="chat-fab-wrap">
+    <button class="chat-fab" onclick="toggleChat()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+    </button>
+    <div class="chat-fab-badge" id="chat-badge">!</div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal" onclick="cerrarModal()">
+  <button class="modal-close" onclick="cerrarModal()">&#x2715;</button>
+  <img id="modal-img" src="" onclick="event.stopPropagation()">
+</div>
+
+<script>
+  const fileInput    = document.getElementById("file-input");
+  const dropZone     = document.getElementById("drop-zone");
+  const grafSelector = document.getElementById("graf-selector");
+  const loader       = document.getElementById("loader");
+  const dashboard    = document.getElementById("dashboard");
+  const errorMsg     = document.getElementById("error-msg");
+  const histList     = document.getElementById("hist-list");
+  const histEmpty    = document.getElementById("hist-empty");
+  const steps        = [1,2,3,4].map(i => document.getElementById("step-"+i));
+  let datosActuales = null;
+  let historialChat = [];
+
+  // ── Chat flotante ──
+  let chatAbierto = false;
+
+  function toggleChat() {
+    chatAbierto = !chatAbierto;
+    document.getElementById("chat-window").classList.toggle("open", chatAbierto);
+    document.getElementById("chat-badge").classList.remove("visible");
+    if (chatAbierto) setTimeout(() => document.getElementById("chat-input").focus(), 100);
+  }
+
+  async function enviarPregunta() {
+    if (!datosActuales) return;
+    const input  = document.getElementById("chat-input");
+    const send   = document.getElementById("chat-send");
+    const msgs   = document.getElementById("chat-messages");
+    const empty  = document.getElementById("chat-empty");
+    const pregunta = input.value.trim();
+    if (!pregunta) return;
+
+    if (empty) empty.remove();
+    input.value = "";
+    send.disabled = true;
+
+    msgs.innerHTML += `
+      <div class="chat-msg user">
+        <div class="chat-avatar">Vos</div>
+        <div class="chat-bubble">${pregunta}</div>
+      </div>`;
+
+    const typingId = "typing-" + Date.now();
+    msgs.innerHTML += `
+      <div class="chat-msg agent" id="${typingId}">
+        <div class="chat-avatar">IA</div>
+        <div class="chat-bubble"><div class="chat-typing"><span></span><span></span><span></span></div></div>
+      </div>`;
+    msgs.scrollTop = msgs.scrollHeight;
+
+    try {
+      const res = await fetch("/preguntar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pregunta, reporte: datosActuales.reporte, historial: historialChat }),
+      });
+      const data = await res.json();
+      document.getElementById(typingId)?.remove();
+
+      if (data.error) {
+        msgs.innerHTML += `<div class="chat-msg agent"><div class="chat-avatar">IA</div><div class="chat-bubble" style="color:var(--danger)">Error: ${data.error}</div></div>`;
+      } else {
+        const respuesta = data.respuesta.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>");
+        msgs.innerHTML += `
+          <div class="chat-msg agent">
+            <div class="chat-avatar">IA</div>
+            <div class="chat-bubble">${respuesta}</div>
+          </div>`;
+        historialChat.push({ role: "user", content: pregunta });
+        historialChat.push({ role: "assistant", content: data.respuesta });
+        if (historialChat.length > 10) historialChat = historialChat.slice(-10);
+
+        // Badge si el chat está cerrado
+        if (!chatAbierto) {
+          document.getElementById("chat-badge").classList.add("visible");
+        }
+      }
+    } catch (e) {
+      document.getElementById(typingId)?.remove();
+      msgs.innerHTML += `<div class="chat-msg agent"><div class="chat-avatar">IA</div><div class="chat-bubble" style="color:var(--danger)">Error de conexión</div></div>`;
+    } finally {
+      send.disabled = false;
+      msgs.scrollTop = msgs.scrollHeight;
+      input.focus();
+    }
+  }
+
+  // ── Exportar PDF ──
+  async function exportarPDF() {
+    if (!datosActuales) return;
+    const btn = document.getElementById("btn-pdf");
+    btn.disabled = true;
+    btn.textContent = "Generando...";
+    try {
+      const res = await fetch("/exportar-pdf", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          reporte: datosActuales.reporte,
+          graficos: datosActuales.graficos,
+          filename: datosActuales.filename,
+        }),
+      });
+      if (!res.ok) throw new Error("Error al generar PDF");
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `reporte_${datosActuales.filename.replace(/\.[^.]+$/, "")}.pdf`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      alert("No se pudo generar el PDF: " + e.message);
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg> Exportar PDF`;
+    }
+  }
+
+  const MAX_HIST = 5;
+  const USERNAME = "{{ username }}";
+  const HIST_KEYS = {
+    analisis:    `sales_hist_analisis_${USERNAME}`,
+    comparacion: `sales_hist_comparacion_${USERNAME}`,
+  };
+  let modoActivo = "analisis";
+
+  // ── Switch de modo ──
+  function cambiarModo(modo) {
+    modoActivo = modo;
+    document.getElementById("modo-analisis").style.display    = modo === "analisis"   ? "block" : "none";
+    document.getElementById("modo-comparacion").style.display = modo === "comparacion" ? "block" : "none";
+    document.getElementById("btn-modo-analisis").classList.toggle("active",    modo === "analisis");
+    document.getElementById("btn-modo-comparacion").classList.toggle("active", modo === "comparacion");
+    document.getElementById("sidebar-hist-label").textContent =
+      modo === "analisis" ? "Recientes — Análisis" : "Recientes — Comparación";
+    activeHistIdx = -1;
+    renderHistorial(-1);
+    // Ocultar chat widget si cambia de modo
+    if (modo === "comparacion") {
+      document.getElementById("chat-widget").classList.remove("visible");
+    }
+  }
+
+  // ── Historial (por modo) ──
+  function cargarHistorial() {
+    try { return JSON.parse(localStorage.getItem(HIST_KEYS[modoActivo])) || []; } catch { return []; }
+  }
+  function guardarEnHistorial(entry) {
+    let hist = cargarHistorial();
+    hist = hist.filter(h => !(h.filename === entry.filename && h.fecha === entry.fecha));
+    hist.unshift(entry);
+    if (hist.length > MAX_HIST) hist = hist.slice(0, MAX_HIST);
+    localStorage.setItem(HIST_KEYS[modoActivo], JSON.stringify(hist));
+    renderHistorial(0);
+  }
+  function renderHistorial(activeIdx) {
+    const hist = cargarHistorial();
+    histEmpty.style.display = hist.length === 0 ? "block" : "none";
+    histList.innerHTML = "";
+    hist.forEach((entry, idx) => {
+      const item = document.createElement("div");
+      item.className = "hist-item" + (idx === activeIdx ? " active" : "");
+      const nameShort = entry.filename.length > 18 ? entry.filename.slice(0, 16) + "…" : entry.filename;
+      item.innerHTML = `
+        <div class="hist-dot"></div>
+        <span class="hist-name" title="${entry.filename}">${nameShort}</span>
+        <span class="hist-date">${entry.fechaCorta || ""}</span>
+        <button class="hist-delete" title="Eliminar" onclick="eliminarDeHistorial(event, ${idx})">&#x2715;</button>
+      `;
+      item.addEventListener("click", () => {
+        activeHistIdx = idx;
+        renderHistorial(idx);
+        if (modoActivo === "analisis") {
+          cargarDesdeHistorial(entry);
+        } else {
+          cargarDesdeHistorialComp(entry);
+        }
+      });
+      histList.appendChild(item);
+    });
+  }
+  function cargarDesdeHistorial(entry) {
+    mostrarResultados({ graficos: entry.graficos, reporte: entry.reporte }, entry.filename);
+  }
+  function cargarDesdeHistorialComp(entry) {
+    mostrarComparacion({ graficos: entry.graficos, reporte: entry.reporte, nombre1: entry.nombre1, nombre2: entry.nombre2 });
+  }
+  function eliminarDeHistorial(e, idx) {
+    e.stopPropagation();
+    let hist = cargarHistorial();
+    hist.splice(idx, 1);
+    localStorage.setItem(HIST_KEYS[modoActivo], JSON.stringify(hist));
+    if (activeHistIdx === idx) {
+      activeHistIdx = -1;
+      if (modoActivo === "analisis") dashboard.style.display = "none";
+      else document.getElementById("comp-dashboard").style.display = "none";
+    } else if (activeHistIdx > idx) activeHistIdx--;
+    renderHistorial(activeHistIdx);
+  }
+  function limpiarHistorial() {
+    localStorage.removeItem(HIST_KEYS[modoActivo]);
+    activeHistIdx = -1;
+    renderHistorial(-1);
+  }
+
+  // ── Selector de gráficos ──
+  document.querySelectorAll(".graf-option").forEach(opt => {
+    opt.addEventListener("click", () => {
+      const cb = opt.querySelector("input");
+      cb.checked = !cb.checked;
+      opt.classList.toggle("selected", cb.checked);
+      actualizarContador();
+    });
+  });
+
+  function actualizarContador() {
+    const total = document.querySelectorAll(".graf-option.selected").length;
+    document.getElementById("graf-count").textContent = total + " seleccionado" + (total !== 1 ? "s" : "");
+    document.getElementById("btn-confirmar").disabled = total === 0;
+  }
+
+  function getGraficosSeleccionados() {
+    return [...document.querySelectorAll(".graf-option.selected")].map(o => o.dataset.id);
+  }
+
+  function cancelarSeleccion() {
+    grafSelector.style.display = "none";
+    fileInput.value = "";
+    archivoActual = null;
+  }
+
+  document.getElementById("btn-confirmar").addEventListener("click", () => {
+    if (archivoActual) analizar(archivoActual, getGraficosSeleccionados());
+  });
+
+  // ── Eventos de archivo ──
+  fileInput.addEventListener("change", () => {
+    if (fileInput.files[0]) mostrarSelector(fileInput.files[0]);
+  });
+  dropZone.addEventListener("dragover", (e) => { e.preventDefault(); dropZone.classList.add("dragover"); });
+  dropZone.addEventListener("dragleave", () => dropZone.classList.remove("dragover"));
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault(); dropZone.classList.remove("dragover");
+    if (e.dataTransfer.files[0]) mostrarSelector(e.dataTransfer.files[0]);
+  });
+
+  function mostrarSelector(file) {
+    archivoActual = file;
+    document.getElementById("graf-filename").textContent = file.name;
+    // Resetear todas a seleccionadas
+    document.querySelectorAll(".graf-option").forEach(o => {
+      o.querySelector("input").checked = true;
+      o.classList.add("selected");
+    });
+    actualizarContador();
+    grafSelector.style.display = "block";
+    errorMsg.classList.remove("visible");
+    dashboard.style.display = "none";
+  }
+
+  // ── Steps ──
+  function animarSteps() {
+    let current = 0;
+    steps.forEach(s => s.className = "step");
+    stepTimer = setInterval(() => {
+      if (current > 0) steps[current-1].className = "step done";
+      if (current < steps.length) { steps[current].className = "step active"; current++; }
+    }, 2800);
+  }
+  function detenerSteps() {
+    clearInterval(stepTimer);
+    steps.forEach(s => s.className = "step done");
+  }
+
+  // ── Analizar ──
+  async function analizar(file, graficosSeleccionados) {
+    grafSelector.style.display = "none";
+    errorMsg.classList.remove("visible");
+    dashboard.style.display = "none";
+    document.getElementById("loader-filename").textContent = file.name;
+    loader.style.display = "block";
+    animarSteps();
+
+    const formData = new FormData();
+    formData.append("archivo", file);
+    formData.append("graficos", JSON.stringify(graficosSeleccionados));
+
+    try {
+      const res = await fetch("/analizar", { method: "POST", body: formData });
+      detenerSteps();
+      loader.style.display = "none";
+      if (res.status === 413) {
+        document.getElementById("error-text").textContent = "El archivo supera el límite de 50MB. Reducí el tamaño o dividilo en partes.";
+        errorMsg.classList.add("visible");
+        return;
+      }
+      const data = await res.json();
+      if (data.error) {
+        document.getElementById("error-text").textContent = data.error;
+        errorMsg.classList.add("visible");
+      } else {
+        const now = new Date();
+        const fecha = now.toLocaleDateString("es-AR", { day: "2-digit", month: "short", year: "numeric" });
+        const fechaCorta = now.toLocaleDateString("es-AR", { day: "2-digit", month: "short" });
+        guardarEnHistorial({ filename: file.name, fecha, fechaCorta, graficos: data.graficos, reporte: data.reporte });
+        mostrarResultados(data, file.name);
+      }
+    } catch (e) {
+      detenerSteps();
+      loader.style.display = "none";
+      document.getElementById("error-text").textContent = "Error de conexión. Verificá que el servidor esté corriendo.";
+      errorMsg.classList.add("visible");
+    }
+  }
+
+  // ── Mostrar resultados ──
+  function mostrarResultados(data, filename) {
+    datosActuales = { ...data, filename };
+    document.getElementById("dash-filename").textContent = filename;
+    const grid = document.getElementById("graficos-grid");
+    grid.innerHTML = "";
+    data.graficos.forEach(b64 => {
+      const card = document.createElement("div");
+      card.className = "grafico-card";
+      card.innerHTML = `<img src="data:image/png;base64,${b64}" onclick="abrirModal(this.src)"><div class="grafico-hint">clic para ampliar</div>`;
+      grid.appendChild(card);
+    });
+    const reporteDiv = document.getElementById("reporte-texto");
+    reporteDiv.innerHTML = data.reporte
+      .replace(/^## (.+)$/gm, "<h2>$1</h2>")
+      .replace(/^### (.+)$/gm, "<h3>$1</h3>")
+      .replace(/^#### (.+)$/gm, "<h4>$1</h4>")
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/^\* (.+)$/gm, "<li>$1</li>")
+      .replace(/^- (.+)$/gm, "<li>$1</li>")
+      .replace(/^(\d+)\. (.+)$/gm, "<li>$2</li>")
+      .replace(/\n\n/g, "</p><p>")
+      .replace(/\n/g, "<br>");
+    dashboard.style.display = "block";
+    document.getElementById("chat-widget").classList.add("visible");
+    setTimeout(() => dashboard.scrollIntoView({ behavior: "smooth", block: "start" }), 100);
+  }
+
+  // ── Modal ──
+  function abrirModal(src) {
+    document.getElementById("modal-img").src = src;
+    document.getElementById("modal").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+  function cerrarModal() {
+    document.getElementById("modal").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") cerrarModal(); });
+
+  // ── Reiniciar ──
+  function reiniciar() {
+    dashboard.style.display = "none";
+    grafSelector.style.display = "none";
+    errorMsg.classList.remove("visible");
+    fileInput.value = "";
+    archivoActual = null;
+    datosActuales = null;
+    historialChat = [];
+    document.getElementById("chat-widget").classList.remove("visible");
+    document.getElementById("chat-window").classList.remove("open");
+    chatAbierto = false;
+    document.getElementById("chat-messages").innerHTML = '<div class="chat-empty" id="chat-empty">Analizá un archivo y luego<br>hacé preguntas sobre los datos</div>';
+    steps.forEach(s => s.className = "step");
+    activeHistIdx = -1;
+    renderHistorial(-1);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  renderHistorial(-1);
+
+  // ── Comparación ──
+  let compArchivo1 = null, compArchivo2 = null;
+
+  document.getElementById("comp-input1").addEventListener("change", (e) => {
+    compArchivo1 = e.target.files[0];
+    const slot = document.getElementById("slot1");
+    document.getElementById("slot1-name").textContent = compArchivo1.name;
+    slot.classList.add("loaded");
+    actualizarBtnComparar();
+  });
+
+  document.getElementById("comp-input2").addEventListener("change", (e) => {
+    compArchivo2 = e.target.files[0];
+    const slot = document.getElementById("slot2");
+    document.getElementById("slot2-name").textContent = compArchivo2.name;
+    slot.classList.add("loaded");
+    actualizarBtnComparar();
+  });
+
+  function actualizarBtnComparar() {
+    const btn = document.getElementById("btn-comparar");
+    if (compArchivo1 && compArchivo2) {
+      btn.textContent = "Comparar períodos";
+      btn.classList.add("ready");
+      btn.disabled = false;
+    } else {
+      btn.textContent = "Seleccioná los dos archivos para comparar";
+      btn.classList.remove("ready");
+      btn.disabled = true;
+    }
+  }
+
+  async function ejecutarComparacion() {
+    if (!compArchivo1 || !compArchivo2) return;
+    const btn = document.getElementById("btn-comparar");
+    btn.disabled = true;
+    btn.textContent = "Analizando...";
+    document.getElementById("comp-loader").style.display = "block";
+    document.getElementById("comp-dashboard").style.display = "none";
+
+    const formData = new FormData();
+    formData.append("archivo1", compArchivo1);
+    formData.append("archivo2", compArchivo2);
+
+    try {
+      const res  = await fetch("/comparar", { method: "POST", body: formData });
+      const data = await res.json();
+      document.getElementById("comp-loader").style.display = "none";
+
+      if (data.error) {
+        alert("Error en la comparación: " + data.error);
+      } else {
+        const now = new Date();
+        const fecha = now.toLocaleDateString("es-AR", { day: "2-digit", month: "short", year: "numeric" });
+        const fechaCorta = now.toLocaleDateString("es-AR", { day: "2-digit", month: "short" });
+        const filenameComp = (data.nombre1 || "A") + " vs " + (data.nombre2 || "B");
+        guardarEnHistorial({
+          filename: filenameComp, fecha, fechaCorta,
+          graficos: data.graficos, reporte: data.reporte,
+          nombre1: data.nombre1, nombre2: data.nombre2,
+        });
+        mostrarComparacion(data);
+      }
+    } catch (e) {
+      document.getElementById("comp-loader").style.display = "none";
+      alert("Error de conexión");
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Comparar períodos";
+    }
+  }
+
+  function mostrarComparacion(data) {
+    document.getElementById("comp-badge-a").textContent = "A: " + (data.nombre1 || "Período A");
+    document.getElementById("comp-badge-b").textContent = "B: " + (data.nombre2 || "Período B");
+
+    const grid = document.getElementById("comp-graficos-grid");
+    grid.innerHTML = "";
+    data.graficos.forEach(b64 => {
+      const card = document.createElement("div");
+      card.className = "grafico-card";
+      card.innerHTML = `<img src="data:image/png;base64,${b64}" onclick="abrirModal(this.src)"><div class="grafico-hint">clic para ampliar</div>`;
+      grid.appendChild(card);
+    });
+
+    document.getElementById("comp-reporte-texto").innerHTML = data.reporte
+      .replace(/^## (.+)$/gm, "<h2>$1</h2>")
+      .replace(/^### (.+)$/gm, "<h3>$1</h3>")
+      .replace(/^#### (.+)$/gm, "<h4>$1</h4>")
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/^\* (.+)$/gm, "<li>$1</li>")
+      .replace(/^- (.+)$/gm, "<li>$1</li>")
+      .replace(/^(\d+)\. (.+)$/gm, "<li>$2</li>")
+      .replace(/\n\n/g, "</p><p>")
+      .replace(/\n/g, "<br>");
+
+    document.getElementById("comp-dashboard").style.display = "block";
+    setTimeout(() => document.getElementById("comp-dashboard").scrollIntoView({ behavior: "smooth", block: "start" }), 100);
+  }
+</script>
+</body>
+</html>

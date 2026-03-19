@@ -1,0 +1,1201 @@
+fecha,producto,categoria,cajero,sucursal,cantidad,precio_unitario,monto
+2024-01-01,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Oeste,6,2.09,12.54
+2024-01-01,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Oeste,11,2.63,28.93
+2024-01-01,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Oeste,11,1.0,11.0
+2024-01-02,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Sur,14,3.91,54.74
+2024-01-02,Chorizo x4,Carnicería,Pablo Giménez,Sucursal Sur,19,3.33,63.27
+2024-01-02,Fideos Spaghetti 500g,Almacén,Sofía Pereyra,Sucursal Oeste,4,1.05,4.2
+2024-01-02,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Sur,15,2.19,32.85
+2024-01-02,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Sur,20,1.24,24.8
+2024-01-03,Harina 0000 1kg,Almacén,Pablo Giménez,Sucursal Sur,3,1.4,4.2
+2024-01-03,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Centro,19,1.11,21.09
+2024-01-03,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,12,1.66,19.92
+2024-01-03,Jugo de Naranja 1L,Bebidas,Romina Álvarez,Sucursal Norte,14,2.27,31.78
+2024-01-04,Milanesas de Cerdo 500g,Carnicería,Pablo Giménez,Sucursal Oeste,20,4.24,84.8
+2024-01-04,Chorizo x4,Carnicería,Tomás Ibáñez,Sucursal Sur,11,3.26,35.86
+2024-01-05,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Oeste,7,4.45,31.15
+2024-01-05,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Centro,9,2.05,18.45
+2024-01-06,Lechuga 1u,Frutas y Verduras,Romina Álvarez,Sucursal Centro,15,1.16,17.4
+2024-01-07,Lechuga 1u,Frutas y Verduras,Pablo Giménez,Sucursal Norte,10,1.29,12.9
+2024-01-07,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Norte,4,1.94,7.76
+2024-01-07,Agua Mineral 1.5L,Bebidas,Sofía Pereyra,Sucursal Norte,19,1.01,19.19
+2024-01-07,Asado 1kg,Carnicería,Marina Castillo,Sucursal Centro,4,7.12,28.48
+2024-01-08,Jabón de Tocador x3,Higiene,Sofía Pereyra,Sucursal Oeste,4,2.02,8.08
+2024-01-08,Queso Cremoso 400g,Lácteos,Pablo Giménez,Sucursal Norte,1,3.78,3.78
+2024-01-08,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,5,1.41,7.05
+2024-01-09,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Oeste,5,3.32,16.6
+2024-01-09,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Norte,19,2.7,51.3
+2024-01-09,Carne Molida 500g,Carnicería,Marina Castillo,Sucursal Centro,12,3.83,45.96
+2024-01-09,Medialunas x6,Panadería,Tomás Ibáñez,Sucursal Norte,10,3.02,30.2
+2024-01-10,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,13,1.75,22.75
+2024-01-11,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Sur,5,7.1,35.5
+2024-01-11,Galletitas Dulces 300g,Panadería,Pablo Giménez,Sucursal Centro,7,2.03,14.21
+2024-01-11,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,18,0.86,15.48
+2024-01-11,Detergente 750ml,Limpieza,Pablo Giménez,Sucursal Sur,1,2.02,2.02
+2024-01-13,Jugo de Naranja 1L,Bebidas,Romina Álvarez,Sucursal Oeste,4,2.12,8.48
+2024-01-14,Manzana Roja 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,20,1.58,31.6
+2024-01-15,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Centro,19,1.72,32.68
+2024-01-15,Aceite Girasol 900ml,Almacén,Nicolás Aguirre,Sucursal Oeste,11,2.74,30.14
+2024-01-15,Suavizante 900ml,Limpieza,Marina Castillo,Sucursal Centro,2,2.71,5.42
+2024-01-16,Pan Integral 400g,Panadería,Marina Castillo,Sucursal Centro,11,2.57,28.27
+2024-01-16,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Norte,10,4.47,44.7
+2024-01-16,Lechuga 1u,Frutas y Verduras,Sofía Pereyra,Sucursal Sur,14,1.18,16.52
+2024-01-17,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Norte,6,3.24,19.44
+2024-01-17,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Oeste,7,2.85,19.95
+2024-01-17,Sal Fina 500g,Almacén,Marina Castillo,Sucursal Norte,20,0.67,13.4
+2024-01-18,Tomate 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,20,1.93,38.6
+2024-01-18,Shampoo 400ml,Higiene,Nicolás Aguirre,Sucursal Oeste,9,3.44,30.96
+2024-01-18,Medialunas x6,Panadería,Marina Castillo,Sucursal Norte,16,2.68,42.88
+2024-01-19,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Sur,17,1.38,23.46
+2024-01-20,Harina 0000 1kg,Almacén,Pablo Giménez,Sucursal Norte,20,1.28,25.6
+2024-01-20,Medialunas x6,Panadería,Marina Castillo,Sucursal Centro,19,3.02,57.38
+2024-01-20,Suavizante 900ml,Limpieza,Tomás Ibáñez,Sucursal Sur,7,2.67,18.69
+2024-01-21,Manzana Roja 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Sur,11,1.56,17.16
+2024-01-21,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Norte,9,3.19,28.71
+2024-01-22,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Sur,8,1.06,8.48
+2024-01-22,Yogur Natural 500g,Lácteos,Romina Álvarez,Sucursal Centro,13,1.94,25.22
+2024-01-23,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Oeste,8,3.28,26.24
+2024-01-23,Azúcar 1kg,Almacén,Marina Castillo,Sucursal Norte,20,1.27,25.4
+2024-01-24,Crema de Leche 200ml,Lácteos,Sofía Pereyra,Sucursal Sur,18,1.65,29.7
+2024-01-24,Jugo de Naranja 1L,Bebidas,Tomás Ibáñez,Sucursal Oeste,10,2.15,21.5
+2024-01-24,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Centro,6,2.1,12.6
+2024-01-24,Papel Higiénico x4,Higiene,Romina Álvarez,Sucursal Norte,6,2.63,15.78
+2024-01-24,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Oeste,3,4.02,12.06
+2024-01-24,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Oeste,5,4.54,22.7
+2024-01-24,Agua Mineral 1.5L,Bebidas,Tomás Ibáñez,Sucursal Oeste,9,1.02,9.18
+2024-01-25,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Norte,15,3.07,46.05
+2024-01-26,Carne Molida 500g,Carnicería,Pablo Giménez,Sucursal Oeste,19,4.15,78.85
+2024-01-26,Medialunas x6,Panadería,Tomás Ibáñez,Sucursal Sur,18,2.82,50.76
+2024-01-27,Medialunas x6,Panadería,Marina Castillo,Sucursal Norte,11,3.03,33.33
+2024-01-27,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Centro,14,2.38,33.32
+2024-01-27,Azúcar 1kg,Almacén,Tomás Ibáñez,Sucursal Sur,2,1.3,2.6
+2024-01-28,Azúcar 1kg,Almacén,Pablo Giménez,Sucursal Centro,9,1.18,10.62
+2024-01-28,Pan Integral 400g,Panadería,Nicolás Aguirre,Sucursal Norte,18,2.58,46.44
+2024-01-28,Leche Entera 1L,Lácteos,Marina Castillo,Sucursal Centro,3,1.27,3.81
+2024-01-28,Galletitas Dulces 300g,Panadería,Sofía Pereyra,Sucursal Norte,15,1.99,29.85
+2024-01-29,Pan Integral 400g,Panadería,Tomás Ibáñez,Sucursal Norte,20,2.65,53.0
+2024-01-29,Tomate Triturado 400g,Almacén,Romina Álvarez,Sucursal Oeste,2,1.48,2.96
+2024-01-29,Chorizo x4,Carnicería,Pablo Giménez,Sucursal Norte,17,3.49,59.33
+2024-01-29,Banana 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,2,1.21,2.42
+2024-01-29,Pollo Entero 1kg,Carnicería,Marina Castillo,Sucursal Sur,17,4.06,69.02
+2024-01-29,Papel Higiénico x4,Higiene,Romina Álvarez,Sucursal Oeste,19,2.64,50.16
+2024-01-30,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,18,0.9,16.2
+2024-01-30,Cebolla 1kg,Frutas y Verduras,Marina Castillo,Sucursal Centro,6,0.95,5.7
+2024-01-30,Papel Higiénico x4,Higiene,Tomás Ibáñez,Sucursal Oeste,8,2.43,19.44
+2024-01-30,Manzana Roja 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,16,1.52,24.32
+2024-01-31,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Norte,4,6.9,27.6
+2024-01-31,Jugo de Naranja 1L,Bebidas,Marina Castillo,Sucursal Centro,18,2.2,39.6
+2024-02-01,Milanesas de Cerdo 500g,Carnicería,Tomás Ibáñez,Sucursal Sur,2,4.01,8.02
+2024-02-02,Queso Cremoso 400g,Lácteos,Marina Castillo,Sucursal Centro,11,3.44,37.84
+2024-02-02,Pan Lactal 500g,Panadería,Marina Castillo,Sucursal Sur,15,2.22,33.3
+2024-02-02,Cerveza 1L,Bebidas,Pablo Giménez,Sucursal Centro,7,3.05,21.35
+2024-02-02,Fideos Spaghetti 500g,Almacén,Romina Álvarez,Sucursal Norte,7,1.18,8.26
+2024-02-03,Leche Entera 1L,Lácteos,Nicolás Aguirre,Sucursal Norte,1,1.29,1.29
+2024-02-03,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,16,1.37,21.92
+2024-02-03,Tomate 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,12,1.79,21.48
+2024-02-03,Fideos Spaghetti 500g,Almacén,Tomás Ibáñez,Sucursal Oeste,18,1.21,21.78
+2024-02-03,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Sur,4,2.51,10.04
+2024-02-03,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Sur,18,1.9,34.2
+2024-02-04,Sal Fina 500g,Almacén,Marina Castillo,Sucursal Norte,15,0.7,10.5
+2024-02-04,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Sur,14,2.38,33.32
+2024-02-04,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Sur,14,1.09,15.26
+2024-02-05,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Sur,9,2.19,19.71
+2024-02-05,Tomate 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,12,1.77,21.24
+2024-02-05,Lentejas 500g,Almacén,Pablo Giménez,Sucursal Oeste,5,1.95,9.75
+2024-02-05,Banana 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,10,1.08,10.8
+2024-02-05,Yogur Natural 500g,Lácteos,Pablo Giménez,Sucursal Norte,17,1.78,30.26
+2024-02-05,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Centro,1,4.89,4.89
+2024-02-05,Lavandina 1L,Limpieza,Sofía Pereyra,Sucursal Sur,17,1.25,21.25
+2024-02-06,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Sur,18,2.61,46.98
+2024-02-06,Shampoo 400ml,Higiene,Tomás Ibáñez,Sucursal Sur,17,3.13,53.21
+2024-02-06,Sal Fina 500g,Almacén,Romina Álvarez,Sucursal Sur,8,0.74,5.92
+2024-02-07,Yogur Natural 500g,Lácteos,Pablo Giménez,Sucursal Sur,7,1.72,12.04
+2024-02-07,Crema de Leche 200ml,Lácteos,Pablo Giménez,Sucursal Sur,20,1.7,34.0
+2024-02-07,Manteca 200g,Lácteos,Nicolás Aguirre,Sucursal Oeste,7,2.25,15.75
+2024-02-07,Carne Molida 500g,Carnicería,Pablo Giménez,Sucursal Sur,9,3.66,32.94
+2024-02-07,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Centro,1,2.28,2.28
+2024-02-07,Jabón en Polvo 500g,Limpieza,Nicolás Aguirre,Sucursal Norte,15,2.37,35.55
+2024-02-08,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Sur,10,2.78,27.8
+2024-02-08,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,14,1.13,15.82
+2024-02-08,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Sur,3,2.59,7.77
+2024-02-08,Galletitas Dulces 300g,Panadería,Sofía Pereyra,Sucursal Oeste,10,2.07,20.7
+2024-02-08,Fideos Spaghetti 500g,Almacén,Sofía Pereyra,Sucursal Centro,10,1.2,12.0
+2024-02-09,Tomate 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,1,1.74,1.74
+2024-02-09,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Centro,8,1.44,11.52
+2024-02-09,Queso Cremoso 400g,Lácteos,Pablo Giménez,Sucursal Sur,19,3.43,65.17
+2024-02-09,Queso Cremoso 400g,Lácteos,Sofía Pereyra,Sucursal Oeste,7,3.48,24.36
+2024-02-10,Jabón de Tocador x3,Higiene,Tomás Ibáñez,Sucursal Centro,8,2.06,16.48
+2024-02-11,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Centro,17,1.47,24.99
+2024-02-11,Agua Mineral 1.5L,Bebidas,Sofía Pereyra,Sucursal Oeste,4,1.04,4.16
+2024-02-11,Carne Molida 500g,Carnicería,Sofía Pereyra,Sucursal Oeste,18,3.71,66.78
+2024-02-12,Fideos Spaghetti 500g,Almacén,Pablo Giménez,Sucursal Norte,1,1.08,1.08
+2024-02-12,Papel Higiénico x4,Higiene,Marina Castillo,Sucursal Centro,20,2.46,49.2
+2024-02-12,Gaseosa Cola 2.25L,Bebidas,Nicolás Aguirre,Sucursal Sur,3,2.92,8.76
+2024-02-13,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,13,4.17,54.21
+2024-02-13,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Centro,9,4.38,39.42
+2024-02-14,Fideos Spaghetti 500g,Almacén,Romina Álvarez,Sucursal Centro,3,1.05,3.15
+2024-02-14,Aceite Girasol 900ml,Almacén,Nicolás Aguirre,Sucursal Centro,3,2.74,8.22
+2024-02-14,Lechuga 1u,Frutas y Verduras,Romina Álvarez,Sucursal Norte,13,1.24,16.12
+2024-02-15,Sal Fina 500g,Almacén,Nicolás Aguirre,Sucursal Norte,8,0.77,6.16
+2024-02-15,Pollo Entero 1kg,Carnicería,Sofía Pereyra,Sucursal Sur,1,4.36,4.36
+2024-02-15,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,6,1.06,6.36
+2024-02-15,Banana 1kg,Frutas y Verduras,Marina Castillo,Sucursal Sur,3,1.07,3.21
+2024-02-15,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Centro,8,1.95,15.6
+2024-02-15,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Sur,2,2.82,5.64
+2024-02-15,Papel Higiénico x4,Higiene,Romina Álvarez,Sucursal Centro,16,2.65,42.4
+2024-02-16,Banana 1kg,Frutas y Verduras,Marina Castillo,Sucursal Oeste,20,1.06,21.2
+2024-02-16,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Oeste,4,2.02,8.08
+2024-02-16,Manteca 200g,Lácteos,Romina Álvarez,Sucursal Centro,20,2.2,44.0
+2024-02-16,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Centro,4,2.73,10.92
+2024-02-17,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,4,0.86,3.44
+2024-02-17,Pollo Entero 1kg,Carnicería,Pablo Giménez,Sucursal Norte,1,4.41,4.41
+2024-02-17,Chorizo x4,Carnicería,Sofía Pereyra,Sucursal Centro,15,3.45,51.75
+2024-02-18,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,11,0.96,10.56
+2024-02-18,Papel Higiénico x4,Higiene,Pablo Giménez,Sucursal Sur,2,2.53,5.06
+2024-02-18,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Sur,20,4.11,82.2
+2024-02-19,Galletitas Dulces 300g,Panadería,Pablo Giménez,Sucursal Centro,9,1.82,16.38
+2024-02-19,Papel Higiénico x4,Higiene,Tomás Ibáñez,Sucursal Centro,9,2.47,22.23
+2024-02-19,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Sur,11,2.24,24.64
+2024-02-19,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Norte,8,4.01,32.08
+2024-02-19,Asado 1kg,Carnicería,Sofía Pereyra,Sucursal Sur,3,6.84,20.52
+2024-02-20,Sal Fina 500g,Almacén,Romina Álvarez,Sucursal Norte,19,0.73,13.87
+2024-02-21,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Centro,10,2.02,20.2
+2024-02-21,Suavizante 900ml,Limpieza,Nicolás Aguirre,Sucursal Oeste,15,2.73,40.95
+2024-02-21,Leche Entera 1L,Lácteos,Romina Álvarez,Sucursal Oeste,20,1.15,23.0
+2024-02-21,Suavizante 900ml,Limpieza,Pablo Giménez,Sucursal Sur,16,2.97,47.52
+2024-02-21,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Norte,19,2.73,51.87
+2024-02-22,Papel Higiénico x4,Higiene,Tomás Ibáñez,Sucursal Sur,10,2.56,25.6
+2024-02-22,Manteca 200g,Lácteos,Nicolás Aguirre,Sucursal Centro,8,2.06,16.48
+2024-02-22,Lavandina 1L,Limpieza,Marina Castillo,Sucursal Oeste,1,1.24,1.24
+2024-02-22,Shampoo 400ml,Higiene,Romina Álvarez,Sucursal Oeste,1,3.19,3.19
+2024-02-23,Shampoo 400ml,Higiene,Tomás Ibáñez,Sucursal Oeste,10,3.46,34.6
+2024-02-23,Cerveza 1L,Bebidas,Sofía Pereyra,Sucursal Norte,8,3.4,27.2
+2024-02-23,Fideos Spaghetti 500g,Almacén,Pablo Giménez,Sucursal Oeste,4,1.11,4.44
+2024-02-24,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Sur,8,4.03,32.24
+2024-02-24,Pan Lactal 500g,Panadería,Nicolás Aguirre,Sucursal Norte,11,2.49,27.39
+2024-02-24,Pollo Entero 1kg,Carnicería,Pablo Giménez,Sucursal Oeste,10,4.44,44.4
+2024-02-24,Crema de Leche 200ml,Lácteos,Romina Álvarez,Sucursal Centro,15,1.53,22.95
+2024-02-25,Queso Cremoso 400g,Lácteos,Romina Álvarez,Sucursal Sur,13,3.61,46.93
+2024-02-25,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,11,1.09,11.99
+2024-02-25,Yogur Natural 500g,Lácteos,Romina Álvarez,Sucursal Sur,20,1.95,39.0
+2024-02-26,Pollo Entero 1kg,Carnicería,Nicolás Aguirre,Sucursal Norte,4,4.53,18.12
+2024-02-26,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,12,0.98,11.76
+2024-02-26,Jabón de Tocador x3,Higiene,Sofía Pereyra,Sucursal Sur,2,1.96,3.92
+2024-02-27,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Norte,7,2.6,18.2
+2024-02-27,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,11,1.61,17.71
+2024-02-27,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Centro,11,2.48,27.28
+2024-02-27,Queso Cremoso 400g,Lácteos,Marina Castillo,Sucursal Oeste,15,3.74,56.1
+2024-02-27,Cerveza 1L,Bebidas,Marina Castillo,Sucursal Centro,7,3.08,21.56
+2024-02-27,Galletitas Dulces 300g,Panadería,Romina Álvarez,Sucursal Sur,13,1.85,24.05
+2024-02-28,Pan Integral 400g,Panadería,Nicolás Aguirre,Sucursal Centro,17,2.48,42.16
+2024-02-28,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Norte,3,0.99,2.97
+2024-02-28,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Centro,6,6.47,38.82
+2024-02-28,Pan Integral 400g,Panadería,Sofía Pereyra,Sucursal Sur,7,2.5,17.5
+2024-02-29,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Sur,9,3.02,27.18
+2024-02-29,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Sur,1,1.7,1.7
+2024-02-29,Gaseosa Cola 2.25L,Bebidas,Tomás Ibáñez,Sucursal Centro,16,2.8,44.8
+2024-03-01,Leche Entera 1L,Lácteos,Romina Álvarez,Sucursal Centro,10,1.25,12.5
+2024-03-01,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Oeste,2,1.48,2.96
+2024-03-01,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,1,0.92,0.92
+2024-03-02,Medialunas x6,Panadería,Tomás Ibáñez,Sucursal Centro,17,2.69,45.73
+2024-03-02,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Norte,17,2.24,38.08
+2024-03-03,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Oeste,4,1.37,5.48
+2024-03-03,Manteca 200g,Lácteos,Tomás Ibáñez,Sucursal Oeste,18,2.07,37.26
+2024-03-03,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Sur,5,1.67,8.35
+2024-03-03,Cerveza 1L,Bebidas,Pablo Giménez,Sucursal Oeste,8,3.12,24.96
+2024-03-03,Manteca 200g,Lácteos,Nicolás Aguirre,Sucursal Centro,9,2.28,20.52
+2024-03-03,Cerveza 1L,Bebidas,Marina Castillo,Sucursal Norte,19,3.18,60.42
+2024-03-05,Galletitas Dulces 300g,Panadería,Nicolás Aguirre,Sucursal Centro,18,2.07,37.26
+2024-03-05,Jabón de Tocador x3,Higiene,Sofía Pereyra,Sucursal Centro,19,2.07,39.33
+2024-03-05,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Norte,16,4.89,78.24
+2024-03-05,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Sur,20,1.6,32.0
+2024-03-05,Lechuga 1u,Frutas y Verduras,Sofía Pereyra,Sucursal Sur,4,1.18,4.72
+2024-03-05,Carne Molida 500g,Carnicería,Marina Castillo,Sucursal Oeste,12,3.73,44.76
+2024-03-05,Lechuga 1u,Frutas y Verduras,Pablo Giménez,Sucursal Norte,14,1.25,17.5
+2024-03-05,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Centro,1,2.93,2.93
+2024-03-05,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Norte,16,2.98,47.68
+2024-03-06,Carne Molida 500g,Carnicería,Marina Castillo,Sucursal Sur,7,3.95,27.65
+2024-03-06,Jabón de Tocador x3,Higiene,Romina Álvarez,Sucursal Norte,18,1.96,35.28
+2024-03-06,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Norte,18,3.68,66.24
+2024-03-06,Lentejas 500g,Almacén,Pablo Giménez,Sucursal Sur,8,1.84,14.72
+2024-03-06,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,9,1.46,13.14
+2024-03-06,Harina 0000 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,13,1.34,17.42
+2024-03-07,Queso Cremoso 400g,Lácteos,Romina Álvarez,Sucursal Sur,11,3.38,37.18
+2024-03-08,Jugo de Naranja 1L,Bebidas,Sofía Pereyra,Sucursal Norte,3,2.39,7.17
+2024-03-08,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Sur,17,1.67,28.39
+2024-03-08,Tomate 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,15,1.77,26.55
+2024-03-08,Harina 0000 1kg,Almacén,Nicolás Aguirre,Sucursal Centro,19,1.25,23.75
+2024-03-08,Medialunas x6,Panadería,Romina Álvarez,Sucursal Norte,15,2.77,41.55
+2024-03-08,Carne Molida 500g,Carnicería,Sofía Pereyra,Sucursal Norte,16,3.62,57.92
+2024-03-08,Queso Cremoso 400g,Lácteos,Marina Castillo,Sucursal Norte,19,3.33,63.27
+2024-03-09,Pan Lactal 500g,Panadería,Marina Castillo,Sucursal Centro,13,2.27,29.51
+2024-03-09,Yogur Natural 500g,Lácteos,Tomás Ibáñez,Sucursal Sur,16,1.9,30.4
+2024-03-10,Pan Integral 400g,Panadería,Marina Castillo,Sucursal Sur,1,2.48,2.48
+2024-03-10,Crema de Leche 200ml,Lácteos,Pablo Giménez,Sucursal Norte,3,1.73,5.19
+2024-03-10,Tomate 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,7,1.9,13.3
+2024-03-10,Harina 0000 1kg,Almacén,Romina Álvarez,Sucursal Sur,16,1.32,21.12
+2024-03-11,Arroz Largo Fino 1kg,Almacén,Marina Castillo,Sucursal Oeste,2,1.44,2.88
+2024-03-11,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Oeste,8,1.72,13.76
+2024-03-11,Papel Higiénico x4,Higiene,Marina Castillo,Sucursal Norte,6,2.72,16.32
+2024-03-11,Fideos Spaghetti 500g,Almacén,Sofía Pereyra,Sucursal Oeste,6,1.13,6.78
+2024-03-11,Fideos Spaghetti 500g,Almacén,Romina Álvarez,Sucursal Centro,14,1.11,15.54
+2024-03-12,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Centro,17,3.74,63.58
+2024-03-12,Lechuga 1u,Frutas y Verduras,Marina Castillo,Sucursal Centro,7,1.23,8.61
+2024-03-12,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Sur,2,2.12,4.24
+2024-03-12,Lavandina 1L,Limpieza,Sofía Pereyra,Sucursal Sur,16,1.25,20.0
+2024-03-13,Tomate Triturado 400g,Almacén,Pablo Giménez,Sucursal Sur,18,1.52,27.36
+2024-03-14,Asado 1kg,Carnicería,Sofía Pereyra,Sucursal Norte,13,6.78,88.14
+2024-03-14,Tomate Triturado 400g,Almacén,Tomás Ibáñez,Sucursal Sur,9,1.43,12.87
+2024-03-14,Arroz Largo Fino 1kg,Almacén,Nicolás Aguirre,Sucursal Centro,11,1.36,14.96
+2024-03-15,Suavizante 900ml,Limpieza,Marina Castillo,Sucursal Centro,13,2.66,34.58
+2024-03-15,Manteca 200g,Lácteos,Marina Castillo,Sucursal Sur,12,2.04,24.48
+2024-03-15,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Centro,5,1.36,6.8
+2024-03-15,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Centro,10,3.14,31.4
+2024-03-15,Queso Cremoso 400g,Lácteos,Nicolás Aguirre,Sucursal Norte,9,3.35,30.15
+2024-03-15,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,11,1.45,15.95
+2024-03-15,Suavizante 900ml,Limpieza,Tomás Ibáñez,Sucursal Norte,9,2.87,25.83
+2024-03-16,Agua Mineral 1.5L,Bebidas,Marina Castillo,Sucursal Sur,9,1.03,9.27
+2024-03-16,Shampoo 400ml,Higiene,Nicolás Aguirre,Sucursal Sur,18,3.51,63.18
+2024-03-17,Leche Entera 1L,Lácteos,Marina Castillo,Sucursal Oeste,2,1.31,2.62
+2024-03-17,Harina 0000 1kg,Almacén,Marina Castillo,Sucursal Norte,5,1.3,6.5
+2024-03-17,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Oeste,20,1.09,21.8
+2024-03-17,Banana 1kg,Frutas y Verduras,Marina Castillo,Sucursal Sur,4,1.08,4.32
+2024-03-17,Jabón de Tocador x3,Higiene,Marina Castillo,Sucursal Norte,6,1.83,10.98
+2024-03-17,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Norte,14,4.5,63.0
+2024-03-18,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Centro,20,2.71,54.2
+2024-03-18,Queso Cremoso 400g,Lácteos,Tomás Ibáñez,Sucursal Centro,16,3.82,61.12
+2024-03-18,Suavizante 900ml,Limpieza,Marina Castillo,Sucursal Oeste,12,2.84,34.08
+2024-03-19,Lavandina 1L,Limpieza,Marina Castillo,Sucursal Norte,10,1.41,14.1
+2024-03-19,Tomate Triturado 400g,Almacén,Tomás Ibáñez,Sucursal Oeste,3,1.48,4.44
+2024-03-19,Carne Molida 500g,Carnicería,Pablo Giménez,Sucursal Oeste,13,4.1,53.3
+2024-03-19,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Centro,5,4.43,22.15
+2024-03-20,Pan Integral 400g,Panadería,Tomás Ibáñez,Sucursal Centro,12,2.68,32.16
+2024-03-20,Shampoo 400ml,Higiene,Sofía Pereyra,Sucursal Centro,9,3.4,30.6
+2024-03-20,Jabón de Tocador x3,Higiene,Marina Castillo,Sucursal Oeste,9,1.99,17.91
+2024-03-20,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Oeste,2,2.44,4.88
+2024-03-21,Sal Fina 500g,Almacén,Marina Castillo,Sucursal Sur,7,0.67,4.69
+2024-03-21,Tomate 1kg,Frutas y Verduras,Marina Castillo,Sucursal Oeste,19,1.81,34.39
+2024-03-22,Gaseosa Cola 2.25L,Bebidas,Pablo Giménez,Sucursal Norte,14,2.68,37.52
+2024-03-22,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,11,1.1,12.1
+2024-03-22,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,13,1.5,19.5
+2024-03-22,Shampoo 400ml,Higiene,Tomás Ibáñez,Sucursal Oeste,4,3.24,12.96
+2024-03-23,Tomate Triturado 400g,Almacén,Pablo Giménez,Sucursal Norte,19,1.58,30.02
+2024-03-23,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,4,1.38,5.52
+2024-03-23,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,4,1.05,4.2
+2024-03-23,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Norte,9,2.53,22.77
+2024-03-23,Banana 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,17,1.19,20.23
+2024-03-24,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Centro,20,2.95,59.0
+2024-03-24,Jugo de Naranja 1L,Bebidas,Tomás Ibáñez,Sucursal Centro,1,2.17,2.17
+2024-03-25,Suavizante 900ml,Limpieza,Nicolás Aguirre,Sucursal Norte,15,2.89,43.35
+2024-03-26,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,8,1.73,13.84
+2024-03-26,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Centro,17,2.21,37.57
+2024-03-26,Yogur Natural 500g,Lácteos,Nicolás Aguirre,Sucursal Centro,1,1.85,1.85
+2024-03-26,Pan Lactal 500g,Panadería,Nicolás Aguirre,Sucursal Oeste,19,2.46,46.74
+2024-03-27,Chorizo x4,Carnicería,Pablo Giménez,Sucursal Sur,8,3.22,25.76
+2024-03-27,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Centro,13,6.42,83.46
+2024-03-27,Detergente 750ml,Limpieza,Pablo Giménez,Sucursal Sur,19,2.02,38.38
+2024-03-27,Papel Higiénico x4,Higiene,Tomás Ibáñez,Sucursal Centro,2,2.49,4.98
+2024-03-28,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,12,1.68,20.16
+2024-03-28,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Oeste,18,4.43,79.74
+2024-03-29,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Sur,8,2.55,20.4
+2024-03-29,Jabón en Polvo 500g,Limpieza,Romina Álvarez,Sucursal Centro,7,2.52,17.64
+2024-03-29,Jabón en Polvo 500g,Limpieza,Tomás Ibáñez,Sucursal Sur,4,2.4,9.6
+2024-03-29,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Centro,4,2.44,9.76
+2024-03-29,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,19,1.16,22.04
+2024-03-30,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Sur,7,2.63,18.41
+2024-03-30,Gaseosa Cola 2.25L,Bebidas,Nicolás Aguirre,Sucursal Norte,2,2.82,5.64
+2024-03-30,Asado 1kg,Carnicería,Marina Castillo,Sucursal Centro,10,6.82,68.2
+2024-03-31,Jugo de Naranja 1L,Bebidas,Nicolás Aguirre,Sucursal Centro,20,2.41,48.2
+2024-03-31,Detergente 750ml,Limpieza,Pablo Giménez,Sucursal Centro,12,2.15,25.8
+2024-03-31,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Sur,4,6.51,26.04
+2024-03-31,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Centro,3,1.07,3.21
+2024-03-31,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Oeste,20,1.3,26.0
+2024-04-01,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Centro,17,1.85,31.45
+2024-04-01,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Centro,14,1.45,20.3
+2024-04-02,Asado 1kg,Carnicería,Pablo Giménez,Sucursal Oeste,9,6.23,56.07
+2024-04-02,Jabón en Polvo 500g,Limpieza,Nicolás Aguirre,Sucursal Norte,9,2.32,20.88
+2024-04-03,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,15,3.8,57.0
+2024-04-04,Pollo Entero 1kg,Carnicería,Romina Álvarez,Sucursal Sur,9,4.56,41.04
+2024-04-04,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,4,0.91,3.64
+2024-04-04,Pan Integral 400g,Panadería,Nicolás Aguirre,Sucursal Sur,18,2.74,49.32
+2024-04-04,Manteca 200g,Lácteos,Tomás Ibáñez,Sucursal Oeste,3,2.22,6.66
+2024-04-04,Shampoo 400ml,Higiene,Nicolás Aguirre,Sucursal Oeste,19,3.07,58.33
+2024-04-04,Pan Lactal 500g,Panadería,Marina Castillo,Sucursal Norte,20,2.29,45.8
+2024-04-05,Asado 1kg,Carnicería,Nicolás Aguirre,Sucursal Oeste,20,7.05,141.0
+2024-04-05,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Norte,5,1.69,8.45
+2024-04-05,Agua Mineral 1.5L,Bebidas,Sofía Pereyra,Sucursal Centro,13,0.95,12.35
+2024-04-05,Shampoo 400ml,Higiene,Marina Castillo,Sucursal Centro,9,3.04,27.36
+2024-04-06,Medialunas x6,Panadería,Romina Álvarez,Sucursal Oeste,1,2.99,2.99
+2024-04-06,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Sur,4,1.72,6.88
+2024-04-06,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Norte,17,3.07,52.19
+2024-04-06,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Sur,2,2.44,4.88
+2024-04-06,Leche Entera 1L,Lácteos,Nicolás Aguirre,Sucursal Norte,19,1.29,24.51
+2024-04-07,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Centro,6,0.98,5.88
+2024-04-07,Sal Fina 500g,Almacén,Romina Álvarez,Sucursal Sur,1,0.69,0.69
+2024-04-08,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Sur,9,1.85,16.65
+2024-04-08,Vino Tinto 750ml,Bebidas,Tomás Ibáñez,Sucursal Oeste,13,4.82,62.66
+2024-04-08,Aceite Girasol 900ml,Almacén,Pablo Giménez,Sucursal Norte,15,2.64,39.6
+2024-04-09,Tomate 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,7,1.8,12.6
+2024-04-09,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Norte,13,3.08,40.04
+2024-04-09,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Oeste,17,1.5,25.5
+2024-04-09,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,12,0.97,11.64
+2024-04-09,Leche Entera 1L,Lácteos,Tomás Ibáñez,Sucursal Oeste,20,1.2,24.0
+2024-04-09,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Norte,11,1.43,15.73
+2024-04-10,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,12,1.06,12.72
+2024-04-10,Manzana Roja 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Centro,7,1.62,11.34
+2024-04-10,Azúcar 1kg,Almacén,Sofía Pereyra,Sucursal Centro,4,1.32,5.28
+2024-04-11,Pollo Entero 1kg,Carnicería,Romina Álvarez,Sucursal Centro,14,4.53,63.42
+2024-04-11,Tomate 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,10,1.83,18.3
+2024-04-11,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Oeste,20,2.29,45.8
+2024-04-12,Yogur Natural 500g,Lácteos,Romina Álvarez,Sucursal Centro,10,1.98,19.8
+2024-04-12,Shampoo 400ml,Higiene,Romina Álvarez,Sucursal Sur,16,3.11,49.76
+2024-04-13,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Sur,14,2.44,34.16
+2024-04-13,Harina 0000 1kg,Almacén,Nicolás Aguirre,Sucursal Norte,18,1.39,25.02
+2024-04-13,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Sur,3,4.44,13.32
+2024-04-13,Fideos Spaghetti 500g,Almacén,Pablo Giménez,Sucursal Oeste,2,1.13,2.26
+2024-04-14,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,9,1.55,13.95
+2024-04-14,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Norte,1,2.35,2.35
+2024-04-14,Leche Entera 1L,Lácteos,Romina Álvarez,Sucursal Norte,20,1.24,24.8
+2024-04-14,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Norte,4,2.52,10.08
+2024-04-14,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Norte,14,2.62,36.68
+2024-04-15,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Sur,14,1.91,26.74
+2024-04-15,Medialunas x6,Panadería,Pablo Giménez,Sucursal Centro,2,2.89,5.78
+2024-04-15,Cebolla 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,2,0.9,1.8
+2024-04-16,Pollo Entero 1kg,Carnicería,Pablo Giménez,Sucursal Oeste,13,4.28,55.64
+2024-04-16,Crema de Leche 200ml,Lácteos,Nicolás Aguirre,Sucursal Oeste,9,1.66,14.94
+2024-04-16,Detergente 750ml,Limpieza,Pablo Giménez,Sucursal Sur,16,2.19,35.04
+2024-04-16,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,3,0.93,2.79
+2024-04-16,Papa 2kg,Frutas y Verduras,Romina Álvarez,Sucursal Centro,6,1.49,8.94
+2024-04-16,Chorizo x4,Carnicería,Nicolás Aguirre,Sucursal Centro,16,3.43,54.88
+2024-04-18,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Oeste,13,4.35,56.55
+2024-04-18,Galletitas Dulces 300g,Panadería,Romina Álvarez,Sucursal Norte,16,1.81,28.96
+2024-04-18,Papa 2kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,5,1.44,7.2
+2024-04-18,Leche Entera 1L,Lácteos,Pablo Giménez,Sucursal Oeste,8,1.19,9.52
+2024-04-18,Cerveza 1L,Bebidas,Nicolás Aguirre,Sucursal Norte,12,3.39,40.68
+2024-04-18,Tomate Triturado 400g,Almacén,Tomás Ibáñez,Sucursal Norte,12,1.55,18.6
+2024-04-18,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Norte,18,3.12,56.16
+2024-04-18,Jabón en Polvo 500g,Limpieza,Sofía Pereyra,Sucursal Norte,13,2.47,32.11
+2024-04-18,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Centro,19,2.65,50.35
+2024-04-18,Pollo Entero 1kg,Carnicería,Marina Castillo,Sucursal Sur,8,4.12,32.96
+2024-04-20,Fideos Spaghetti 500g,Almacén,Marina Castillo,Sucursal Norte,15,1.17,17.55
+2024-04-20,Queso Cremoso 400g,Lácteos,Tomás Ibáñez,Sucursal Oeste,5,3.64,18.2
+2024-04-21,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,11,1.55,17.05
+2024-04-21,Sal Fina 500g,Almacén,Tomás Ibáñez,Sucursal Sur,17,0.73,12.41
+2024-04-21,Cebolla 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,4,0.86,3.44
+2024-04-21,Lechuga 1u,Frutas y Verduras,Nicolás Aguirre,Sucursal Centro,6,1.19,7.14
+2024-04-21,Manzana Roja 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Sur,20,1.56,31.2
+2024-04-21,Lechuga 1u,Frutas y Verduras,Nicolás Aguirre,Sucursal Centro,16,1.31,20.96
+2024-04-22,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Oeste,12,4.68,56.16
+2024-04-22,Papel Higiénico x4,Higiene,Sofía Pereyra,Sucursal Sur,13,2.61,33.93
+2024-04-22,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,20,1.64,32.8
+2024-04-22,Carne Molida 500g,Carnicería,Pablo Giménez,Sucursal Oeste,6,3.99,23.94
+2024-04-22,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Norte,7,1.52,10.64
+2024-04-22,Jugo de Naranja 1L,Bebidas,Nicolás Aguirre,Sucursal Norte,14,2.26,31.64
+2024-04-23,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Oeste,15,1.41,21.15
+2024-04-23,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Sur,20,2.72,54.4
+2024-04-24,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Norte,20,3.97,79.4
+2024-04-25,Manteca 200g,Lácteos,Romina Álvarez,Sucursal Sur,7,2.08,14.56
+2024-04-25,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Centro,18,2.38,42.84
+2024-04-25,Lavandina 1L,Limpieza,Romina Álvarez,Sucursal Oeste,10,1.31,13.1
+2024-04-26,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Oeste,20,1.56,31.2
+2024-04-26,Detergente 750ml,Limpieza,Pablo Giménez,Sucursal Oeste,4,2.15,8.6
+2024-04-26,Lavandina 1L,Limpieza,Nicolás Aguirre,Sucursal Sur,1,1.34,1.34
+2024-04-26,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Norte,17,3.8,64.6
+2024-04-26,Lavandina 1L,Limpieza,Marina Castillo,Sucursal Oeste,13,1.31,17.03
+2024-04-26,Pollo Entero 1kg,Carnicería,Romina Álvarez,Sucursal Sur,10,4.59,45.9
+2024-04-26,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Oeste,16,2.67,42.72
+2024-04-26,Lentejas 500g,Almacén,Tomás Ibáñez,Sucursal Centro,17,1.77,30.09
+2024-04-27,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Norte,6,1.6,9.6
+2024-04-27,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Sur,7,4.48,31.36
+2024-04-27,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,11,1.51,16.61
+2024-04-28,Tomate 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,4,1.96,7.84
+2024-04-28,Vino Tinto 750ml,Bebidas,Nicolás Aguirre,Sucursal Norte,3,4.9,14.7
+2024-04-28,Manteca 200g,Lácteos,Marina Castillo,Sucursal Norte,16,2.0,32.0
+2024-04-28,Yogur Natural 500g,Lácteos,Sofía Pereyra,Sucursal Norte,1,1.74,1.74
+2024-04-29,Suavizante 900ml,Limpieza,Nicolás Aguirre,Sucursal Norte,4,2.86,11.44
+2024-04-29,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Sur,7,2.4,16.8
+2024-04-29,Asado 1kg,Carnicería,Tomás Ibáñez,Sucursal Centro,9,6.43,57.87
+2024-04-29,Lechuga 1u,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,16,1.26,20.16
+2024-04-30,Tomate Triturado 400g,Almacén,Nicolás Aguirre,Sucursal Centro,14,1.54,21.56
+2024-04-30,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Centro,20,2.62,52.4
+2024-04-30,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Sur,11,1.39,15.29
+2024-04-30,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Norte,15,4.41,66.15
+2024-05-01,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Oeste,1,3.94,3.94
+2024-05-02,Papa 2kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,10,1.35,13.5
+2024-05-02,Jabón de Tocador x3,Higiene,Tomás Ibáñez,Sucursal Sur,19,1.85,35.15
+2024-05-02,Jabón en Polvo 500g,Limpieza,Tomás Ibáñez,Sucursal Sur,7,2.35,16.45
+2024-05-02,Cerveza 1L,Bebidas,Marina Castillo,Sucursal Sur,15,3.1,46.5
+2024-05-02,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Oeste,17,4.47,75.99
+2024-05-02,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Norte,18,1.48,26.64
+2024-05-03,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Oeste,19,1.8,34.2
+2024-05-03,Vino Tinto 750ml,Bebidas,Nicolás Aguirre,Sucursal Centro,5,4.94,24.7
+2024-05-03,Arroz Largo Fino 1kg,Almacén,Marina Castillo,Sucursal Oeste,15,1.39,20.85
+2024-05-03,Jabón de Tocador x3,Higiene,Nicolás Aguirre,Sucursal Centro,15,2.04,30.6
+2024-05-04,Manzana Roja 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,1,1.62,1.62
+2024-05-04,Fideos Spaghetti 500g,Almacén,Tomás Ibáñez,Sucursal Centro,14,1.19,16.66
+2024-05-04,Jugo de Naranja 1L,Bebidas,Marina Castillo,Sucursal Centro,10,2.11,21.1
+2024-05-05,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,8,0.98,7.84
+2024-05-05,Manteca 200g,Lácteos,Romina Álvarez,Sucursal Oeste,18,2.09,37.62
+2024-05-05,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,8,4.16,33.28
+2024-05-05,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Oeste,1,4.04,4.04
+2024-05-05,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Oeste,8,1.54,12.32
+2024-05-06,Milanesas de Cerdo 500g,Carnicería,Pablo Giménez,Sucursal Sur,2,4.46,8.92
+2024-05-06,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Oeste,18,2.73,49.14
+2024-05-06,Medialunas x6,Panadería,Marina Castillo,Sucursal Oeste,7,2.94,20.58
+2024-05-07,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Norte,6,1.36,8.16
+2024-05-07,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Oeste,1,3.38,3.38
+2024-05-08,Asado 1kg,Carnicería,Nicolás Aguirre,Sucursal Sur,6,6.56,39.36
+2024-05-08,Queso Cremoso 400g,Lácteos,Tomás Ibáñez,Sucursal Sur,8,3.64,29.12
+2024-05-08,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Centro,17,1.51,25.67
+2024-05-09,Yogur Natural 500g,Lácteos,Romina Álvarez,Sucursal Norte,2,1.8,3.6
+2024-05-10,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Norte,11,4.01,44.11
+2024-05-11,Lechuga 1u,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,14,1.3,18.2
+2024-05-11,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Oeste,10,1.37,13.7
+2024-05-11,Cerveza 1L,Bebidas,Nicolás Aguirre,Sucursal Oeste,2,2.95,5.9
+2024-05-11,Asado 1kg,Carnicería,Sofía Pereyra,Sucursal Sur,11,6.68,73.48
+2024-05-11,Lentejas 500g,Almacén,Pablo Giménez,Sucursal Norte,19,1.82,34.58
+2024-05-11,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Oeste,19,1.51,28.69
+2024-05-11,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Centro,2,3.17,6.34
+2024-05-11,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Oeste,16,1.0,16.0
+2024-05-12,Jugo de Naranja 1L,Bebidas,Marina Castillo,Sucursal Centro,18,2.23,40.14
+2024-05-13,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,20,1.64,32.8
+2024-05-13,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Norte,19,2.05,38.95
+2024-05-13,Medialunas x6,Panadería,Marina Castillo,Sucursal Sur,7,2.9,20.3
+2024-05-13,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Oeste,8,1.63,13.04
+2024-05-14,Gaseosa Cola 2.25L,Bebidas,Pablo Giménez,Sucursal Centro,1,3.01,3.01
+2024-05-14,Medialunas x6,Panadería,Sofía Pereyra,Sucursal Sur,2,3.07,6.14
+2024-05-15,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Oeste,5,1.0,5.0
+2024-05-15,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,1,1.17,1.17
+2024-05-15,Crema de Leche 200ml,Lácteos,Pablo Giménez,Sucursal Sur,9,1.53,13.77
+2024-05-15,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,11,0.96,10.56
+2024-05-15,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Sur,9,2.13,19.17
+2024-05-17,Cerveza 1L,Bebidas,Pablo Giménez,Sucursal Centro,6,3.29,19.74
+2024-05-17,Jugo de Naranja 1L,Bebidas,Pablo Giménez,Sucursal Oeste,14,2.29,32.06
+2024-05-17,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Oeste,3,2.32,6.96
+2024-05-17,Pan Lactal 500g,Panadería,Tomás Ibáñez,Sucursal Centro,17,2.33,39.61
+2024-05-17,Crema de Leche 200ml,Lácteos,Nicolás Aguirre,Sucursal Oeste,14,1.68,23.52
+2024-05-17,Yogur Natural 500g,Lácteos,Marina Castillo,Sucursal Sur,4,1.95,7.8
+2024-05-17,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Sur,4,2.67,10.68
+2024-05-18,Asado 1kg,Carnicería,Pablo Giménez,Sucursal Oeste,8,6.78,54.24
+2024-05-18,Crema de Leche 200ml,Lácteos,Sofía Pereyra,Sucursal Sur,5,1.66,8.3
+2024-05-18,Suavizante 900ml,Limpieza,Tomás Ibáñez,Sucursal Oeste,3,2.84,8.52
+2024-05-18,Fideos Spaghetti 500g,Almacén,Marina Castillo,Sucursal Oeste,1,1.1,1.1
+2024-05-18,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Norte,13,4.6,59.8
+2024-05-19,Cerveza 1L,Bebidas,Nicolás Aguirre,Sucursal Sur,11,3.31,36.41
+2024-05-20,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Sur,19,2.99,56.81
+2024-05-20,Azúcar 1kg,Almacén,Romina Álvarez,Sucursal Centro,19,1.19,22.61
+2024-05-20,Lentejas 500g,Almacén,Marina Castillo,Sucursal Norte,1,1.89,1.89
+2024-05-20,Lechuga 1u,Frutas y Verduras,Nicolás Aguirre,Sucursal Oeste,15,1.32,19.8
+2024-05-20,Tomate Triturado 400g,Almacén,Romina Álvarez,Sucursal Norte,11,1.54,16.94
+2024-05-20,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Oeste,20,2.86,57.2
+2024-05-21,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Norte,1,2.72,2.72
+2024-05-21,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Sur,7,1.61,11.27
+2024-05-21,Papa 2kg,Frutas y Verduras,Marina Castillo,Sucursal Centro,3,1.52,4.56
+2024-05-21,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Norte,14,4.09,57.26
+2024-05-22,Sal Fina 500g,Almacén,Romina Álvarez,Sucursal Oeste,19,0.73,13.87
+2024-05-22,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Norte,15,4.01,60.15
+2024-05-22,Azúcar 1kg,Almacén,Tomás Ibáñez,Sucursal Centro,4,1.16,4.64
+2024-05-22,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Centro,15,3.32,49.8
+2024-05-23,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Norte,17,3.29,55.93
+2024-05-23,Manzana Roja 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,3,1.64,4.92
+2024-05-23,Harina 0000 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,2,1.33,2.66
+2024-05-23,Fideos Spaghetti 500g,Almacén,Tomás Ibáñez,Sucursal Norte,2,1.11,2.22
+2024-05-23,Manzana Roja 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Oeste,19,1.66,31.54
+2024-05-24,Tomate 1kg,Frutas y Verduras,Marina Castillo,Sucursal Oeste,20,1.89,37.8
+2024-05-24,Detergente 750ml,Limpieza,Sofía Pereyra,Sucursal Oeste,7,2.01,14.07
+2024-05-26,Cerveza 1L,Bebidas,Nicolás Aguirre,Sucursal Sur,14,3.34,46.76
+2024-05-26,Queso Cremoso 400g,Lácteos,Pablo Giménez,Sucursal Oeste,10,3.49,34.9
+2024-05-26,Galletitas Dulces 300g,Panadería,Pablo Giménez,Sucursal Centro,12,1.93,23.16
+2024-05-27,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Sur,15,2.49,37.35
+2024-05-27,Suavizante 900ml,Limpieza,Tomás Ibáñez,Sucursal Sur,10,2.99,29.9
+2024-05-28,Shampoo 400ml,Higiene,Romina Álvarez,Sucursal Sur,9,3.3,29.7
+2024-05-28,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Sur,17,1.81,30.77
+2024-05-28,Azúcar 1kg,Almacén,Romina Álvarez,Sucursal Sur,13,1.17,15.21
+2024-05-28,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Centro,18,4.38,78.84
+2024-05-29,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,3,1.11,3.33
+2024-05-29,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,10,0.96,9.6
+2024-05-29,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Centro,16,1.06,16.96
+2024-05-29,Azúcar 1kg,Almacén,Nicolás Aguirre,Sucursal Norte,19,1.24,23.56
+2024-05-30,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Norte,10,2.17,21.7
+2024-05-30,Sal Fina 500g,Almacén,Tomás Ibáñez,Sucursal Centro,1,0.71,0.71
+2024-05-31,Aceite Girasol 900ml,Almacén,Pablo Giménez,Sucursal Oeste,14,2.86,40.04
+2024-05-31,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Sur,17,1.52,25.84
+2024-05-31,Vino Tinto 750ml,Bebidas,Nicolás Aguirre,Sucursal Norte,3,4.67,14.01
+2024-05-31,Carne Molida 500g,Carnicería,Marina Castillo,Sucursal Norte,16,3.83,61.28
+2024-05-31,Azúcar 1kg,Almacén,Sofía Pereyra,Sucursal Norte,1,1.24,1.24
+2024-05-31,Manteca 200g,Lácteos,Pablo Giménez,Sucursal Centro,20,2.02,40.4
+2024-05-31,Cerveza 1L,Bebidas,Marina Castillo,Sucursal Norte,9,3.11,27.99
+2024-06-02,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Norte,12,1.8,21.6
+2024-06-02,Queso Cremoso 400g,Lácteos,Sofía Pereyra,Sucursal Norte,4,3.6,14.4
+2024-06-03,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Centro,12,3.71,44.52
+2024-06-03,Queso Cremoso 400g,Lácteos,Tomás Ibáñez,Sucursal Centro,6,3.63,21.78
+2024-06-03,Crema de Leche 200ml,Lácteos,Romina Álvarez,Sucursal Sur,17,1.65,28.05
+2024-06-03,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Norte,3,1.69,5.07
+2024-06-03,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,7,1.45,10.15
+2024-06-04,Lechuga 1u,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,3,1.27,3.81
+2024-06-04,Pan Lactal 500g,Panadería,Romina Álvarez,Sucursal Centro,19,2.5,47.5
+2024-06-04,Tomate Triturado 400g,Almacén,Pablo Giménez,Sucursal Norte,10,1.55,15.5
+2024-06-04,Crema de Leche 200ml,Lácteos,Pablo Giménez,Sucursal Sur,13,1.54,20.02
+2024-06-05,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,16,0.86,13.76
+2024-06-05,Fideos Spaghetti 500g,Almacén,Pablo Giménez,Sucursal Norte,14,1.17,16.38
+2024-06-05,Crema de Leche 200ml,Lácteos,Sofía Pereyra,Sucursal Norte,13,1.72,22.36
+2024-06-05,Jugo de Naranja 1L,Bebidas,Marina Castillo,Sucursal Oeste,12,2.17,26.04
+2024-06-06,Jabón de Tocador x3,Higiene,Romina Álvarez,Sucursal Centro,15,2.07,31.05
+2024-06-07,Vino Tinto 750ml,Bebidas,Nicolás Aguirre,Sucursal Norte,15,4.32,64.8
+2024-06-07,Lavandina 1L,Limpieza,Sofía Pereyra,Sucursal Sur,2,1.33,2.66
+2024-06-08,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Centro,14,3.38,47.32
+2024-06-08,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Oeste,4,0.93,3.72
+2024-06-09,Tomate 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,12,1.89,22.68
+2024-06-09,Aceite Girasol 900ml,Almacén,Tomás Ibáñez,Sucursal Oeste,2,2.48,4.96
+2024-06-09,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Centro,19,1.34,25.46
+2024-06-10,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Norte,13,3.77,49.01
+2024-06-10,Jabón de Tocador x3,Higiene,Marina Castillo,Sucursal Centro,1,1.83,1.83
+2024-06-10,Vino Tinto 750ml,Bebidas,Tomás Ibáñez,Sucursal Oeste,12,4.63,55.56
+2024-06-11,Tomate Triturado 400g,Almacén,Romina Álvarez,Sucursal Oeste,5,1.63,8.15
+2024-06-12,Leche Entera 1L,Lácteos,Nicolás Aguirre,Sucursal Centro,5,1.14,5.7
+2024-06-12,Queso Cremoso 400g,Lácteos,Romina Álvarez,Sucursal Oeste,8,3.82,30.56
+2024-06-12,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Oeste,15,2.19,32.85
+2024-06-12,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Oeste,19,1.44,27.36
+2024-06-13,Arroz Largo Fino 1kg,Almacén,Tomás Ibáñez,Sucursal Sur,17,1.35,22.95
+2024-06-14,Yogur Natural 500g,Lácteos,Sofía Pereyra,Sucursal Oeste,7,1.97,13.79
+2024-06-15,Vino Tinto 750ml,Bebidas,Romina Álvarez,Sucursal Norte,14,4.45,62.3
+2024-06-15,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Oeste,5,1.82,9.1
+2024-06-15,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Centro,11,2.09,22.99
+2024-06-15,Lechuga 1u,Frutas y Verduras,Marina Castillo,Sucursal Centro,15,1.26,18.9
+2024-06-15,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Sur,10,1.4,14.0
+2024-06-15,Shampoo 400ml,Higiene,Romina Álvarez,Sucursal Norte,12,3.08,36.96
+2024-06-16,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,9,1.71,15.39
+2024-06-16,Suavizante 900ml,Limpieza,Pablo Giménez,Sucursal Norte,7,2.8,19.6
+2024-06-16,Suavizante 900ml,Limpieza,Pablo Giménez,Sucursal Oeste,2,3.03,6.06
+2024-06-16,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Oeste,12,4.15,49.8
+2024-06-16,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Norte,7,1.34,9.38
+2024-06-16,Milanesas de Cerdo 500g,Carnicería,Tomás Ibáñez,Sucursal Sur,6,4.27,25.62
+2024-06-16,Pollo Entero 1kg,Carnicería,Nicolás Aguirre,Sucursal Norte,13,4.31,56.03
+2024-06-16,Cebolla 1kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,3,0.95,2.85
+2024-06-17,Queso Cremoso 400g,Lácteos,Marina Castillo,Sucursal Oeste,9,3.43,30.87
+2024-06-18,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Sur,1,3.07,3.07
+2024-06-18,Harina 0000 1kg,Almacén,Romina Álvarez,Sucursal Sur,11,1.25,13.75
+2024-06-18,Papa 2kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,7,1.44,10.08
+2024-06-18,Manteca 200g,Lácteos,Marina Castillo,Sucursal Norte,11,2.15,23.65
+2024-06-18,Sal Fina 500g,Almacén,Nicolás Aguirre,Sucursal Norte,13,0.72,9.36
+2024-06-18,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Centro,11,6.8,74.8
+2024-06-19,Arroz Largo Fino 1kg,Almacén,Tomás Ibáñez,Sucursal Sur,10,1.36,13.6
+2024-06-19,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Sur,12,1.71,20.52
+2024-06-19,Pan Lactal 500g,Panadería,Pablo Giménez,Sucursal Norte,3,2.45,7.35
+2024-06-20,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Centro,18,1.24,22.32
+2024-06-20,Vino Tinto 750ml,Bebidas,Nicolás Aguirre,Sucursal Sur,9,4.3,38.7
+2024-06-20,Crema de Leche 200ml,Lácteos,Romina Álvarez,Sucursal Norte,12,1.61,19.32
+2024-06-21,Azúcar 1kg,Almacén,Nicolás Aguirre,Sucursal Oeste,11,1.21,13.31
+2024-06-21,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Oeste,10,2.81,28.1
+2024-06-22,Shampoo 400ml,Higiene,Romina Álvarez,Sucursal Centro,1,3.08,3.08
+2024-06-22,Lentejas 500g,Almacén,Marina Castillo,Sucursal Sur,7,1.74,12.18
+2024-06-22,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Sur,12,1.44,17.28
+2024-06-22,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Centro,19,2.96,56.24
+2024-06-22,Lechuga 1u,Frutas y Verduras,Romina Álvarez,Sucursal Sur,6,1.2,7.2
+2024-06-23,Manteca 200g,Lácteos,Pablo Giménez,Sucursal Sur,14,2.28,31.92
+2024-06-23,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Sur,18,1.3,23.4
+2024-06-23,Manteca 200g,Lácteos,Tomás Ibáñez,Sucursal Centro,11,2.28,25.08
+2024-06-24,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Sur,13,2.13,27.69
+2024-06-24,Yogur Natural 500g,Lácteos,Nicolás Aguirre,Sucursal Norte,1,1.85,1.85
+2024-06-24,Arroz Largo Fino 1kg,Almacén,Pablo Giménez,Sucursal Sur,1,1.49,1.49
+2024-06-24,Papa 2kg,Frutas y Verduras,Romina Álvarez,Sucursal Norte,2,1.49,2.98
+2024-06-24,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Centro,18,4.18,75.24
+2024-06-24,Galletitas Dulces 300g,Panadería,Pablo Giménez,Sucursal Oeste,14,1.82,25.48
+2024-06-25,Milanesas de Cerdo 500g,Carnicería,Tomás Ibáñez,Sucursal Centro,1,3.96,3.96
+2024-06-25,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Centro,8,1.36,10.88
+2024-06-25,Manteca 200g,Lácteos,Pablo Giménez,Sucursal Sur,20,2.16,43.2
+2024-06-25,Manteca 200g,Lácteos,Tomás Ibáñez,Sucursal Centro,13,2.07,26.91
+2024-06-25,Arroz Largo Fino 1kg,Almacén,Pablo Giménez,Sucursal Oeste,1,1.36,1.36
+2024-06-26,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Oeste,8,3.02,24.16
+2024-06-27,Tomate Triturado 400g,Almacén,Tomás Ibáñez,Sucursal Norte,7,1.43,10.01
+2024-06-27,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Sur,6,2.24,13.44
+2024-06-28,Medialunas x6,Panadería,Sofía Pereyra,Sucursal Sur,6,2.75,16.5
+2024-06-28,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Centro,14,1.24,17.36
+2024-06-28,Cerveza 1L,Bebidas,Sofía Pereyra,Sucursal Oeste,14,3.15,44.1
+2024-06-28,Chorizo x4,Carnicería,Tomás Ibáñez,Sucursal Centro,19,3.25,61.75
+2024-06-29,Jugo de Naranja 1L,Bebidas,Marina Castillo,Sucursal Norte,6,2.23,13.38
+2024-06-30,Jabón en Polvo 500g,Limpieza,Tomás Ibáñez,Sucursal Centro,12,2.62,31.44
+2024-06-30,Pan Integral 400g,Panadería,Nicolás Aguirre,Sucursal Sur,14,2.44,34.16
+2024-07-01,Cebolla 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,19,0.86,16.34
+2024-07-02,Harina 0000 1kg,Almacén,Romina Álvarez,Sucursal Sur,10,1.29,12.9
+2024-07-02,Manzana Roja 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Norte,5,1.63,8.15
+2024-07-02,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Centro,15,2.76,41.4
+2024-07-03,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Oeste,8,2.75,22.0
+2024-07-03,Pan Integral 400g,Panadería,Sofía Pereyra,Sucursal Oeste,16,2.73,43.68
+2024-07-03,Agua Mineral 1.5L,Bebidas,Romina Álvarez,Sucursal Oeste,10,1.05,10.5
+2024-07-03,Jabón de Tocador x3,Higiene,Tomás Ibáñez,Sucursal Sur,19,2.0,38.0
+2024-07-04,Lentejas 500g,Almacén,Tomás Ibáñez,Sucursal Centro,1,1.89,1.89
+2024-07-05,Vino Tinto 750ml,Bebidas,Tomás Ibáñez,Sucursal Norte,8,4.56,36.48
+2024-07-05,Lechuga 1u,Frutas y Verduras,Nicolás Aguirre,Sucursal Centro,5,1.18,5.9
+2024-07-05,Pan Integral 400g,Panadería,Sofía Pereyra,Sucursal Norte,9,2.49,22.41
+2024-07-05,Milanesas de Cerdo 500g,Carnicería,Tomás Ibáñez,Sucursal Oeste,14,4.05,56.7
+2024-07-05,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Norte,19,3.99,75.81
+2024-07-06,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,11,1.74,19.14
+2024-07-06,Manteca 200g,Lácteos,Pablo Giménez,Sucursal Norte,3,2.0,6.0
+2024-07-06,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Norte,15,1.53,22.95
+2024-07-06,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Norte,11,1.0,11.0
+2024-07-07,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Norte,4,2.42,9.68
+2024-07-07,Chorizo x4,Carnicería,Nicolás Aguirre,Sucursal Centro,7,3.42,23.94
+2024-07-07,Aceite Girasol 900ml,Almacén,Tomás Ibáñez,Sucursal Centro,20,2.48,49.6
+2024-07-07,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,12,1.13,13.56
+2024-07-08,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Norte,17,1.26,21.42
+2024-07-08,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,3,1.62,4.86
+2024-07-09,Papel Higiénico x4,Higiene,Sofía Pereyra,Sucursal Centro,13,2.62,34.06
+2024-07-09,Chorizo x4,Carnicería,Pablo Giménez,Sucursal Oeste,3,3.19,9.57
+2024-07-09,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Centro,20,2.07,41.4
+2024-07-10,Tomate 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,7,1.94,13.58
+2024-07-10,Lentejas 500g,Almacén,Marina Castillo,Sucursal Oeste,2,1.79,3.58
+2024-07-10,Chorizo x4,Carnicería,Pablo Giménez,Sucursal Oeste,16,3.14,50.24
+2024-07-10,Chorizo x4,Carnicería,Tomás Ibáñez,Sucursal Oeste,1,3.37,3.37
+2024-07-10,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Oeste,6,2.74,16.44
+2024-07-11,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Oeste,7,2.72,19.04
+2024-07-11,Tomate 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Oeste,11,1.78,19.58
+2024-07-12,Suavizante 900ml,Limpieza,Romina Álvarez,Sucursal Centro,12,2.99,35.88
+2024-07-13,Azúcar 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,9,1.27,11.43
+2024-07-13,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Oeste,16,2.59,41.44
+2024-07-14,Lechuga 1u,Frutas y Verduras,Romina Álvarez,Sucursal Norte,11,1.3,14.3
+2024-07-14,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Norte,16,1.63,26.08
+2024-07-14,Jabón en Polvo 500g,Limpieza,Tomás Ibáñez,Sucursal Norte,19,2.34,44.46
+2024-07-14,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Centro,2,1.53,3.06
+2024-07-15,Pollo Entero 1kg,Carnicería,Marina Castillo,Sucursal Oeste,3,4.55,13.65
+2024-07-15,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Centro,17,2.08,35.36
+2024-07-16,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,19,1.91,36.29
+2024-07-16,Fideos Spaghetti 500g,Almacén,Pablo Giménez,Sucursal Sur,14,1.16,16.24
+2024-07-16,Pan Integral 400g,Panadería,Marina Castillo,Sucursal Norte,11,2.68,29.48
+2024-07-17,Yogur Natural 500g,Lácteos,Tomás Ibáñez,Sucursal Centro,12,1.79,21.48
+2024-07-17,Banana 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,2,1.05,2.1
+2024-07-17,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,3,1.17,3.51
+2024-07-17,Jabón de Tocador x3,Higiene,Tomás Ibáñez,Sucursal Sur,4,1.98,7.92
+2024-07-18,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Sur,20,4.85,97.0
+2024-07-18,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Norte,4,4.72,18.88
+2024-07-18,Jabón en Polvo 500g,Limpieza,Romina Álvarez,Sucursal Sur,9,2.41,21.69
+2024-07-18,Azúcar 1kg,Almacén,Pablo Giménez,Sucursal Sur,19,1.29,24.51
+2024-07-18,Manzana Roja 1kg,Frutas y Verduras,Marina Castillo,Sucursal Centro,18,1.54,27.72
+2024-07-19,Vino Tinto 750ml,Bebidas,Sofía Pereyra,Sucursal Centro,4,4.41,17.64
+2024-07-19,Jabón en Polvo 500g,Limpieza,Nicolás Aguirre,Sucursal Norte,8,2.63,21.04
+2024-07-19,Detergente 750ml,Limpieza,Pablo Giménez,Sucursal Sur,18,2.21,39.78
+2024-07-20,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Sur,19,2.48,47.12
+2024-07-21,Azúcar 1kg,Almacén,Sofía Pereyra,Sucursal Norte,19,1.18,22.42
+2024-07-21,Cerveza 1L,Bebidas,Marina Castillo,Sucursal Sur,19,3.16,60.04
+2024-07-21,Fideos Spaghetti 500g,Almacén,Sofía Pereyra,Sucursal Centro,20,1.18,23.6
+2024-07-22,Queso Cremoso 400g,Lácteos,Pablo Giménez,Sucursal Sur,17,3.35,56.95
+2024-07-22,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Norte,4,3.27,13.08
+2024-07-22,Jabón de Tocador x3,Higiene,Marina Castillo,Sucursal Norte,4,1.97,7.88
+2024-07-22,Crema de Leche 200ml,Lácteos,Sofía Pereyra,Sucursal Oeste,3,1.55,4.65
+2024-07-22,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Centro,20,2.63,52.6
+2024-07-22,Pollo Entero 1kg,Carnicería,Sofía Pereyra,Sucursal Centro,10,4.56,45.6
+2024-07-22,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Norte,8,1.51,12.08
+2024-07-23,Gaseosa Cola 2.25L,Bebidas,Tomás Ibáñez,Sucursal Sur,8,2.76,22.08
+2024-07-23,Carne Molida 500g,Carnicería,Sofía Pereyra,Sucursal Norte,12,4.05,48.6
+2024-07-23,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,11,1.49,16.39
+2024-07-24,Queso Cremoso 400g,Lácteos,Pablo Giménez,Sucursal Sur,13,3.65,47.45
+2024-07-24,Lavandina 1L,Limpieza,Nicolás Aguirre,Sucursal Sur,18,1.24,22.32
+2024-07-25,Tomate 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,6,1.76,10.56
+2024-07-26,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Sur,1,4.07,4.07
+2024-07-26,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Sur,8,6.88,55.04
+2024-07-26,Pollo Entero 1kg,Carnicería,Sofía Pereyra,Sucursal Centro,4,4.09,16.36
+2024-07-26,Shampoo 400ml,Higiene,Sofía Pereyra,Sucursal Sur,6,3.07,18.42
+2024-07-27,Lavandina 1L,Limpieza,Tomás Ibáñez,Sucursal Centro,9,1.41,12.69
+2024-07-28,Cerveza 1L,Bebidas,Sofía Pereyra,Sucursal Sur,15,3.15,47.25
+2024-07-28,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Oeste,7,3.86,27.02
+2024-07-28,Asado 1kg,Carnicería,Pablo Giménez,Sucursal Centro,9,6.39,57.51
+2024-07-28,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Oeste,11,1.74,19.14
+2024-07-28,Jabón de Tocador x3,Higiene,Nicolás Aguirre,Sucursal Oeste,2,1.99,3.98
+2024-07-29,Shampoo 400ml,Higiene,Tomás Ibáñez,Sucursal Oeste,13,3.5,45.5
+2024-07-29,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Oeste,12,1.65,19.8
+2024-07-30,Fideos Spaghetti 500g,Almacén,Sofía Pereyra,Sucursal Norte,20,1.15,23.0
+2024-07-30,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Oeste,19,2.66,50.54
+2024-07-30,Manzana Roja 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,16,1.55,24.8
+2024-07-31,Banana 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,6,1.13,6.78
+2024-07-31,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Norte,2,1.02,2.04
+2024-07-31,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Centro,15,2.4,36.0
+2024-07-31,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Oeste,2,4.11,8.22
+2024-08-01,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Centro,3,2.02,6.06
+2024-08-02,Jabón en Polvo 500g,Limpieza,Sofía Pereyra,Sucursal Sur,6,2.62,15.72
+2024-08-02,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Oeste,8,4.76,38.08
+2024-08-02,Tomate 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Norte,18,1.74,31.32
+2024-08-02,Asado 1kg,Carnicería,Marina Castillo,Sucursal Centro,2,6.96,13.92
+2024-08-02,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Norte,12,1.4,16.8
+2024-08-02,Jabón de Tocador x3,Higiene,Sofía Pereyra,Sucursal Norte,7,1.87,13.09
+2024-08-03,Tomate 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,6,1.75,10.5
+2024-08-03,Agua Mineral 1.5L,Bebidas,Marina Castillo,Sucursal Oeste,12,1.04,12.48
+2024-08-03,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Oeste,9,1.7,15.3
+2024-08-03,Shampoo 400ml,Higiene,Marina Castillo,Sucursal Oeste,19,3.05,57.95
+2024-08-04,Azúcar 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,11,1.25,13.75
+2024-08-05,Azúcar 1kg,Almacén,Romina Álvarez,Sucursal Oeste,18,1.21,21.78
+2024-08-07,Agua Mineral 1.5L,Bebidas,Sofía Pereyra,Sucursal Centro,14,0.98,13.72
+2024-08-07,Queso Cremoso 400g,Lácteos,Marina Castillo,Sucursal Oeste,12,3.57,42.84
+2024-08-08,Galletitas Dulces 300g,Panadería,Marina Castillo,Sucursal Norte,3,2.04,6.12
+2024-08-08,Fideos Spaghetti 500g,Almacén,Tomás Ibáñez,Sucursal Oeste,5,1.14,5.7
+2024-08-08,Jugo de Naranja 1L,Bebidas,Sofía Pereyra,Sucursal Norte,13,2.36,30.68
+2024-08-09,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,7,1.53,10.71
+2024-08-09,Tomate 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,14,1.85,25.9
+2024-08-10,Leche Entera 1L,Lácteos,Pablo Giménez,Sucursal Norte,1,1.24,1.24
+2024-08-10,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Sur,3,1.99,5.97
+2024-08-10,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Sur,18,3.01,54.18
+2024-08-10,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Norte,10,2.75,27.5
+2024-08-12,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Centro,14,2.49,34.86
+2024-08-12,Leche Entera 1L,Lácteos,Marina Castillo,Sucursal Centro,12,1.15,13.8
+2024-08-12,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Centro,19,2.72,51.68
+2024-08-12,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Norte,18,2.61,46.98
+2024-08-13,Galletitas Dulces 300g,Panadería,Pablo Giménez,Sucursal Centro,7,1.93,13.51
+2024-08-13,Manteca 200g,Lácteos,Tomás Ibáñez,Sucursal Centro,12,2.31,27.72
+2024-08-13,Banana 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,7,1.12,7.84
+2024-08-13,Aceite Girasol 900ml,Almacén,Tomás Ibáñez,Sucursal Sur,11,2.59,28.49
+2024-08-13,Jabón de Tocador x3,Higiene,Marina Castillo,Sucursal Oeste,5,2.04,10.2
+2024-08-14,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Oeste,5,1.86,9.3
+2024-08-14,Lechuga 1u,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,7,1.24,8.68
+2024-08-15,Arroz Largo Fino 1kg,Almacén,Pablo Giménez,Sucursal Sur,9,1.34,12.06
+2024-08-16,Crema de Leche 200ml,Lácteos,Sofía Pereyra,Sucursal Oeste,8,1.56,12.48
+2024-08-16,Jugo de Naranja 1L,Bebidas,Pablo Giménez,Sucursal Oeste,18,2.28,41.04
+2024-08-16,Gaseosa Cola 2.25L,Bebidas,Pablo Giménez,Sucursal Oeste,14,2.8,39.2
+2024-08-16,Sal Fina 500g,Almacén,Pablo Giménez,Sucursal Norte,18,0.72,12.96
+2024-08-17,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Sur,6,1.85,11.1
+2024-08-17,Pan Integral 400g,Panadería,Nicolás Aguirre,Sucursal Oeste,5,2.65,13.25
+2024-08-17,Asado 1kg,Carnicería,Marina Castillo,Sucursal Oeste,1,6.19,6.19
+2024-08-18,Jabón de Tocador x3,Higiene,Pablo Giménez,Sucursal Oeste,14,2.02,28.28
+2024-08-18,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Oeste,18,2.49,44.82
+2024-08-19,Harina 0000 1kg,Almacén,Nicolás Aguirre,Sucursal Centro,20,1.32,26.4
+2024-08-19,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Centro,7,2.47,17.29
+2024-08-20,Papel Higiénico x4,Higiene,Sofía Pereyra,Sucursal Norte,20,2.7,54.0
+2024-08-20,Arroz Largo Fino 1kg,Almacén,Marina Castillo,Sucursal Norte,5,1.47,7.35
+2024-08-20,Banana 1kg,Frutas y Verduras,Marina Castillo,Sucursal Centro,19,1.17,22.23
+2024-08-20,Lechuga 1u,Frutas y Verduras,Pablo Giménez,Sucursal Centro,6,1.17,7.02
+2024-08-20,Jabón en Polvo 500g,Limpieza,Pablo Giménez,Sucursal Sur,6,2.5,15.0
+2024-08-23,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Centro,11,2.0,22.0
+2024-08-23,Aceite Girasol 900ml,Almacén,Sofía Pereyra,Sucursal Centro,20,2.55,51.0
+2024-08-23,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,12,1.37,16.44
+2024-08-23,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Sur,4,1.13,4.52
+2024-08-25,Pollo Entero 1kg,Carnicería,Tomás Ibáñez,Sucursal Sur,16,4.45,71.2
+2024-08-25,Aceite Girasol 900ml,Almacén,Nicolás Aguirre,Sucursal Sur,17,2.65,45.05
+2024-08-25,Vino Tinto 750ml,Bebidas,Tomás Ibáñez,Sucursal Centro,7,4.45,31.15
+2024-08-25,Pollo Entero 1kg,Carnicería,Romina Álvarez,Sucursal Centro,9,4.45,40.05
+2024-08-25,Manzana Roja 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,17,1.61,27.37
+2024-08-26,Agua Mineral 1.5L,Bebidas,Sofía Pereyra,Sucursal Norte,11,1.02,11.22
+2024-08-26,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Centro,17,2.07,35.19
+2024-08-27,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Norte,4,4.36,17.44
+2024-08-28,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Centro,9,4.14,37.26
+2024-08-28,Harina 0000 1kg,Almacén,Romina Álvarez,Sucursal Sur,11,1.33,14.63
+2024-08-28,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Sur,5,2.75,13.75
+2024-08-28,Sal Fina 500g,Almacén,Tomás Ibáñez,Sucursal Oeste,8,0.71,5.68
+2024-08-28,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Centro,19,1.4,26.6
+2024-08-28,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Norte,7,1.07,7.49
+2024-08-29,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,20,3.87,77.4
+2024-08-29,Pollo Entero 1kg,Carnicería,Nicolás Aguirre,Sucursal Centro,18,4.33,77.94
+2024-08-29,Jabón de Tocador x3,Higiene,Romina Álvarez,Sucursal Oeste,7,2.02,14.14
+2024-08-29,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Sur,10,3.4,34.0
+2024-08-29,Harina 0000 1kg,Almacén,Marina Castillo,Sucursal Sur,20,1.39,27.8
+2024-08-30,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,8,0.93,7.44
+2024-08-31,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Oeste,17,3.1,52.7
+2024-08-31,Manteca 200g,Lácteos,Pablo Giménez,Sucursal Sur,10,2.21,22.1
+2024-08-31,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Centro,3,2.14,6.42
+2024-08-31,Carne Molida 500g,Carnicería,Pablo Giménez,Sucursal Oeste,7,3.84,26.88
+2024-08-31,Galletitas Dulces 300g,Panadería,Nicolás Aguirre,Sucursal Centro,4,1.93,7.72
+2024-09-01,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Sur,7,2.25,15.75
+2024-09-01,Sal Fina 500g,Almacén,Romina Álvarez,Sucursal Centro,19,0.74,14.06
+2024-09-02,Pan Lactal 500g,Panadería,Tomás Ibáñez,Sucursal Sur,14,2.32,32.48
+2024-09-02,Harina 0000 1kg,Almacén,Romina Álvarez,Sucursal Centro,4,1.32,5.28
+2024-09-02,Sal Fina 500g,Almacén,Nicolás Aguirre,Sucursal Centro,18,0.75,13.5
+2024-09-02,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Centro,8,1.47,11.76
+2024-09-02,Jugo de Naranja 1L,Bebidas,Sofía Pereyra,Sucursal Centro,20,2.38,47.6
+2024-09-03,Suavizante 900ml,Limpieza,Nicolás Aguirre,Sucursal Oeste,5,2.82,14.1
+2024-09-03,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Centro,13,1.95,25.35
+2024-09-03,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Oeste,10,2.09,20.9
+2024-09-03,Arroz Largo Fino 1kg,Almacén,Tomás Ibáñez,Sucursal Norte,18,1.47,26.46
+2024-09-03,Jugo de Naranja 1L,Bebidas,Pablo Giménez,Sucursal Oeste,18,2.21,39.78
+2024-09-03,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Oeste,8,3.14,25.12
+2024-09-03,Azúcar 1kg,Almacén,Sofía Pereyra,Sucursal Norte,18,1.28,23.04
+2024-09-04,Leche Entera 1L,Lácteos,Romina Álvarez,Sucursal Centro,2,1.3,2.6
+2024-09-04,Arroz Largo Fino 1kg,Almacén,Pablo Giménez,Sucursal Sur,19,1.36,25.84
+2024-09-04,Jugo de Naranja 1L,Bebidas,Romina Álvarez,Sucursal Norte,5,2.24,11.2
+2024-09-04,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Centro,17,2.86,48.62
+2024-09-04,Leche Entera 1L,Lácteos,Marina Castillo,Sucursal Centro,18,1.15,20.7
+2024-09-04,Asado 1kg,Carnicería,Tomás Ibáñez,Sucursal Centro,16,6.72,107.52
+2024-09-04,Sal Fina 500g,Almacén,Sofía Pereyra,Sucursal Oeste,18,0.72,12.96
+2024-09-05,Galletitas Dulces 300g,Panadería,Marina Castillo,Sucursal Centro,6,1.98,11.88
+2024-09-05,Jabón de Tocador x3,Higiene,Tomás Ibáñez,Sucursal Oeste,10,1.91,19.1
+2024-09-06,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Oeste,7,2.33,16.31
+2024-09-06,Sal Fina 500g,Almacén,Nicolás Aguirre,Sucursal Sur,19,0.73,13.87
+2024-09-06,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Sur,10,1.0,10.0
+2024-09-06,Arroz Largo Fino 1kg,Almacén,Nicolás Aguirre,Sucursal Oeste,17,1.4,23.8
+2024-09-07,Medialunas x6,Panadería,Romina Álvarez,Sucursal Norte,9,2.82,25.38
+2024-09-07,Yogur Natural 500g,Lácteos,Tomás Ibáñez,Sucursal Oeste,19,1.73,32.87
+2024-09-07,Chorizo x4,Carnicería,Tomás Ibáñez,Sucursal Norte,11,3.27,35.97
+2024-09-07,Cerveza 1L,Bebidas,Sofía Pereyra,Sucursal Centro,10,3.28,32.8
+2024-09-07,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Sur,18,3.27,58.86
+2024-09-07,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Norte,16,2.14,34.24
+2024-09-08,Sal Fina 500g,Almacén,Nicolás Aguirre,Sucursal Sur,3,0.72,2.16
+2024-09-08,Medialunas x6,Panadería,Sofía Pereyra,Sucursal Oeste,9,2.78,25.02
+2024-09-08,Sal Fina 500g,Almacén,Marina Castillo,Sucursal Centro,19,0.72,13.68
+2024-09-09,Carne Molida 500g,Carnicería,Marina Castillo,Sucursal Oeste,15,3.71,55.65
+2024-09-09,Lechuga 1u,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,10,1.2,12.0
+2024-09-09,Papel Higiénico x4,Higiene,Sofía Pereyra,Sucursal Sur,1,2.38,2.38
+2024-09-09,Queso Cremoso 400g,Lácteos,Sofía Pereyra,Sucursal Centro,17,3.42,58.14
+2024-09-10,Lechuga 1u,Frutas y Verduras,Tomás Ibáñez,Sucursal Oeste,16,1.25,20.0
+2024-09-11,Lechuga 1u,Frutas y Verduras,Marina Castillo,Sucursal Sur,13,1.24,16.12
+2024-09-11,Papa 2kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,11,1.41,15.51
+2024-09-11,Vino Tinto 750ml,Bebidas,Nicolás Aguirre,Sucursal Sur,18,4.46,80.28
+2024-09-12,Sal Fina 500g,Almacén,Sofía Pereyra,Sucursal Norte,4,0.75,3.0
+2024-09-12,Pan Integral 400g,Panadería,Tomás Ibáñez,Sucursal Norte,12,2.48,29.76
+2024-09-12,Aceite Girasol 900ml,Almacén,Nicolás Aguirre,Sucursal Oeste,4,2.69,10.76
+2024-09-12,Pan Lactal 500g,Panadería,Nicolás Aguirre,Sucursal Centro,12,2.25,27.0
+2024-09-12,Arroz Largo Fino 1kg,Almacén,Pablo Giménez,Sucursal Oeste,19,1.36,25.84
+2024-09-12,Sal Fina 500g,Almacén,Nicolás Aguirre,Sucursal Sur,2,0.73,1.46
+2024-09-13,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Norte,11,3.2,35.2
+2024-09-14,Aceite Girasol 900ml,Almacén,Pablo Giménez,Sucursal Oeste,1,2.48,2.48
+2024-09-14,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,11,4.13,45.43
+2024-09-14,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,19,1.45,27.55
+2024-09-14,Chorizo x4,Carnicería,Marina Castillo,Sucursal Centro,5,3.15,15.75
+2024-09-14,Manteca 200g,Lácteos,Marina Castillo,Sucursal Oeste,2,2.1,4.2
+2024-09-15,Leche Entera 1L,Lácteos,Tomás Ibáñez,Sucursal Oeste,18,1.31,23.58
+2024-09-15,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,18,0.98,17.64
+2024-09-16,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,17,0.86,14.62
+2024-09-16,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Norte,20,2.21,44.2
+2024-09-17,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Norte,7,0.99,6.93
+2024-09-17,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Oeste,10,6.93,69.3
+2024-09-17,Lavandina 1L,Limpieza,Tomás Ibáñez,Sucursal Sur,9,1.24,11.16
+2024-09-17,Suavizante 900ml,Limpieza,Romina Álvarez,Sucursal Norte,1,2.95,2.95
+2024-09-18,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Sur,13,1.81,23.53
+2024-09-18,Pan Integral 400g,Panadería,Pablo Giménez,Sucursal Norte,2,2.46,4.92
+2024-09-18,Sal Fina 500g,Almacén,Pablo Giménez,Sucursal Norte,20,0.67,13.4
+2024-09-19,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Sur,18,3.88,69.84
+2024-09-19,Tomate Triturado 400g,Almacén,Nicolás Aguirre,Sucursal Oeste,9,1.58,14.22
+2024-09-19,Chorizo x4,Carnicería,Nicolás Aguirre,Sucursal Oeste,1,3.5,3.5
+2024-09-19,Milanesas de Cerdo 500g,Carnicería,Tomás Ibáñez,Sucursal Centro,2,4.14,8.28
+2024-09-20,Banana 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,6,1.06,6.36
+2024-09-20,Cerveza 1L,Bebidas,Pablo Giménez,Sucursal Oeste,14,3.28,45.92
+2024-09-20,Pan Lactal 500g,Panadería,Sofía Pereyra,Sucursal Norte,8,2.51,20.08
+2024-09-20,Chorizo x4,Carnicería,Tomás Ibáñez,Sucursal Centro,2,3.16,6.32
+2024-09-20,Lavandina 1L,Limpieza,Sofía Pereyra,Sucursal Centro,12,1.3,15.6
+2024-09-21,Leche Entera 1L,Lácteos,Nicolás Aguirre,Sucursal Sur,9,1.17,10.53
+2024-09-22,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Norte,2,1.35,2.7
+2024-09-22,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Oeste,17,2.66,45.22
+2024-09-22,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Centro,9,1.19,10.71
+2024-09-22,Tomate Triturado 400g,Almacén,Tomás Ibáñez,Sucursal Centro,7,1.5,10.5
+2024-09-23,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Centro,13,2.7,35.1
+2024-09-23,Leche Entera 1L,Lácteos,Romina Álvarez,Sucursal Sur,1,1.23,1.23
+2024-09-23,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,13,0.91,11.83
+2024-09-24,Papa 2kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,2,1.37,2.74
+2024-09-24,Agua Mineral 1.5L,Bebidas,Romina Álvarez,Sucursal Oeste,12,0.99,11.88
+2024-09-24,Milanesas de Cerdo 500g,Carnicería,Nicolás Aguirre,Sucursal Centro,10,4.2,42.0
+2024-09-24,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Norte,4,2.79,11.16
+2024-09-24,Shampoo 400ml,Higiene,Tomás Ibáñez,Sucursal Sur,9,3.14,28.26
+2024-09-25,Suavizante 900ml,Limpieza,Romina Álvarez,Sucursal Norte,16,2.92,46.72
+2024-09-25,Shampoo 400ml,Higiene,Nicolás Aguirre,Sucursal Sur,20,3.48,69.6
+2024-09-26,Asado 1kg,Carnicería,Sofía Pereyra,Sucursal Centro,6,6.42,38.52
+2024-09-26,Arroz Largo Fino 1kg,Almacén,Tomás Ibáñez,Sucursal Norte,2,1.35,2.7
+2024-09-26,Lavandina 1L,Limpieza,Tomás Ibáñez,Sucursal Oeste,8,1.31,10.48
+2024-09-27,Pan Integral 400g,Panadería,Tomás Ibáñez,Sucursal Sur,14,2.57,35.98
+2024-09-27,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Norte,8,1.41,11.28
+2024-09-27,Shampoo 400ml,Higiene,Nicolás Aguirre,Sucursal Sur,2,3.14,6.28
+2024-09-28,Agua Mineral 1.5L,Bebidas,Tomás Ibáñez,Sucursal Oeste,8,0.97,7.76
+2024-09-28,Carne Molida 500g,Carnicería,Pablo Giménez,Sucursal Norte,11,3.77,41.47
+2024-09-28,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Sur,9,2.11,18.99
+2024-09-28,Suavizante 900ml,Limpieza,Marina Castillo,Sucursal Centro,4,2.94,11.76
+2024-09-29,Milanesas de Cerdo 500g,Carnicería,Tomás Ibáñez,Sucursal Centro,7,4.1,28.7
+2024-09-29,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Centro,8,2.98,23.84
+2024-09-29,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,3,1.7,5.1
+2024-09-29,Jugo de Naranja 1L,Bebidas,Nicolás Aguirre,Sucursal Centro,12,2.37,28.44
+2024-09-29,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Oeste,17,1.37,23.29
+2024-09-29,Lechuga 1u,Frutas y Verduras,Marina Castillo,Sucursal Centro,1,1.2,1.2
+2024-09-30,Carne Molida 500g,Carnicería,Sofía Pereyra,Sucursal Norte,10,3.97,39.7
+2024-10-01,Gaseosa Cola 2.25L,Bebidas,Nicolás Aguirre,Sucursal Centro,4,2.92,11.68
+2024-10-01,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Norte,12,4.01,48.12
+2024-10-01,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Oeste,8,2.44,19.52
+2024-10-01,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Sur,9,1.38,12.42
+2024-10-02,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Centro,16,1.74,27.84
+2024-10-02,Harina 0000 1kg,Almacén,Marina Castillo,Sucursal Norte,2,1.24,2.48
+2024-10-03,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Sur,19,1.29,24.51
+2024-10-03,Carne Molida 500g,Carnicería,Sofía Pereyra,Sucursal Sur,7,4.07,28.49
+2024-10-03,Gaseosa Cola 2.25L,Bebidas,Tomás Ibáñez,Sucursal Norte,11,3.06,33.66
+2024-10-04,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Sur,6,1.47,8.82
+2024-10-05,Shampoo 400ml,Higiene,Romina Álvarez,Sucursal Sur,6,3.5,21.0
+2024-10-05,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Norte,14,3.26,45.64
+2024-10-05,Suavizante 900ml,Limpieza,Nicolás Aguirre,Sucursal Norte,6,2.84,17.04
+2024-10-06,Azúcar 1kg,Almacén,Sofía Pereyra,Sucursal Norte,10,1.32,13.2
+2024-10-06,Sal Fina 500g,Almacén,Pablo Giménez,Sucursal Norte,6,0.7,4.2
+2024-10-06,Azúcar 1kg,Almacén,Sofía Pereyra,Sucursal Sur,7,1.2,8.4
+2024-10-06,Chorizo x4,Carnicería,Pablo Giménez,Sucursal Norte,19,3.42,64.98
+2024-10-06,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Norte,16,2.78,44.48
+2024-10-07,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Centro,5,1.04,5.2
+2024-10-07,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Centro,6,4.33,25.98
+2024-10-07,Sal Fina 500g,Almacén,Pablo Giménez,Sucursal Sur,16,0.76,12.16
+2024-10-08,Tomate Triturado 400g,Almacén,Nicolás Aguirre,Sucursal Norte,3,1.51,4.53
+2024-10-08,Gaseosa Cola 2.25L,Bebidas,Marina Castillo,Sucursal Centro,13,2.66,34.58
+2024-10-09,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,20,1.42,28.4
+2024-10-09,Tomate Triturado 400g,Almacén,Marina Castillo,Sucursal Norte,15,1.45,21.75
+2024-10-09,Lavandina 1L,Limpieza,Nicolás Aguirre,Sucursal Oeste,5,1.28,6.4
+2024-10-10,Chorizo x4,Carnicería,Tomás Ibáñez,Sucursal Sur,16,3.41,54.56
+2024-10-10,Shampoo 400ml,Higiene,Nicolás Aguirre,Sucursal Centro,12,3.08,36.96
+2024-10-11,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Centro,16,3.78,60.48
+2024-10-11,Papa 2kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,5,1.52,7.6
+2024-10-11,Manteca 200g,Lácteos,Nicolás Aguirre,Sucursal Centro,7,2.22,15.54
+2024-10-11,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Sur,9,3.19,28.71
+2024-10-11,Cebolla 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,11,0.95,10.45
+2024-10-12,Aceite Girasol 900ml,Almacén,Sofía Pereyra,Sucursal Centro,18,2.75,49.5
+2024-10-12,Aceite Girasol 900ml,Almacén,Nicolás Aguirre,Sucursal Norte,13,2.68,34.84
+2024-10-12,Pan Integral 400g,Panadería,Sofía Pereyra,Sucursal Norte,15,2.68,40.2
+2024-10-12,Tomate Triturado 400g,Almacén,Tomás Ibáñez,Sucursal Norte,9,1.53,13.77
+2024-10-13,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Oeste,11,1.42,15.62
+2024-10-13,Azúcar 1kg,Almacén,Pablo Giménez,Sucursal Centro,5,1.22,6.1
+2024-10-13,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Sur,20,1.15,23.0
+2024-10-13,Pan Integral 400g,Panadería,Marina Castillo,Sucursal Sur,11,2.57,28.27
+2024-10-14,Tomate Triturado 400g,Almacén,Romina Álvarez,Sucursal Centro,1,1.44,1.44
+2024-10-14,Pollo Entero 1kg,Carnicería,Romina Álvarez,Sucursal Norte,6,4.22,25.32
+2024-10-15,Shampoo 400ml,Higiene,Marina Castillo,Sucursal Centro,11,3.25,35.75
+2024-10-15,Jabón de Tocador x3,Higiene,Romina Álvarez,Sucursal Norte,13,1.84,23.92
+2024-10-15,Lentejas 500g,Almacén,Romina Álvarez,Sucursal Centro,17,1.78,30.26
+2024-10-16,Jugo de Naranja 1L,Bebidas,Pablo Giménez,Sucursal Oeste,10,2.35,23.5
+2024-10-16,Lechuga 1u,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,19,1.21,22.99
+2024-10-16,Jugo de Naranja 1L,Bebidas,Romina Álvarez,Sucursal Oeste,6,2.37,14.22
+2024-10-17,Arroz Largo Fino 1kg,Almacén,Marina Castillo,Sucursal Norte,4,1.51,6.04
+2024-10-17,Papel Higiénico x4,Higiene,Sofía Pereyra,Sucursal Norte,12,2.54,30.48
+2024-10-18,Papel Higiénico x4,Higiene,Romina Álvarez,Sucursal Norte,13,2.6,33.8
+2024-10-18,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Oeste,7,1.4,9.8
+2024-10-19,Detergente 750ml,Limpieza,Romina Álvarez,Sucursal Oeste,4,2.05,8.2
+2024-10-19,Sal Fina 500g,Almacén,Marina Castillo,Sucursal Oeste,9,0.77,6.93
+2024-10-19,Papel Higiénico x4,Higiene,Marina Castillo,Sucursal Norte,20,2.7,54.0
+2024-10-20,Jugo de Naranja 1L,Bebidas,Marina Castillo,Sucursal Norte,3,2.31,6.93
+2024-10-20,Lechuga 1u,Frutas y Verduras,Nicolás Aguirre,Sucursal Sur,18,1.3,23.4
+2024-10-21,Papel Higiénico x4,Higiene,Romina Álvarez,Sucursal Oeste,11,2.73,30.03
+2024-10-21,Medialunas x6,Panadería,Sofía Pereyra,Sucursal Sur,16,2.75,44.0
+2024-10-22,Lentejas 500g,Almacén,Marina Castillo,Sucursal Oeste,5,1.85,9.25
+2024-10-22,Pan Integral 400g,Panadería,Romina Álvarez,Sucursal Norte,20,2.45,49.0
+2024-10-22,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Oeste,18,1.4,25.2
+2024-10-22,Queso Cremoso 400g,Lácteos,Romina Álvarez,Sucursal Oeste,16,3.44,55.04
+2024-10-23,Arroz Largo Fino 1kg,Almacén,Nicolás Aguirre,Sucursal Norte,7,1.49,10.43
+2024-10-23,Harina 0000 1kg,Almacén,Romina Álvarez,Sucursal Oeste,16,1.27,20.32
+2024-10-24,Pollo Entero 1kg,Carnicería,Romina Álvarez,Sucursal Sur,8,4.56,36.48
+2024-10-24,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,4,1.36,5.44
+2024-10-25,Milanesas de Cerdo 500g,Carnicería,Pablo Giménez,Sucursal Centro,6,4.15,24.9
+2024-10-25,Gaseosa Cola 2.25L,Bebidas,Romina Álvarez,Sucursal Centro,12,2.77,33.24
+2024-10-25,Cerveza 1L,Bebidas,Nicolás Aguirre,Sucursal Sur,14,3.1,43.4
+2024-10-25,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,13,1.93,25.09
+2024-10-26,Detergente 750ml,Limpieza,Marina Castillo,Sucursal Centro,1,2.23,2.23
+2024-10-26,Suavizante 900ml,Limpieza,Pablo Giménez,Sucursal Oeste,2,2.93,5.86
+2024-10-26,Arroz Largo Fino 1kg,Almacén,Tomás Ibáñez,Sucursal Centro,17,1.41,23.97
+2024-10-26,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Centro,10,1.71,17.1
+2024-10-27,Lechuga 1u,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,20,1.3,26.0
+2024-10-27,Galletitas Dulces 300g,Panadería,Romina Álvarez,Sucursal Sur,1,1.95,1.95
+2024-10-27,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Sur,13,1.14,14.82
+2024-10-27,Yogur Natural 500g,Lácteos,Tomás Ibáñez,Sucursal Sur,4,1.97,7.88
+2024-10-28,Pan Lactal 500g,Panadería,Marina Castillo,Sucursal Oeste,6,2.21,13.26
+2024-10-28,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Sur,12,3.27,39.24
+2024-10-28,Tomate 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,6,1.9,11.4
+2024-10-28,Manteca 200g,Lácteos,Pablo Giménez,Sucursal Sur,9,2.1,18.9
+2024-10-29,Cebolla 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Centro,7,0.92,6.44
+2024-10-29,Papel Higiénico x4,Higiene,Sofía Pereyra,Sucursal Sur,20,2.44,48.8
+2024-10-29,Jugo de Naranja 1L,Bebidas,Sofía Pereyra,Sucursal Sur,3,2.4,7.2
+2024-10-29,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,8,1.07,8.56
+2024-10-30,Asado 1kg,Carnicería,Tomás Ibáñez,Sucursal Sur,9,6.41,57.69
+2024-10-30,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Oeste,1,4.2,4.2
+2024-10-30,Galletitas Dulces 300g,Panadería,Tomás Ibáñez,Sucursal Norte,8,1.82,14.56
+2024-10-31,Tomate Triturado 400g,Almacén,Nicolás Aguirre,Sucursal Norte,19,1.5,28.5
+2024-10-31,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Oeste,12,2.83,33.96
+2024-11-01,Lechuga 1u,Frutas y Verduras,Marina Castillo,Sucursal Norte,6,1.2,7.2
+2024-11-01,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Norte,4,4.3,17.2
+2024-11-01,Cebolla 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Sur,14,0.9,12.6
+2024-11-01,Azúcar 1kg,Almacén,Romina Álvarez,Sucursal Centro,9,1.21,10.89
+2024-11-01,Carne Molida 500g,Carnicería,Marina Castillo,Sucursal Norte,20,3.92,78.4
+2024-11-01,Banana 1kg,Frutas y Verduras,Marina Castillo,Sucursal Oeste,8,1.16,9.28
+2024-11-02,Pan Lactal 500g,Panadería,Pablo Giménez,Sucursal Norte,5,2.36,11.8
+2024-11-03,Vino Tinto 750ml,Bebidas,Pablo Giménez,Sucursal Sur,20,4.35,87.0
+2024-11-03,Medialunas x6,Panadería,Pablo Giménez,Sucursal Oeste,5,2.79,13.95
+2024-11-03,Pan Integral 400g,Panadería,Marina Castillo,Sucursal Oeste,18,2.38,42.84
+2024-11-04,Pan Lactal 500g,Panadería,Pablo Giménez,Sucursal Oeste,6,2.49,14.94
+2024-11-04,Sal Fina 500g,Almacén,Romina Álvarez,Sucursal Centro,18,0.73,13.14
+2024-11-05,Lavandina 1L,Limpieza,Sofía Pereyra,Sucursal Oeste,4,1.41,5.64
+2024-11-05,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,9,4.18,37.62
+2024-11-05,Chorizo x4,Carnicería,Romina Álvarez,Sucursal Centro,15,3.19,47.85
+2024-11-05,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,6,1.2,7.2
+2024-11-05,Arroz Largo Fino 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,10,1.4,14.0
+2024-11-05,Chorizo x4,Carnicería,Sofía Pereyra,Sucursal Sur,18,3.19,57.42
+2024-11-06,Asado 1kg,Carnicería,Pablo Giménez,Sucursal Centro,18,6.64,119.52
+2024-11-06,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Sur,17,2.53,43.01
+2024-11-06,Pollo Entero 1kg,Carnicería,Nicolás Aguirre,Sucursal Oeste,19,4.05,76.95
+2024-11-07,Cebolla 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,4,0.87,3.48
+2024-11-07,Yogur Natural 500g,Lácteos,Sofía Pereyra,Sucursal Centro,2,1.92,3.84
+2024-11-07,Aceite Girasol 900ml,Almacén,Tomás Ibáñez,Sucursal Norte,15,2.74,41.1
+2024-11-07,Queso Cremoso 400g,Lácteos,Nicolás Aguirre,Sucursal Centro,12,3.55,42.6
+2024-11-08,Aceite Girasol 900ml,Almacén,Pablo Giménez,Sucursal Sur,18,2.72,48.96
+2024-11-08,Agua Mineral 1.5L,Bebidas,Tomás Ibáñez,Sucursal Centro,1,0.97,0.97
+2024-11-08,Tomate Triturado 400g,Almacén,Nicolás Aguirre,Sucursal Norte,15,1.59,23.85
+2024-11-08,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Oeste,6,1.61,9.66
+2024-11-08,Leche Entera 1L,Lácteos,Tomás Ibáñez,Sucursal Sur,3,1.2,3.6
+2024-11-08,Milanesas de Cerdo 500g,Carnicería,Marina Castillo,Sucursal Oeste,13,4.13,53.69
+2024-11-08,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Centro,8,2.28,18.24
+2024-11-08,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Oeste,8,1.19,9.52
+2024-11-09,Tomate 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,11,1.88,20.68
+2024-11-09,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Oeste,17,2.06,35.02
+2024-11-10,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,3,1.66,4.98
+2024-11-10,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Norte,18,1.2,21.6
+2024-11-10,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Sur,12,3.28,39.36
+2024-11-10,Suavizante 900ml,Limpieza,Pablo Giménez,Sucursal Centro,19,2.7,51.3
+2024-11-11,Cebolla 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,3,0.95,2.85
+2024-11-11,Banana 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Centro,18,1.2,21.6
+2024-11-11,Pan Lactal 500g,Panadería,Pablo Giménez,Sucursal Norte,13,2.42,31.46
+2024-11-12,Cerveza 1L,Bebidas,Nicolás Aguirre,Sucursal Centro,18,3.21,57.78
+2024-11-12,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Sur,9,1.1,9.9
+2024-11-13,Lentejas 500g,Almacén,Tomás Ibáñez,Sucursal Centro,3,1.92,5.76
+2024-11-13,Vino Tinto 750ml,Bebidas,Marina Castillo,Sucursal Centro,16,4.31,68.96
+2024-11-13,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Sur,18,3.93,70.74
+2024-11-13,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,7,0.86,6.02
+2024-11-13,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Norte,19,2.51,47.69
+2024-11-14,Arroz Largo Fino 1kg,Almacén,Romina Álvarez,Sucursal Norte,6,1.48,8.88
+2024-11-14,Yogur Natural 500g,Lácteos,Pablo Giménez,Sucursal Norte,8,1.96,15.68
+2024-11-14,Azúcar 1kg,Almacén,Pablo Giménez,Sucursal Norte,7,1.17,8.19
+2024-11-15,Cerveza 1L,Bebidas,Marina Castillo,Sucursal Norte,20,3.04,60.8
+2024-11-15,Lentejas 500g,Almacén,Marina Castillo,Sucursal Sur,15,1.83,27.45
+2024-11-15,Pollo Entero 1kg,Carnicería,Tomás Ibáñez,Sucursal Oeste,6,4.08,24.48
+2024-11-15,Queso Cremoso 400g,Lácteos,Pablo Giménez,Sucursal Centro,4,3.54,14.16
+2024-11-16,Queso Cremoso 400g,Lácteos,Nicolás Aguirre,Sucursal Sur,19,3.69,70.11
+2024-11-16,Sal Fina 500g,Almacén,Pablo Giménez,Sucursal Norte,10,0.76,7.6
+2024-11-17,Pan Lactal 500g,Panadería,Marina Castillo,Sucursal Oeste,14,2.35,32.9
+2024-11-17,Detergente 750ml,Limpieza,Sofía Pereyra,Sucursal Sur,18,2.15,38.7
+2024-11-17,Galletitas Dulces 300g,Panadería,Marina Castillo,Sucursal Norte,15,1.98,29.7
+2024-11-18,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Oeste,5,1.39,6.95
+2024-11-19,Aceite Girasol 900ml,Almacén,Tomás Ibáñez,Sucursal Centro,5,2.6,13.0
+2024-11-19,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Sur,12,2.52,30.24
+2024-11-19,Gaseosa Cola 2.25L,Bebidas,Nicolás Aguirre,Sucursal Centro,9,2.74,24.66
+2024-11-19,Lentejas 500g,Almacén,Tomás Ibáñez,Sucursal Norte,16,1.74,27.84
+2024-11-19,Medialunas x6,Panadería,Romina Álvarez,Sucursal Norte,17,2.91,49.47
+2024-11-19,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Norte,1,4.02,4.02
+2024-11-20,Pan Integral 400g,Panadería,Nicolás Aguirre,Sucursal Centro,7,2.7,18.9
+2024-11-20,Banana 1kg,Frutas y Verduras,Sofía Pereyra,Sucursal Sur,18,1.16,20.88
+2024-11-21,Carne Molida 500g,Carnicería,Sofía Pereyra,Sucursal Sur,7,3.84,26.88
+2024-11-21,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Sur,2,3.32,6.64
+2024-11-22,Azúcar 1kg,Almacén,Marina Castillo,Sucursal Sur,2,1.26,2.52
+2024-11-22,Manteca 200g,Lácteos,Tomás Ibáñez,Sucursal Norte,8,2.21,17.68
+2024-11-23,Lentejas 500g,Almacén,Nicolás Aguirre,Sucursal Sur,8,1.89,15.12
+2024-11-23,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Oeste,9,1.33,11.97
+2024-11-23,Galletitas Dulces 300g,Panadería,Marina Castillo,Sucursal Norte,5,1.89,9.45
+2024-11-23,Arroz Largo Fino 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,10,1.47,14.7
+2024-11-23,Queso Cremoso 400g,Lácteos,Romina Álvarez,Sucursal Sur,6,3.49,20.94
+2024-11-24,Papel Higiénico x4,Higiene,Nicolás Aguirre,Sucursal Norte,20,2.67,53.4
+2024-11-24,Medialunas x6,Panadería,Sofía Pereyra,Sucursal Norte,5,2.85,14.25
+2024-11-25,Detergente 750ml,Limpieza,Tomás Ibáñez,Sucursal Centro,16,2.24,35.84
+2024-11-25,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Centro,1,2.8,2.8
+2024-11-25,Suavizante 900ml,Limpieza,Romina Álvarez,Sucursal Centro,19,2.81,53.39
+2024-11-25,Arroz Largo Fino 1kg,Almacén,Nicolás Aguirre,Sucursal Sur,10,1.51,15.1
+2024-11-25,Milanesas de Cerdo 500g,Carnicería,Sofía Pereyra,Sucursal Oeste,20,4.16,83.2
+2024-11-26,Harina 0000 1kg,Almacén,Sofía Pereyra,Sucursal Sur,16,1.31,20.96
+2024-11-26,Galletitas Dulces 300g,Panadería,Pablo Giménez,Sucursal Sur,7,2.06,14.42
+2024-11-26,Fideos Spaghetti 500g,Almacén,Marina Castillo,Sucursal Centro,13,1.06,13.78
+2024-11-26,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Oeste,7,2.58,18.06
+2024-11-26,Pollo Entero 1kg,Carnicería,Tomás Ibáñez,Sucursal Sur,17,4.16,70.72
+2024-11-26,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Oeste,19,2.29,43.51
+2024-11-27,Cerveza 1L,Bebidas,Sofía Pereyra,Sucursal Centro,1,2.95,2.95
+2024-11-27,Galletitas Dulces 300g,Panadería,Marina Castillo,Sucursal Norte,12,1.97,23.64
+2024-11-27,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Sur,19,1.66,31.54
+2024-11-28,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Norte,17,6.37,108.29
+2024-11-29,Leche Entera 1L,Lácteos,Pablo Giménez,Sucursal Oeste,11,1.3,14.3
+2024-11-29,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Oeste,4,1.56,6.24
+2024-11-29,Aceite Girasol 900ml,Almacén,Marina Castillo,Sucursal Sur,5,2.73,13.65
+2024-11-30,Lavandina 1L,Limpieza,Tomás Ibáñez,Sucursal Norte,4,1.25,5.0
+2024-11-30,Jugo de Naranja 1L,Bebidas,Sofía Pereyra,Sucursal Sur,7,2.38,16.66
+2024-11-30,Medialunas x6,Panadería,Nicolás Aguirre,Sucursal Sur,17,2.95,50.15
+2024-12-01,Fideos Spaghetti 500g,Almacén,Nicolás Aguirre,Sucursal Oeste,17,1.09,18.53
+2024-12-01,Suavizante 900ml,Limpieza,Sofía Pereyra,Sucursal Centro,16,2.98,47.68
+2024-12-01,Carne Molida 500g,Carnicería,Nicolás Aguirre,Sucursal Norte,9,3.76,33.84
+2024-12-02,Papa 2kg,Frutas y Verduras,Marina Castillo,Sucursal Norte,17,1.33,22.61
+2024-12-02,Manteca 200g,Lácteos,Sofía Pereyra,Sucursal Oeste,10,2.04,20.4
+2024-12-03,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Norte,6,1.94,11.64
+2024-12-03,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Centro,7,1.0,7.0
+2024-12-03,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,9,1.61,14.49
+2024-12-04,Aceite Girasol 900ml,Almacén,Romina Álvarez,Sucursal Centro,11,2.8,30.8
+2024-12-04,Lavandina 1L,Limpieza,Tomás Ibáñez,Sucursal Centro,10,1.31,13.1
+2024-12-04,Leche Entera 1L,Lácteos,Tomás Ibáñez,Sucursal Norte,3,1.3,3.9
+2024-12-04,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Norte,14,1.39,19.46
+2024-12-04,Papa 2kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,12,1.38,16.56
+2024-12-04,Cerveza 1L,Bebidas,Tomás Ibáñez,Sucursal Sur,19,3.0,57.0
+2024-12-05,Papa 2kg,Frutas y Verduras,Marina Castillo,Sucursal Centro,18,1.37,24.66
+2024-12-05,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Sur,10,1.83,18.3
+2024-12-05,Fideos Spaghetti 500g,Almacén,Tomás Ibáñez,Sucursal Oeste,12,1.19,14.28
+2024-12-05,Lentejas 500g,Almacén,Romina Álvarez,Sucursal Oeste,11,1.82,20.02
+2024-12-06,Gaseosa Cola 2.25L,Bebidas,Tomás Ibáñez,Sucursal Sur,20,2.88,57.6
+2024-12-06,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Centro,19,7.12,135.28
+2024-12-06,Aceite Girasol 900ml,Almacén,Pablo Giménez,Sucursal Oeste,1,2.85,2.85
+2024-12-06,Cebolla 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,1,0.91,0.91
+2024-12-06,Banana 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Norte,16,1.12,17.92
+2024-12-07,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,7,1.69,11.83
+2024-12-07,Cebolla 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,9,0.98,8.82
+2024-12-07,Gaseosa Cola 2.25L,Bebidas,Sofía Pereyra,Sucursal Oeste,12,2.88,34.56
+2024-12-08,Jugo de Naranja 1L,Bebidas,Tomás Ibáñez,Sucursal Norte,3,2.11,6.33
+2024-12-08,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Norte,2,1.08,2.16
+2024-12-08,Pan Integral 400g,Panadería,Tomás Ibáñez,Sucursal Centro,20,2.51,50.2
+2024-12-08,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Sur,18,1.75,31.5
+2024-12-08,Lentejas 500g,Almacén,Pablo Giménez,Sucursal Sur,10,1.94,19.4
+2024-12-08,Crema de Leche 200ml,Lácteos,Sofía Pereyra,Sucursal Norte,13,1.6,20.8
+2024-12-09,Harina 0000 1kg,Almacén,Pablo Giménez,Sucursal Centro,15,1.41,21.15
+2024-12-09,Lechuga 1u,Frutas y Verduras,Tomás Ibáñez,Sucursal Sur,2,1.19,2.38
+2024-12-09,Pan Lactal 500g,Panadería,Pablo Giménez,Sucursal Centro,12,2.51,30.12
+2024-12-09,Jabón en Polvo 500g,Limpieza,Marina Castillo,Sucursal Oeste,5,2.53,12.65
+2024-12-09,Asado 1kg,Carnicería,Romina Álvarez,Sucursal Centro,19,6.38,121.22
+2024-12-10,Lavandina 1L,Limpieza,Pablo Giménez,Sucursal Oeste,15,1.38,20.7
+2024-12-10,Manzana Roja 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,8,1.67,13.36
+2024-12-10,Crema de Leche 200ml,Lácteos,Tomás Ibáñez,Sucursal Norte,11,1.58,17.38
+2024-12-10,Banana 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Oeste,3,1.16,3.48
+2024-12-11,Agua Mineral 1.5L,Bebidas,Nicolás Aguirre,Sucursal Centro,12,0.98,11.76
+2024-12-11,Pollo Entero 1kg,Carnicería,Nicolás Aguirre,Sucursal Norte,9,4.59,41.31
+2024-12-11,Jabón de Tocador x3,Higiene,Romina Álvarez,Sucursal Centro,10,1.92,19.2
+2024-12-11,Banana 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Norte,10,1.19,11.9
+2024-12-11,Crema de Leche 200ml,Lácteos,Pablo Giménez,Sucursal Norte,10,1.72,17.2
+2024-12-11,Lentejas 500g,Almacén,Marina Castillo,Sucursal Oeste,4,1.94,7.76
+2024-12-12,Jabón de Tocador x3,Higiene,Nicolás Aguirre,Sucursal Sur,20,1.93,38.6
+2024-12-12,Lentejas 500g,Almacén,Sofía Pereyra,Sucursal Oeste,8,1.87,14.96
+2024-12-12,Pollo Entero 1kg,Carnicería,Nicolás Aguirre,Sucursal Centro,19,4.05,76.95
+2024-12-13,Crema de Leche 200ml,Lácteos,Marina Castillo,Sucursal Centro,1,1.64,1.64
+2024-12-13,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,20,1.48,29.6
+2024-12-14,Manzana Roja 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Oeste,17,1.56,26.52
+2024-12-14,Papa 2kg,Frutas y Verduras,Marina Castillo,Sucursal Oeste,11,1.5,16.5
+2024-12-14,Suavizante 900ml,Limpieza,Nicolás Aguirre,Sucursal Sur,7,2.74,19.18
+2024-12-15,Jabón en Polvo 500g,Limpieza,Nicolás Aguirre,Sucursal Norte,2,2.53,5.06
+2024-12-16,Cebolla 1kg,Frutas y Verduras,Tomás Ibáñez,Sucursal Centro,14,0.87,12.18
+2024-12-16,Lavandina 1L,Limpieza,Romina Álvarez,Sucursal Norte,18,1.38,24.84
+2024-12-16,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Centro,17,3.72,63.24
+2024-12-17,Papa 2kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,15,1.47,22.05
+2024-12-17,Sal Fina 500g,Almacén,Marina Castillo,Sucursal Centro,16,0.67,10.72
+2024-12-18,Jabón de Tocador x3,Higiene,Nicolás Aguirre,Sucursal Sur,19,1.85,35.15
+2024-12-18,Carne Molida 500g,Carnicería,Tomás Ibáñez,Sucursal Centro,5,4.12,20.6
+2024-12-18,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Oeste,6,3.19,19.14
+2024-12-19,Carne Molida 500g,Carnicería,Romina Álvarez,Sucursal Sur,14,4.18,58.52
+2024-12-19,Queso Cremoso 400g,Lácteos,Sofía Pereyra,Sucursal Norte,19,3.74,71.06
+2024-12-19,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Sur,12,1.17,14.04
+2024-12-19,Gaseosa Cola 2.25L,Bebidas,Tomás Ibáñez,Sucursal Sur,19,2.68,50.92
+2024-12-20,Agua Mineral 1.5L,Bebidas,Pablo Giménez,Sucursal Centro,7,1.0,7.0
+2024-12-20,Fideos Spaghetti 500g,Almacén,Marina Castillo,Sucursal Oeste,20,1.15,23.0
+2024-12-21,Yogur Natural 500g,Lácteos,Tomás Ibáñez,Sucursal Oeste,10,1.92,19.2
+2024-12-21,Pollo Entero 1kg,Carnicería,Tomás Ibáñez,Sucursal Oeste,14,4.09,57.26
+2024-12-22,Asado 1kg,Carnicería,Nicolás Aguirre,Sucursal Centro,7,6.69,46.83
+2024-12-22,Cebolla 1kg,Frutas y Verduras,Marina Castillo,Sucursal Sur,19,0.93,17.67
+2024-12-22,Arroz Largo Fino 1kg,Almacén,Tomás Ibáñez,Sucursal Centro,7,1.37,9.59
+2024-12-22,Leche Entera 1L,Lácteos,Sofía Pereyra,Sucursal Sur,16,1.19,19.04
+2024-12-23,Suavizante 900ml,Limpieza,Tomás Ibáñez,Sucursal Sur,9,2.71,24.39
+2024-12-23,Manteca 200g,Lácteos,Marina Castillo,Sucursal Centro,8,2.22,17.76
+2024-12-25,Lentejas 500g,Almacén,Pablo Giménez,Sucursal Norte,1,1.77,1.77
+2024-12-25,Queso Cremoso 400g,Lácteos,Romina Álvarez,Sucursal Sur,6,3.38,20.28
+2024-12-25,Milanesas de Cerdo 500g,Carnicería,Romina Álvarez,Sucursal Sur,12,4.27,51.24
+2024-12-25,Tomate Triturado 400g,Almacén,Sofía Pereyra,Sucursal Sur,4,1.49,5.96
+2024-12-25,Arroz Largo Fino 1kg,Almacén,Sofía Pereyra,Sucursal Sur,7,1.41,9.87
+2024-12-25,Yogur Natural 500g,Lácteos,Pablo Giménez,Sucursal Sur,15,1.77,26.55
+2024-12-25,Cebolla 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Sur,3,0.86,2.58
+2024-12-26,Gaseosa Cola 2.25L,Bebidas,Marina Castillo,Sucursal Norte,11,2.84,31.24
+2024-12-26,Leche Entera 1L,Lácteos,Pablo Giménez,Sucursal Norte,14,1.25,17.5
+2024-12-27,Detergente 750ml,Limpieza,Nicolás Aguirre,Sucursal Oeste,19,2.16,41.04
+2024-12-27,Agua Mineral 1.5L,Bebidas,Marina Castillo,Sucursal Norte,18,1.04,18.72
+2024-12-27,Jabón en Polvo 500g,Limpieza,Romina Álvarez,Sucursal Norte,8,2.51,20.08
+2024-12-28,Jugo de Naranja 1L,Bebidas,Tomás Ibáñez,Sucursal Oeste,10,2.2,22.0
+2024-12-29,Banana 1kg,Frutas y Verduras,Nicolás Aguirre,Sucursal Norte,8,1.08,8.64
+2024-12-29,Harina 0000 1kg,Almacén,Tomás Ibáñez,Sucursal Oeste,8,1.33,10.64
+2024-12-29,Azúcar 1kg,Almacén,Tomás Ibáñez,Sucursal Centro,6,1.19,7.14
+2024-12-29,Papa 2kg,Frutas y Verduras,Sofía Pereyra,Sucursal Norte,4,1.5,6.0
+2024-12-29,Lavandina 1L,Limpieza,Romina Álvarez,Sucursal Norte,8,1.41,11.28
+2024-12-30,Shampoo 400ml,Higiene,Pablo Giménez,Sucursal Centro,20,3.47,69.4
+2024-12-30,Lechuga 1u,Frutas y Verduras,Romina Álvarez,Sucursal Centro,7,1.31,9.17
+2024-12-30,Manzana Roja 1kg,Frutas y Verduras,Romina Álvarez,Sucursal Sur,6,1.56,9.36
+2024-12-30,Manzana Roja 1kg,Frutas y Verduras,Pablo Giménez,Sucursal Oeste,7,1.75,12.25
+2024-12-30,Sal Fina 500g,Almacén,Pablo Giménez,Sucursal Norte,14,0.74,10.36
+2024-12-30,Agua Mineral 1.5L,Bebidas,Marina Castillo,Sucursal Sur,17,1.06,18.02
+2024-12-31,Medialunas x6,Panadería,Romina Álvarez,Sucursal Norte,18,2.8,50.4
+2024-12-31,Cerveza 1L,Bebidas,Romina Álvarez,Sucursal Centro,11,3.05,33.55
+2024-12-31,Medialunas x6,Panadería,Pablo Giménez,Sucursal Sur,14,2.96,41.44

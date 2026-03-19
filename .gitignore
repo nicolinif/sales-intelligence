@@ -1,0 +1,7 @@
+.env
+venv/
+__pycache__/
+*.pyc
+uploads_temp/
+resultados/
+users.db

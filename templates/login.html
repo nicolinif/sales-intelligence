@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Intelligence — Iniciar sesión</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f; --surface: #13131a; --surface2: #1c1c27;
+      --border: rgba(255,255,255,0.07); --border-hover: rgba(255,255,255,0.15);
+      --accent: #7c6ff7; --accent-dim: rgba(124,111,247,0.12);
+      --text: #e8e8f0; --text-muted: #6b6b80; --text-dim: #3a3a4a;
+      --danger: #f07070; --danger-dim: rgba(240,112,112,0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "DM Sans", sans-serif; background: var(--bg); color: var(--text);
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(124,111,247,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,111,247,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    body::after {
+      content: ""; position: fixed; top: -200px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 400px; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse, rgba(124,111,247,0.1) 0%, transparent 70%);
+    }
+    .card {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 400px; margin: 24px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 20px; padding: 40px 36px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; margin-bottom: 32px; }
+    .logo-icon {
+      width: 32px; height: 32px; border-radius: 8px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 16px; height: 16px; color: white; }
+    .logo-name { font-size: 15px; font-weight: 600; letter-spacing: -0.3px; }
+    .logo-sub { font-size: 10px; color: var(--text-muted); font-family: "DM Mono", monospace; }
+    h1 { font-size: 22px; font-weight: 300; letter-spacing: -0.8px; margin-bottom: 6px; }
+    h1 span { font-weight: 600; color: var(--accent); }
+    .subtitle { font-size: 13px; color: var(--text-muted); margin-bottom: 28px; }
+    .field { margin-bottom: 16px; }
+    .field label { display: block; font-size: 11px; font-family: "DM Mono", monospace; color: var(--text-muted); margin-bottom: 7px; letter-spacing: 0.5px; }
+    .field input {
+      width: 100%; background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 9px; padding: 11px 14px; font-size: 14px; color: var(--text);
+      font-family: "DM Sans", sans-serif; outline: none; transition: border-color 0.2s;
+    }
+    .field input:focus { border-color: rgba(124,111,247,0.5); }
+    .field input::placeholder { color: var(--text-dim); }
+    .btn-login {
+      width: 100%; background: var(--accent); color: white; border: none;
+      padding: 13px; border-radius: 9px; font-size: 14px; font-weight: 500;
+      font-family: "DM Sans", sans-serif; cursor: pointer; transition: all 0.2s;
+      margin-top: 8px;
+    }
+    .btn-login:hover { background: #6c5ff0; box-shadow: 0 4px 20px rgba(124,111,247,0.35); }
+    .error {
+      background: var(--danger-dim); border: 1px solid rgba(240,112,112,0.25);
+      border-radius: 8px; padding: 10px 14px; font-size: 12px; color: var(--danger);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-name">Sales Intelligence</div>
+        <div class="logo-sub">powered by AI</div>
+      </div>
+    </div>
+
+    <h1>Bienvenido <span>de vuelta</span></h1>
+    <p class="subtitle">Iniciá sesión para continuar</p>
+
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST">
+      <div class="field">
+        <label>USUARIO</label>
+        <input type="text" name="username" placeholder="tu usuario" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label>CONTRASEÑA</label>
+        <input type="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn-login">Iniciar sesión</button>
+    </form>
+  </div>
+</body>
+</html>
