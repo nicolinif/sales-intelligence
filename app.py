@@ -360,11 +360,10 @@ def ejecutar_agente(ruta_archivo: str, graficos_seleccionados: list = None):
         )
 
         mensaje = respuesta.choices[0].message
-        mensajes.append({
-            "role": "assistant",
-            "content": mensaje.content,
-            "tool_calls": mensaje.tool_calls,
-        })
+        asistente_msg = {"role": "assistant", "content": mensaje.content}
+        if mensaje.tool_calls:
+            asistente_msg["tool_calls"] = mensaje.tool_calls
+        mensajes.append(asistente_msg)
 
         if not mensaje.tool_calls:
             break
